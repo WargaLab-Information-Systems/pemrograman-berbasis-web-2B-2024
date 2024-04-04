@@ -1,0 +1,17 @@
+<html>
+  
+</head>
+<body bgcolor="pink" text="purple">
+    <center>
+        <h1>Percobaan web sederhanaku gais</h1>
+	<center>
+			berikut biografi aku ya
+    </center>
+    Welcome to my website! Salam kenal semua
+    <br>Nama : Khusnur Faizah
+    <br>Ttl  : Jombang, 30 Januari 2005
+    <br>Hobi : Cari uang
+    <br>Pengalaman Kerja : Berjualan
+		<h1>dadah gais,i love you all</h1>
+</body>
+</html>
