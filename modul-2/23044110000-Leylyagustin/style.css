@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color:black;
+}
+
+.makanan{
+    padding: 10px;
+    background-color:pink;
+}
+.minuman{
+    padding: 10px;
+    background-color:khaki;
+}
+
+li{
+    margin-bottom: 5px;
+    list-style-type:decimal;
+}
+
+.makanan li{
+    color:red;
+    text-align: left;
+}
+
+.minuman li{
+    color:blue;
+    text-align: left;
+}
