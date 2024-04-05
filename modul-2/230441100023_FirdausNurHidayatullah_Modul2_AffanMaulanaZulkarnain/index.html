@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Makanan dan Minuman</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3FC4B2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .item h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .item p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Menu Makanan dan Minuman</h1>
+        <div class="menu">
+            <div class="item">
+                <h2>Nasi Goreng</h2>
+                <p>Rp 15.000</p>
+                <p>Nasi goreng dengan telur, ayam, dan sayuran.</p>
+            </div>
+            <div class="item">
+                <h2>Mie Goreng</h2>
+                <p>Rp 12.000</p>
+                <p>Mie goreng dengan telur, sayuran, dan bumbu khas.</p>
+            </div>
+            <div class="item">
+                <h2>Ayam Goreng</h2>
+                <p>Rp 20.000</p>
+                <p>Ayam goreng dengan bumbu rempah.</p>
+            </div>
+            <div class="item">
+                <h2>Es Teh Manis</h2>
+                <p>Rp 5.000</p>
+                <p>Es teh manis dengan es batu.</p>
+            </div>
+            <div class="item">
+                <h2>Es Jeruk</h2>
+                <p>Rp 6.000</p>
+                <p>Es jeruk segar dengan perasan jeruk asli.</p>
+            </div>
+            <div class="item">
+                <h2>Jus Alpukat</h2>
+                <p>Rp 10.000</p>
+                <p>Jus alpukat segar tanpa tambahan gula.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
