@@ -1,0 +1,13 @@
+body{
+    background-color: yellow;
+}
+
+.judul{
+    text-align: right;
+    color: blue;
+}
+
+#judul1{
+    text-align: left;
+    color: brown;
+}

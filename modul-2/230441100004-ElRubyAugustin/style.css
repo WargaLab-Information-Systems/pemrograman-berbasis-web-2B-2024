@@ -1,0 +1,17 @@
+#h1{
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+#menu-makanan{
+    border-radius: 8px;
+}
+#menu-minuman{
+    border-radius: 8px;
+    text-align: center;
+}
+li{
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    list-style: none;
+    text-align: center;
+}
