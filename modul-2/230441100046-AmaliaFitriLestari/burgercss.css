@@ -1,0 +1,28 @@
+
+.subjudul {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.subb { 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: green;
+    font-size: 7;
+}
+.isi {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    text-align: center;
+}
+.harga {
+    text-align : center;
+    font-weight: bold;
+    color: red;
+
+}
+.name {
+    text-align : center;
+    font-weight: bold;
+
+}
