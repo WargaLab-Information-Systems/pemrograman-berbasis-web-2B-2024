@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORM</title>
+</head>
+<body align= "center"style="background-color:LightBlue">
+    <h1 align="center"><b>MOHON UNTUK DIISI</h1></b>
+    <hr>
+    <h2><i>Silahkan mengisi biodata anda:</h2></i>
+    <form method="post">
+        <label for="name"><b>Nama :</b></label><br>
+        <input type="text" id="name" name="name"><br>
+        <p><label for="alamat"><b>Alamat : </b></label><br>
+        <input type="text" id="alamat" name="alamat"><br>
+        <p><label for="tgl"><b>Tanggal Lahir : </b></label><p>
+        <input type="date" id="tgl" name="tgl"><br>
+        <br>
+        <label for="pendidikan"><b>Pendidikan Terakhir:</b></label><p>
+        <select id="pendidikan" name="pendidikan_terakhir">
+            <option value="sd">SD</option>
+            <option value="smp">SMP</option>
+            <option value="sma">SMA</option>
+            <option value="s1">S1</option>
+            <option value="d3">D3</option>
+            <option value="d4">D4</option>
+        </select><br>
+        <br>
+        <b>Hobi:</b>
+        <p>
+        <input type="checkbox" id="mancing" name="hobi[]" value="mancing">
+        <label for="mancing"> Memancing</label>
+        <input type="checkbox" id="bernyanyi" name="hobi[]" value="bernyanyi">
+        <label for="bernyanyi"> Bernyanyi</label><br>
+        <input type="checkbox" id="mengoding" name="hobi[]" value="mengoding">
+        <label for="mengoding"> Mengoding</label>
+        <input type="checkbox" id="menari" name="hobi[]" value="menari">
+        <label for="menari"> Menari</label>
+        <p>
+        <input type="submit" value="Simpan" name="t1">
+        <input type="reset" value="Reset" name="t2">
+    </form>
+    <a href="PRAKTIKUM_PBW.html"><i>Klik Disini Untuk Melihat Biodata</i></a>
+    <p>
+    <a href="TugasTabelMhs.html"><i>Klik Disini Untuk Melihat Tabel</i></a>
+</body>
+</html>
