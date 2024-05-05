@@ -1,0 +1,63 @@
+body{
+    width:100%;
+    height:120vh;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.font{
+    font-family: Times New Roman;
+    text-align: center;
+}
+
+.navbar {
+    background-color: transparent !important;
+  }
+  
+.navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+.navbar-nav .nav-link:hover {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+  }
+  
+.page{
+    font-family:Times New Roman;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+
+}
+
+.page h1{
+    font-weight: bold;
+    color: white; 
+}
+
+.page p{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    color: black;
+  }
+
+
+  .card {
+    border-bottom-left-radius: auto;
+    border-bottom-right-radius: 45px;
+    border-top-left-radius: 45px; 
+    border-top-right-radius: auto;
+  }
+  
+.card-img-top {
+    width: 350px;
+    height: 400px; 
+    border-top-left-radius: 45px; 
+    border-top-right-radius: auto;
+  }
+
+
