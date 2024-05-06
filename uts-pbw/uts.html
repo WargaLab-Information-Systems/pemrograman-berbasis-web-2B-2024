@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Import Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    .img-container {
+      position: relative;
+      width: 100%;
+      height: 400px;
+    }
+    .img-fluid {
+      width: 100%;
+      height: 100%;
+    }
+    .text-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      text-align: center;
+    }
+    .text-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      text-align: center;
+    }
+    .text-center2 {
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    .text-below {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
+    .navbar-custom {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      background-color: rgba(91, 41, 3, 0.5);
+      z-index: 1;
+    }
+    .search-form {
+      position: relative;
+    }
+    .search-input {
+      border-radius: 20px;
+      border: none;
+      padding: 10px 30px;
+      width: 200px;
+    }
+    .search-btn {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      background: none;
+      border: none; 
+      cursor: pointer;
+    }
+    .navbar-custom .btn-light:hover {
+      background-color: rgba(91, 41, 3, 0.5);
+    }
+
+    .btn {
+      border-radius: 2rem;
+      width: 150px;
+    }
+    .p-3 {
+      background-color: rgb(41, 18, 0);
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px; 
+    }
+    .card {
+      width: 20%; 
+      margin-left: 4rem;
+      margin-right: 4rem;
+      margin-bottom: 8rem;
+      border-top-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+      overflow: hidden; 
+    }
+    .card-img-top {
+      height: 200px; 
+      object-fit: cover; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="img-container">
+      <img src="bromo1.jpeg" class="img-fluid" alt="...">
+      <nav class="navbar navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Travel Blok</a>
+          <div class="d-flex justify-content-end">
+            <a class="btn btn-light me-2" href="#" role="button">Beranda</a>
+            <a class="btn btn-light me-2" href="#" role="button">Fasilitas</a>
+            <a class="btn btn-light me-2" href="#" role="button">About</a>
+            <form class="search-form">
+              <input class="form-control search-input me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="search-btn" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <h1 class="text-center">PESONA JAWA TIMUR</h1>
+      <p class="text-below">Ayo Kita Jelajahi Keindahan Jawa Timur</p>
+    </div>
+    <div class="p-3 mb-2 text-danger-emphasis">
+      <div class="card-container">
+        <div class="card">
+          <img src="gbromo.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GUNUNG BROMO</h5>
+            <p class="card-text">Gunung Bromo adalah
+              gunung berapi yang
+              terkenal di Jawa Timur,
+              Indonesia, terkenal
+              dengan pemandangan
+              matahari terbitnya yang
+              spektakuler.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="ijen.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">KAWAH IJEN</h5>
+            <p class="card-text">Kawah Ijen terkenal
+              dengan blue fire dan
+              danau sulfur hijau tosca,
+              terletak di Gunung Ijen,
+              Banyuwangi, Jawa
+              Timur.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="gunung-semeru.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GUNUNG SEMERU</h5>
+            <p class="card-text">Gunung Semeru adalah
+              gunung tertinggi di
+              Pulau Jawa dan terkenal
+              dengan pendakian yang
+              menantang.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center1">
+      <div class="row">
+          <div class="col">
+            <img src="Screenshot 2024-05-06 231650.png" class="img-fluid1" alt="...">
+          </div>
+          <div class="col">
+            <h2>Fasilitas dan layanan yang tersedia</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum saepe a esse velit illum! Ipsum adipisci corrupti sequi veniam, accusamus dolorum sit accusantium magnam, maxime tempora iusto, tenetur atque fuga!
+          <div class="container text-center1">
+            <div class="row row-cols-2">
+              <div class="col">
+                <img src="camping.png" class="img-fluid1" alt="...">
+                <h3>Area Camping</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam, accusamus fuga autem qui sunt illum illo, modi officia eum officiis! Laudantium eligendi hic labore culpa cumque itaque minus eveniet!
+              </div>
+              <div class="col">
+                <img src="toilet.png" class="img-fluid1" alt="...">
+                <h3>Kamar Mandi</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A ullam, accusamus fuga autem qui sunt illum illo, modi officia eum officiis! Laudantium eligendi hic labore culpa cumque itaque minus eveniet!
+              </div>
+              <div class="col">
+                <img src="makanan.png" class="img-fluid1" alt="...">
+                <h3>Tempat Makan</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil ut eligendi facilis reiciendis at et soluta consequuntur praesentium rem vitae cupiditate maxime dignissimos numquam in, sint repudiandae temporibus eos.
+              </div>
+              <div class="col">
+                <img src="main.png" class="img-fluid1" alt="...">
+                <h3>Tempat Bermain</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil ut eligendi facilis reiciendis at et soluta consequuntur praesentium rem vitae cupiditate maxime dignissimos numquam in, sint repudiandae temporibus eos.
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="p-3 mb-2 text-danger-emphasis">
+            <div class="container text-center2">
+              <div class="row row-cols-2">
+                <div class="col">
+                  <h1>Tentang Kami</h1>
+                  <p>Travel blog berbasis online merupakan trobosan
+                    yang dilakukan oleh dinas dibudparpora untuk
+                    memudahkan masyarakat juga memberikan
+                    informasi yang lengkap tentang wisata yang ada
+                    di sini.</p>
+                </div>
+                <div class="col">
+                  <h3>Sosial Media</h3>
+                  <img src="sosmed.png" class="img-fluid1" alt="...">
+                </div>
+                <div class="col rows-4">
+                <div class="col">
+                  Jl. Mutiara No 14, Gg 2 RT2 RW3, Kabupaten Bangkalan
+                </div>
+                <div class="col">
+                  disbudparpora@kamal.go.id
+                </div>
+                <div class="col">
+                  www.disbudparporakamal.go.id
+                </div>
+                <div class="col">
+                  +(21) 9987 7764 (Travel blog)
+                </div>
+                </div>
+              <div class="col">  
+                <div class="col">
+                  <h3>Selengkapnya</h3>
+                  <p>Service Client</p>
+                  <p>Syarat dan Ketentuan</p>
+                  <p>Daftar Akomodasi dan Kerjasama</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
