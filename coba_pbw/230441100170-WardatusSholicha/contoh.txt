@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>HOMEPAGE</title>
+    </head>
+    <body text="black" bgcolor="lavender">
+        <h2 align="center"><img src="icha.jpg" alt="" width="250px" height="300px">
+        <hr>
+        <p> Nama 	: Wardatus Sholicha</p>
+        <p> Nim 	: 230441100170 </p>
+        <p> Prodi 	: Sistem Informasi</p></h2> 
+        <h3>
+		<ul>
+			<a>halaman selanjutnya ya =></a>
+			<a href="homepage 2.html"> [klik disini] </a>
+		
+            <p><a>website belajar HTML =></a>
+            <a href="https://www.w3schools.com/html/"> [klik tautan]</a></p>
+   
+            <p><a>Hubungi Layanan =></a>
+            <a href="mailto:wardasholicha@gmail.com">  [email saya]  </a></p>
+
+            <p><a>klik untuk melihat file=></a>
+            <a href="PBW.pdf"> [file saya]</a></p>
+        </h3>
+		</ul>
+    </body>
+</html>
