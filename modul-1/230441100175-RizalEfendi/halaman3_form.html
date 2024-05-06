@@ -1,0 +1,57 @@
+<html>
+<head>
+    <title>Form Input Biodata</title>
+</head>
+<body>
+    <div style="width: 400px; margin: 50px auto; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #0801021a;">
+        <h2 style="text-align: center;">Login</h2>
+        <form method="post">
+            <table cellpadding="5" style="width: 100%;">
+                <tr>
+                    <td><b>NAMA :</b></td>
+                    <td><input type="text" name="user" size="20"></td>
+                </tr>
+                <tr>
+                    <td><b>NIM:</b></td>
+                    <td><input type="number" name="nim" size="20"></td>
+                </tr>
+                <tr>
+                    <td><b>TANGGAL LAHIR:</b></td>
+                    <td><input type="date" name="tanggal" size="20"></td>
+                </tr>
+                <tr>
+                    <td><b>ALAMAT:</b></td>
+                    <td><input type="text" name="alamat"></td>
+                </tr>
+                <tr>
+                    <td><b>JENIS KELAMIN:</b></td>
+                    <td>
+                        <input type="radio" id="laki" name="jk"><label for="laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jk"><label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>HOBBY:</b></td>
+                    <td>
+                        <input type="checkbox" id="berenang"><label for="berenang">Berenang</label>
+                        <input type="checkbox" id="menyanyi"><label for="menyanyi">Menyanyi</label><br>
+                        <input type="checkbox" id="membaca"><label for="membaca">Membaca</label>
+                        <input type="checkbox" id="menulis"><label for="menulis">Menulis</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>JURUSAN:</b></td>
+                    <td>
+                        <select name="jurusan">
+                            <option value="sistem_informasi">Sistem Informasi</option>
+                            <option value="mesin">Mesin</option>
+                            <option value="informatika">Informatika</option>
+                            <option value="industri">Industri</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
