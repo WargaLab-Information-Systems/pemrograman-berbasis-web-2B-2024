@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"  rel="stylesheet" />
+</head>
+  <body style="background-color:#A79277;">
+    
+
+    <nav class="bg-fixed border-blue-200 dark:bg-blue-500" style="background-image: url(aot.jpeg)">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-1 p-1 bg-fixed" style="background-image: url(aot.jpeg)">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <div class="h-8 text-bold" alt="" ></div>
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white text-white" style="font-family: Cooper Black;">AOT Blok</span>
+        </a>
+        <div class="flex md:order-2">
+          <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="pl-5 md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 me-1">
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+          <div class="relative hidden md:block">
+            <div class=" absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none px-3">
+              <svg class=" w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+              </svg>
+              <span class="sr-only">Search icon</span>
+            </div>
+            <input type="text" id="search-navbar" class=" ml-2 pl-8 block w-full p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-white-500 focus:border-white-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+          </div>
+          <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+        </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+            <div class="relative mt-3 md:hidden">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                </svg>
+              </div>
+              <input type="text" id="search-navbar" class=" block w-full pl-4 ml-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search...">
+            </div>
+            <ul class="flex flex-col p-4 md:p-0 mt-1 font-medium  rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row  bg-transparent bg-fixed" style="background-image: url(aot.jpeg)">
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-white rounded md:bg-white-500 md:text-white md:p-0 md:dark:text-white-500 bg-fixed" style="background-image: url(aot.jpeg); font-family: Cooper Black; font-size: 21px" aria-current="page">Beranda</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-white rounded md:bg-white-500 md:text-white md:p-0 md:dark:text-white-500 bg-fixed" style="background-image: url(aot.jpeg); font-family: Cooper Black; font-size: 21px"> Fasilitas</a>
+              </li>
+              <li>
+                <a href="#" class="block py-2 px-3 text-white bg-white rounded md:bg-white-500 md:text-white md:p-0 md:dark:text-white-500 bg-fixed" style="background-image: url(aot.jpeg); font-family: Cooper Black; font-size: 21px">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header class="text-white text-center bg-fixed" style="background-image: url(aot.jpeg)">        
+        <h1 class="font-bold text-5xl pt-10" style="font-family: Cooper Black">ATTACK ON TITAN</h1>
+        <p class="mt-4 pb-40 text-xl" style="font-family: Segoe Print">Korbankan jantung mu demi kejayaan umat manusia</p>
+    </header>
+
+    <div class="container text-center mx-auto ">
+      <div class="row my-3 ml-6 ">
+
+        <div class="col-4">
+          <div class="card max-w-sm bg-white border border-black shadow dark:bg-black dark:border-black " style="width: 18rem; border-top-left-radius: 50px; border-bottom-right-radius: 50px; ">
+              <img class="" style="width: 18rem; border-top-left-radius: 50px;" src="military.jpg" alt="" />
+            <div class="card-body p-5">
+              <h5 class="card-title mb-2 text-2xl font-bold tracking-tight text-black dark:text-white"style="font-family: Cooper Black">MILITARY POLICE</h5>
+              <p class="card-text mb-3 font-normal text-black dark:text-black" style="font-family: Segoe Print">For His Magesty the King</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card max-w-sm bg-white border border-black  shadow dark:bg-black dark:border-black" style="width: 18rem; border-top-left-radius: 50px; border-bottom-right-radius: 50px;">
+                <img class="" style="width: 18rem; border-top-left-radius: 50px;" src="scouting.jpg" alt="" />
+            <div class="card-body p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-black dark:text-white" style="font-family: Cooper Black">SCOUTING LEGION</h5>
+                <p class="mb-3 font-normal text-black dark:text-black" style="font-family: Segoe Print">For the Glory of Humanity</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="card max-w-sm bg-white border border-gray-200 shadow dark:bg-gray-800 dark:border-gray-700" style="width: 18rem; border-top-left-radius: 50px; border-bottom-right-radius: 50px;">
+                <img class="" style="width: 18rem; border-top-left-radius: 50px;" src="stationary.jpg" alt="" />
+            <div class="card-body p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" style="font-family: Cooper Black">STATIONARY GUARD</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400" style="font-family: Segoe Print">For Order and the Peace</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <h2 class="text-center mx-auto mt-20" style="font-family: Cooper Black; font-size: 40px;">Struktur Pemerintahan Paradise Island</h2>
+    <section class="mt-3 mb-20 mx-auto bg-transparent container"  style="display:flex">
+        <img src="structure.jpg" class="mr-7" style="width: 400px; height:700px; ">
+        <div style="font-size: 20px; font-family: Segoe Print">
+        <p align="justify">
+        Sistem pemerintahan atas masyarakat Pulau Paradis, dari ibu kota Mitras, monarki palsu Fritz selama seratus tahun terakhir telah bertindak sebagai wajah Pemerintah Kerajaan sementara keluarga Reiss, yang dulunya adalah keluarga Fritz yang sebenarnya, bertindak sebagai garis keturunan penguasa rahasia. Setelah kudeta, mayoritas pemerintahan lama digantikan oleh sistem yang dipimpin militer dengan keluarga Reiss yang berkuasa secara publik. Historia Reiss saat ini memegang komando sebagai Ratu Tembok. 
+        </p>
+        <p align="justify">Sebelum kudeta, Pemerintahan Kerajaan secara lahiriah dipimpin oleh raja boneka Fritz, yang tidak ada hubungannya dengan keluarga Reiss, keturunan sebenarnya dari Karl Fritz. Para pejabat yang membentuk sisa pemerintahan kerajaan Fritz berbeda dari ras mayoritas yang mencakup sebagian besar populasi di dalam Tembok, yang membuat mereka kebal terhadap kemampuan Titan Pendiri yang dapat mengubah pikiran. Mereka kemungkinan besar adalah orang-orang Eldia dari ras minoritas yang menjilat Karl Fritz untuk mendapatkan posisi keluarga mereka.</p>
+        <p align="justify">Setelah kudeta, posisi Fritz sebagai raja digantikan oleh Historia Reiss, keturunan langsung Karl Fritz. Pemerintahan dikendalikan oleh anggota militer, yang mengambil alih kekuasaan para bangsawan yang digulingkan dari majelis sebelumnya. Para pemimpin cabang militer kadang-kadang berkumpul di bawah Darius Zackly untuk membuat keputusan penting tentang masa depan Tembok. Meskipun Historia berperan sebagai Ratu, ia tidak lebih dari sekadar boneka, dan Tembok justru menjadi kediktatoran militer. Setelah pembunuhan Zackly, Dot Pixis menjadi penjabat Panglima Tertinggi.</p>    
+        </div>
+    </section>
+    
+
+
+<footer class="bg-white dark:bg-gray-900">
+    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div class="md:flex md:justify-between">
+          <div class="mb-6 md:mb-0">
+              <a href="#" class="flex items-center">
+                  <img src="logo.png" class="h-8 me-3" style="width: 4rem; height:4rem;" alt="Logo" />
+                  <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white" style="font-family: Cooper Black;">Tentang Paradise</span>
+              </a>
+          </div>
+          <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style="font-family: Cooper Black;">Resources</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4" >
+                          <a href="#" class="hover:underline" style="font-family: Segoe Print">Attack on Titan</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline" style="font-family: Segoe Print">Rumbling</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style="font-family: Cooper Black;">Join us</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline" style="font-family: Segoe Print">Military Police</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline" style="font-family: Segoe Print">Scouting Legion</a>
+                      </li>
+                      <li>
+                          <a href="#" class="hover:underline" style="font-family: Segoe Print">Stationary Guard</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white" style="font-family: Cooper Black;">Illegal</h2>
+                  <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline" style="font-family: Segoe Print">Yeagerist</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+    </div>
+</footer>
+
+
+  
+  </body>
+</html>
