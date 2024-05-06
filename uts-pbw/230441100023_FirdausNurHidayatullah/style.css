@@ -1,0 +1,12 @@
+.banner {
+    background: url("Gunung\ bromo.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: #fff;
+}
+
+footer {
+    color: white;
+    background-color: #492727;
+}
