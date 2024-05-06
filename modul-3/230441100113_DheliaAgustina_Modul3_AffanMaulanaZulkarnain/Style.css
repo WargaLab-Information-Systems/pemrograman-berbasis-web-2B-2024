@@ -1,0 +1,16 @@
+body {
+    font-family: cursive;
+    color:white;
+    background-color: #2d5c3a;
+    margin: 0;
+    padding: 0;
+}
+
+.card{
+    background-color: #8dcc9a;
+    font-family: Arial;
+}
+
+.jarak-baris {
+    margin-bottom: 20px;
+}
