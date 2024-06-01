@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit();
-}
+// if (!isset($_SESSION['username'])) {
+//     header("Location: login.php");
+//     exit();
+// }
 
 include 'db.php';
 
@@ -43,7 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" name="jurusan" placeholder="Jurusan" required>
         <input type="text" name="asal_kota" placeholder="Asal Kota" required>
         <button type="submit">Tambah</button>
+
+        <a href="students.php" class="button" style="width: 370px; text-align: center;">Kembali</a>
     </form>
-    <a href="students.php">Kembali</a>
 </body>
 </html>

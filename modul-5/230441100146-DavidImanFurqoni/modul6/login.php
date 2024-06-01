@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 session_start();
 
 include 'db.php';
@@ -17,8 +17,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $error = "Username atau password salah!";
     }
 }
-?>
-
+?> -->
+<!-- 
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,4 +35,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </form>
     <a href="register.php" class="button back">Register</a>
 </body>
-</html>
+</html> -->

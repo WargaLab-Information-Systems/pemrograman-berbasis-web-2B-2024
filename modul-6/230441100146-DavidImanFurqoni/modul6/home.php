@@ -15,7 +15,9 @@
             exit();
         }
     ?>
-    <a href="students.php" class="button">Data Mahasiswa</a>
-    <a href="logout.php" class="button back">Logout</a>
+    <form action="">
+        <a href="students.php" class="button" class="button" style="width: 370px; text-align: center;">Data Mahasiswa</a>
+        <a href="logout.php" class="button" style="width: 370px; text-align: center;">Logout</a>
+    </form>
 </body>
 </html>

@@ -53,7 +53,7 @@ th, td {
 }
 
 a {
-    color: #3498db;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -72,7 +72,9 @@ a:hover {
     border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
+    width: 300px;
 }
+
 
 .button:hover {
     background-color: #2980b9;
@@ -96,7 +98,8 @@ a:hover {
 }
 
 .button.back {
-    background-color: #95a5a6;
+    
+    background-color: #ffffff;
 }
 
 .button.back:hover {

@@ -23,8 +23,10 @@ $students = $conn->query("SELECT * FROM students");
 </head>
 <body>
     <h1>Data Mahasiswa</h1>
-    <a href="add_student.php" class="button">Tambah Mahasiswa</a>
-    <a href="home.php" class="button back">Kembali</a>
+    <form action="">
+        <a href="add_student.php" class="button" style="width: 370px; text-align: center;">Tambah Mahasiswa</a>
+        <a href="home.php" class="button" style="width: 370px; text-align: center;">Kembali</a>
+    </form>
     <table>
         <tr>
             <th>NIM</th>

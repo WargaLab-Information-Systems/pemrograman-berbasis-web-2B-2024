@@ -1,9 +1,9 @@
 <?php
 session_start();
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit();
-}
+// if (!isset($_SESSION['username'])) {
+//     header("Location: login.php");
+//     exit();
+// }
 
 include 'db.php';
 
@@ -46,7 +46,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <input type="text" name="jurusan" value="<?php echo htmlspecialchars($student['jurusan']); ?>" required>
         <input type="text" name="asal_kota" value="<?php echo htmlspecialchars($student['asal_kota']); ?>" required>
         <button type="submit" class="button">Update</button>
+    
+    <a href="students.php" class="button" style="width: 370px; text-align: center;" >Kembali</a>
     </form>
-    <a href="students.php" class="button back">Kembali</a>
 </body>
 </html>
