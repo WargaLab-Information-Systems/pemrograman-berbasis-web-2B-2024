@@ -1,0 +1,153 @@
+body {
+  background-color: #3e2a2a;
+}
+
+nav {
+  background-color: rgba(62, 42, 42, 0.7);
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.nav-link {
+  font-weight: 620;
+  width: 100px;
+  text-align: center;
+  display: block;
+  border-radius: 50px;
+  background-color: white;
+  color: #3e2a2a;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.search {
+  width: 40px;
+  height: 25px;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  position: relative;
+}
+
+.pesona {
+  background-image: url(img/bgd.jpg);
+  background-size: 1400px 350px;
+  background-repeat: repeat-x;
+}
+
+#pesona {
+  padding: 50px;
+}
+
+.pesona-text {
+  font-weight: 700;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.card-parent {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 0px;
+  width: 15rem;
+  height: 25rem;
+}
+
+.card-img-top {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 0px;
+  height: 190px;
+  object-fit: cover;
+}
+
+.fasilitas {
+  background-color: white;
+  padding-bottom: 40px;
+}
+
+.fas-text {
+  text-align: justify;
+}
+
+.fasilitas-img {
+  padding-top: 40px;
+}
+
+.img-fluid {
+  height: 475px;
+}
+
+.fasilitas .fa-solid {
+  color: #3e2a2a;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.fasilitas-text p {
+  color: #3e2a2a;
+}
+
+.col-4 {
+  padding: 20px;
+}
+
+footer {
+  color: white;
+  padding: 50px;
+  padding-bottom: 5px;
+}
+
+#about p {
+  text-align: justify;
+  padding-bottom: 30px;
+}
+
+#about ul {
+  margin-left: -30px;
+  padding-top: 10px;
+  list-style-type: none;
+}
+
+#about .fa-solid,
+.fa-regular {
+  text-align: left;
+  margin-right: 15px;
+}
+
+#sosmed {
+  text-align: right;
+}
+
+#sosmed ul {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 50px;
+}
+
+#sosmed li {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: block;
+  font-size: 20px;
+  border-radius: 50px;
+  background-color: white;
+  text-align: center;
+  color: #3e2a2a;
+  margin-left: 10px;
+  line-height: 40px;
+  border-radius: 50%;
+}
+
+#sosmed p {
+  text-align: right;
+}

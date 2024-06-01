@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modul 4</title>
+  </head>
+  <body>
+    <script>
+      // nomor 1
+      var mahasiswa = {
+        nama: "Lina",
+        npm: "230441100178",
+        jurusan: "Sistem Informasi",
+        nilai: [85, 70, 60, 45, 95],
+      };
+
+      // nomor 2
+      console.log("==== Data Mahasiswa ====");
+      console.log(`Nama    : ${mahasiswa.nama}`);
+      console.log(`NPM     : ${mahasiswa.npm}`);
+      console.log(`Jurusan : ${mahasiswa.jurusan}`);
+      console.log(`Nilai   : ${mahasiswa.nilai}`);
+      console.log("");
+
+      //nomor 3
+      function hitungRataNilai(nilai) {
+        var total = 0;
+        for (let i = 0; i < nilai.length; i++) {
+          total += nilai[i];
+        }
+        return total / nilai.length;
+      }
+      const rataRata = hitungRataNilai(mahasiswa.nilai);
+
+      //nomor 4
+      function ubahUrutan(karakter) {
+        var urutan = "";
+        for (let i = karakter.length - 1; i >= 0; i--) {
+          urutan += karakter[i];
+        }
+        return urutan;
+      }
+      const input = "Hello";
+      const kebalikan = ubahUrutan(input);
+      console.log(`Kebalikan dari '${input}' adalah '${kebalikan}'`);
+      console.log("");
+
+      //nomor 5
+      console.log(`Berikut adalah nilai ${mahasiswa.nama} :`);
+      for (let i = 0; i < mahasiswa["nilai"].length; i++) {
+        console.log(mahasiswa.nilai[i]);
+      }
+      console.log("");
+
+      //nomor 6
+      function nilaiHuruf(nilai) {
+        if (nilai > 80) {
+          return "A";
+        } else if (nilai >= 70 && nilai <= 79) {
+          return "B";
+        } else if (nilai >= 60 && nilai <= 69) {
+          return "C";
+        } else if (nilai >= 50 && nilai <= 59) {
+          return "D";
+        } else {
+          return "E";
+        }
+      }
+
+      // nomor 7
+      const nilaiHrf = nilaiHuruf(rataRata);
+      console.log(`Rata-rata nilai ${mahasiswa.nama}       : ${rataRata}`);
+      console.log(`Nilai huruf dari rata-rata : ${nilaiHrf}`);
+    </script>
+  </body>
+</html>
