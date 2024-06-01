@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(gambar.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #fbfafa;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(142, 214, 148, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    background-color: #2bdce6;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0471ff;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+li button {
+    margin-left: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+li button.edit {
+    background-color: #daa645;
+    color: #fff;
+}
+
+li button.delete {
+    background-color: #ffa006;
+    color: #fff;
+}
+
+li button.complete {
+    background-color: #ffa805;
+    color: #fff;
+}
+
+li button:hover {
+    opacity: 0.8;
+}
