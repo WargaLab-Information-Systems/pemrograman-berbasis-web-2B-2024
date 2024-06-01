@@ -1,0 +1,101 @@
+body {
+    background-color: #f8f9fa; 
+    color: #333; 
+}
+
+.navbar {
+    background-color: #8B0000; 
+    border-bottom: 3px solid #BC8F8F; 
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-link {
+    color: black; 
+}
+
+.nav-link:hover {
+    color: #ffffff; 
+}
+
+.school-heading {
+    font-size: 24px; 
+    color: #8B0000; 
+    margin-bottom: 20px; 
+}
+
+.carousel-item {
+    height: 500px; 
+}
+
+.carousel-item img {
+    object-fit: cover; 
+    height: 100%;
+}
+
+.card {
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.card-img-top {
+    height: 180px; 
+    object-fit: cover; 
+}
+
+.card-title {
+    color: #8B0000; /
+}
+
+.card-text {
+    font-size: 0.9rem; 
+}
+
+.card-footer {
+    background-color: #8B0000;
+    color: #ffffff;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.header-card {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #8B0000;
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.container .col:nth-child(1) p {
+    color: #8B0000
+}
+
+.container .col:nth-child(2) p {
+    color: #8B0000
+}
+
+.container .col:nth-child(3) p {
+    color: #8B0000
+}
+
+h5.text-center {
+    color: #8B0000 
+}
+
+.card-footer.text-body-secondary {
+    color: black; 
+    font-size: 14px; 
+    font-weight: bold;
+    padding: 8px; 
+    margin-top: 20px; 
+}

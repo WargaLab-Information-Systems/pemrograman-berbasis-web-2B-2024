@@ -1,0 +1,128 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Warna latar belakang halaman */
+}
+
+/* Kontainer untuk elemen-elemen login, welcome, dan form */
+.login-container, .container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Warna latar belakang kontainer */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+/* Kontainer untuk elemen selamat datang */
+.welcome-container {
+    max-width: 600px; /* Lebar maksimum kontainer */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff; /* Warna latar belakang kontainer */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    text-align: center;
+}
+
+/* Gaya untuk judul "Selamat datang" */
+.welcome-title {
+    font-size: 32px; /* Ukuran font yang lebih besar */
+    color: #333; /* Warna teks yang lebih gelap */
+    margin-bottom: 20px; /* Jarak bawah dari judul */
+}
+
+/* Gaya untuk teks selamat datang */
+.welcome-text {
+    font-size: 18px; /* Ukuran font yang sedikit lebih besar */
+    color: #666; /* Warna teks yang lebih netral */
+    line-height: 1.6; /* Jarak antar baris yang lebih nyaman */
+}
+
+.navbar {
+    background-color: black;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-link {
+    color: black; /* Mengatur warna teks menjadi hitam */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.navbar-link:hover {
+    color: black; /* Mengatur warna teks saat dihover menjadi hitam */
+}
+
+
+.mahasiswa-container {
+    margin-top: 50px; /* Tambahkan margin-top agar tidak tertutup oleh navbar */
+}
+
+/* Input dan tombol */
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+button:hover {
+    background-color: blue; /* Warna tombol saat hover */
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px; /* Perbesar padding */
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Link */
+a {
+    color: blue;
+    text-decoration: none;
+    transition: color 0.3s; /* Efek transisi saat hover */
+}
+
+a:hover {
+    color: blue; /* Warna link saat hover */
+}

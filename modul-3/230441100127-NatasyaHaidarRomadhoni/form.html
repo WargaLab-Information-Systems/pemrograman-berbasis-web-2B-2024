@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Form</title>
+    <style>
+        body {
+            background-image: url("OIP (1).jpeg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">INPUT DATA CALON SISWA</h1>
+    <hr>
+    <br>
+    <form action="">
+        <table align="center">
+            <tr>
+                <td>Nama Lengkap</td>
+                <td><input type="text"></td>
+            </tr>   
+
+            <tr>
+                <td>NISN</td>
+                <td><input type="text"></td>
+            </tr>
+
+            <tr>
+                <td><label for="birthday">Tanggal</label></td>
+                <td><input type="date" id="birthday" name="birthday"></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">Jenis Kelamin</label></td>
+                <td>
+                    <select id="gender" name="gender">
+                        <option value="Perempuan">Perempuan</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="years">Angkatan</label></td>
+                <td>
+                    <select id="years" name="years">
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobi</td>
+                <td><input type="radio" name="hobi">Menyanyi</td>
+                <td><input type="radio" name="hobi">Menari</td>
+                <td><input type="radio" name="hobi">Tidur</td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email" name="email"></td>
+            </tr>
+        </table>
+        <div align="center">
+            <button type="reset" value="hapus">Reset</button>
+            <button type="submit" value="kirim">Tambah</button>
+        </div>
+    </form>
+    <p><a href="pendidikan.html">&lt;==PREVIOUS</a></p>
+</body>
+</html>
