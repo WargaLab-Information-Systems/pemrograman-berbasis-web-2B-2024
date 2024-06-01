@@ -1,0 +1,31 @@
+.navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider-content img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.header-card{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 30px;
+    
+}
+
+.card-parent {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.img-card{
+    height: 250px;
+    object-fit: cover;
+}
+
