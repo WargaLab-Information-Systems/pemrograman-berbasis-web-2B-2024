@@ -1,0 +1,53 @@
+/* Mengatur tampilan body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Mengatur tampilan kontainer menu dropdown */
+.menu-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Mengatur tampilan tombol dropdown */
+.tombol-dropdown {
+    background-color: #ff7eb6;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mengatur tampilan tombol dropdown saat di-hover atau di-fokus */
+.tombol-dropdown:hover, .tombol-dropdown:focus {
+    background-color: #ff7eb6;
+}
+
+/* Mengatur tampilan konten dropdown */
+.konten-dropdown {
+    display: none; /* Awalnya disembunyikan */
+    position: absolute;
+    background-color: #ffdbec;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Menempatkan di atas elemen lainnya */
+}
+
+/* Mengatur tampilan link dalam konten dropdown */
+.konten-dropdown a {
+    color: rgb(255, 182, 222);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; /* Memastikan link tampil sebagai blok */
+}
+
+/* Mengatur tampilan link dalam konten dropdown saat di-hover */
+.konten-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Kelas untuk menampilkan konten dropdown */
+.tampil {
+    display: block;
+}
