@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="oke.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>List Tugas</h1>
+        <input type="text" id="tugasBaru" placeholder="Tambahkan tugas.....">
+        <button id="tambahTugas">Tambah Tugas</button>
+        <ul id="listTugas"></ul>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const taskInput = document.getElementById('tugasBaru');
+    const addTaskButton = document.getElementById('tambahTugas');
+    const taskList = document.getElementById('listTugas');
+
+    addTaskButton.addEventListener('click', addTask);
+    taskList.addEventListener('click', handleTaskActions);
+
+    function addTask() {
+        const taskText = taskInput.value.trim();
+        if (taskText !== '') {
+            const listItem = createTaskElement(taskText);
+            taskList.appendChild(listItem);
+            taskInput.value = '';
+        }
+    }
+
+    function createTaskElement(tugas) {
+        const listItem = document.createElement('li');
+        listItem.textContent = tugas;
+
+        const editButton = document.createElement('button');
+        editButton.textContent = 'Ubah';
+        editButton.className = 'edit';
+
+        const deleteButton = document.createElement('button');
+        deleteButton.textContent = 'Hapus';
+        deleteButton.className = 'delete';
+
+        const completeButton = document.createElement('button');
+        completeButton.textContent = 'Selesai';
+        completeButton.className = 'complete';
+
+        listItem.appendChild(completeButton);
+        listItem.appendChild(editButton);
+        listItem.appendChild(deleteButton);
+
+        return listItem;
+    }
+
+        function handleTaskActions(e) {
+            if (e.target.classList.contains('delete')) {
+                const listItem = e.target.parentElement;
+                taskList.removeChild(listItem);
+            } else if (e.target.classList.contains('edit')) {
+                const listItem = e.target.parentElement;
+                const newTaskText = prompt('Ubah tugas:', listItem.firstChild.textContent);
+                if (newTaskText !== null && newTaskText.trim() !== '') {
+                    listItem.firstChild.textContent = newTaskText;
+                }
+            } else if (e.target.classList.contains('complete')) {
+                const listItem = e.target.parentElement;
+                listItem.classList.toggle('completed');
+            }
+        }
+    });
+    </script>
+</body>
+</html>
