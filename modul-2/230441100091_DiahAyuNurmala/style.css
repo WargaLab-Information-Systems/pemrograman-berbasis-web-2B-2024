@@ -1,0 +1,33 @@
+body {
+    font-family: 'Times New Roman', sans-serif;
+    margin: 10;
+    padding: 0;
+}
+
+header {
+    background-color:grey;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.menu-item {
+    width: 80%;
+    margin: auto;
+}
+
+.makanan, .minuman {
+    text-align: center;
+    padding: 20px;
+}
+
+.makanan img, .minuman img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}

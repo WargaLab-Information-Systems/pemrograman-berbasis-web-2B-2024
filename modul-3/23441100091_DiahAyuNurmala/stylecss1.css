@@ -1,0 +1,38 @@
+.detail {
+    background-image: url('g1.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 200px 50px;
+}
+
+  .feature {
+    margin-bottom: 30px;
+  }
+
+.card {
+     margin-bottom: 20px; 
+     border-radius: 10px; 
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+ }
+.card-img-top {
+     border-top-left-radius: 10px; 
+     border-top-right-radius: 10px; 
+     height: 200px; 
+     object-fit: cover; 
+ }
+ h3 {
+    text-align: center;
+ }
+ p {
+    text-align: justify;
+ }
+
+ .warna {
+    color:green;
+ }
+
+
+.modify {
+    background-color: blueviolet;
+}
