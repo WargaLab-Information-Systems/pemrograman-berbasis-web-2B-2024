@@ -1,0 +1,144 @@
+body {
+    height: max-height;
+}
+
+.detail {
+    background-image: url('baru.jpeg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 200px 50px;
+    font-weight: bold;
+    height: 500px;
+    width: 100%;
+}
+.background{
+    background-color: rgb(113, 49, 0);
+    height: 1000px;
+}
+.card {
+    margin-bottom: 20px; 
+    border-radius: 40px 0px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+.card-img-top {
+    border-top-left-radius: 40px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-text {
+    font-weight: normal;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+    background-color: rgba(64, 44, 44, 0.6) !important;
+}
+
+.lead {
+    margin-bottom: 60px;
+}
+
+.display-4{
+    font-weight: bold;
+}
+
+.display-4, .lead{
+    color: white;
+}
+
+.mb-3 {
+    position: absolute;
+}
+
+.nav-link{
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.bi-search{
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-brand{
+    font-weight: bold; 
+}
+
+#cw {
+    color: white;
+}
+
+.content-2 {
+    margin-top: 600px;
+}
+
+.img-fluid {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.jdl {
+    font-size: 30px;
+    font-weight: medium;
+}
+
+.fa-campground, .fa-toilet, .fa-utensils, .fa-futbol {
+    font-size: 47px;
+}
+
+.footer{
+    background-color: rgb(117, 44, 1);
+    margin-top: 100px;
+    color: white;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .col-md-6:last-child {
+    text-align: right; 
+}
+
+.fa-twitter, .fa-instagram, .fa-linkedin-in {
+    background-color: white;
+    margin: 10px;
+    padding: 5px 6px;
+    border-radius: 50%;
+    color: rgba(64, 44, 44);
+}
+
+.fa-facebook-f {
+    background-color: white;
+    margin: 10px;
+    padding: 5px 8px;
+    border-radius: 50%;
+    color: rgba(64, 44, 44);
+}
+
+.content-3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer .col-md-6 {
+    padding-bottom: 20px; /* Tambahkan padding bawah */
+}
+
+.footer h5 {
+    margin-top: 35px; /* Tambahkan margin atas pada judul */
+}
+
+.footer p {
+    margin-top: 10px; /* Tambahkan margin atas pada paragraf */
+}
