@@ -1,0 +1,79 @@
+body {
+    background-image: url('foto1.jpg');
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+h2 {
+    text-align: center;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color:#f2f2f2;
+}
+
+.action-links a {
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 3px 8px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 3px;
+}
+
+.action-links a:hover {
+    background-color: #ddd;
+}
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+tabel {
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="radio"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+

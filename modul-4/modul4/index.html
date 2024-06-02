@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal nomor 1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav class="navbar">
+        <ul>
+          <li><a href="todo.html">TODO</a></li>
+          <li><a href="music.html">MUSIC</a></li>
+        </ul>
+
+        <img src="umam.jpg" alt="" width="80px" class="user-pic" onclick="toggleMenu()" />
+
+        <div class="submenu-wrapper" id="submenu">
+          <div class="submenu">
+            <div class="dropdown">
+              <img src="umam.jpg" alt="" width="80px" />
+              <h3>khoirul umam</h3>
+            </div>
+            <hr />
+
+            <a href="#" class="submenu-link">
+              <img src="image/2.jpg" alt="" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+              <img src="image/message.jpg" alt="" />
+              <p>Message</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+              <img src="image/setting.jpg" alt="" />
+              <p>Settings</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+              <img src="image/1.jpg" alt="" />
+              <p>Help</p>
+              <span>></span>
+            </a>
+
+            <a href="#" class="submenu-link">
+              <img src="image/logout.jpg" alt="" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="https://bing.com/th?id=OSK.62bccdeeaf3221e41e0782350cf75e73" />
+        </div>
+        <div class="about-text">
+          <h2>Rendang</h2>
+          <p>
+            Rendang adalah hidangan tradisional khas Indonesia yang berasal dari suku Minangkabau di Sumatera Barat. Hidangan ini terbuat dari daging yang dimasak perlahan dalam campuran santan dan berbagai rempah-rempah, seperti cabai,
+            serai, lengkuas, kunyit, jahe, bawang putih, dan bawang merah. Proses memasaknya memakan waktu lama, sekitar empat jam atau lebih, hingga santan mengering dan bumbu terserap sempurna ke dalam daging​. Rendang dikenal dengan cita
+            rasanya yang kaya dan kompleks serta tekstur daging yang empuk. Selain menggunakan daging sapi, rendang juga bisa dibuat dengan daging ayam, kambing, atau bebek. Hidangan ini memiliki dua jenis utama: rendang kering dan rendang
+            basah (kalio). Rendang kering adalah yang paling populer, di mana santan benar-benar mengering dan menghasilkan daging yang berwarna hitam pekat, sementara kalio memiliki lebih banyak kuah dan berwarna cokelat keemasan​ .Rendang
+            sering disajikan dalam acara-acara adat dan perhelatan istimewa di Minangkabau, dan telah menjadi salah satu hidangan nasional Indonesia sejak tahun 2018. Keistimewaan rendang juga diakui secara internasional; pada tahun 2011,
+            rendang dinobatkan sebagai hidangan terlezat di dunia oleh CNN International​
+          </p>
+        </div>
+      </section>
+      <footer>
+        <p>10 desember 2004 khoirul umam</p>
+      </footer>
+      <br />
+    </div>
+    <script>
+      let submenu = document.getElementById('submenu');
+
+      function toggleMenu() {
+        submenu.classList.toggle('openMenu');
+      }
+    </script>
+  </body>
+</html>
