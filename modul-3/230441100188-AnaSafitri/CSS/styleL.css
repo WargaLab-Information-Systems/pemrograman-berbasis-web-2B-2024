@@ -1,0 +1,23 @@
+body {
+    background-image: url('path/to/your/l1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-green-500 {
+    background-color: rgba(72, 187, 120, 0.7);
+}
+
+.bg-white {
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: rgb(10, 90, 30);
+    font-style: italic;
+}
