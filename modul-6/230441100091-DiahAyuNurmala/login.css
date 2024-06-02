@@ -1,0 +1,57 @@
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+body {
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #5e69a0 0%, #663f63 46%, #ffe6b8 100%);
+}
+.container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 50px;
+    border-radius: 20px;
+    width: auto;
+    align-content: center;
+    border: 1px solid;
+    box-shadow: 5px 10px #314b49;
+}
+.container h1 {
+    text-align: center;
+}
+.form-container input[type="password"],
+.form-container input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-color:rgb(148, 143, 143);
+    transition: width 2s, height 0.2s;
+    cursor: pointer;
+}
+.form-container input[type="password"]:hover,
+.form-container input[type="text"]:hover{
+    height: 50px;
+}
+input[type="submit"]{
+    width: 100%;
+    border-radius: 50px;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #444e44;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;}
+input[type="submit"]:hover {
+    background-color: #343d34;
+}

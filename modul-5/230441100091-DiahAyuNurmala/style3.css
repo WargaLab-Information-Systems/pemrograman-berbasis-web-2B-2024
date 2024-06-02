@@ -1,0 +1,200 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image:url(117.jpg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+nav{
+    background: #ffffff8c;
+    backdrop-filter: blur(10px) ;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(167, 161, 161, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a{
+    margin:0 15px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color 0.3s;
+    -webkit-transition: color 0.3s;
+    -moz-transition: color 0.3s;
+    -ms-transition: color 0.3s;
+    -o-transition: color 0.3s;
+}
+nav a:hover{
+    color: #7f888e;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;  
+}
+nav button:hover{
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1, h2 {
+    height: 30px;
+    color: #333;
+    text-align: center;
+    margin-top: 3rem;
+}
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    align-items: center;
+    color: #666;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+input[type="submit"], .edit a {
+    background-color: #06b927;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    width: 70%;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover, .edit a:hover {
+    background-color: #45a049;
+}
+
+.edit {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.edit a {
+    background-color: #f44336;
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 100%;
+}
+
+.edit a:hover {
+    background-color: #d32f2f;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: left;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+button[name="edit_button"] {
+    background-color: #4caf50; 
+    color: white; 
+    padding: 8px 12px;
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    margin-right: 5px; 
+    margin-bottom: 4px;
+}
+
+button[name="edit_button"]:hover {
+    background-color: #45a049; 
+}
+
+button[type="submit"]:last-child {
+    background-color: #f44336; 
+    color: white; 
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:last-child:hover {
+    background-color: #d32f2f;
+}
+footer{
+    height: 2rem;
+    background: #ffffff8c;
+    backdrop-filter: blur(10px) ;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(167, 161, 161, 0.3);
+    width: 100%;
+    bottom: 0;
+    z-index: 1000;
+}
