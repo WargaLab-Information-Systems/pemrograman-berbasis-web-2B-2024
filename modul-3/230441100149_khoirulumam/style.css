@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(rgb(107, 120, 48) 10%, rgba(108, 218, 13, 0.604) 50%, rgba(239, 188, 47, 0.605)100%);
+
+}
+
+.prof {
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+.mts {
+    width: 400px;
+    
+}
+
+.prof h1 {
+    color :rgb(5, 15, 1);
+
+}
+
+.prof h4 {
+    color:rgb(10, 2, 2);
+    transform: translateY(-10px);
+}
+
+.home{
+    padding-top: 55px;
+}
+
+.Biodata{
+    background: linear-gradient(rgb(255, 255, 255) 10%, rgb(233, 243, 158) 50%, rgba(63, 199, 140, 0)100%);
+    padding: 50px;
+}
+
+.fasilitas{
+    padding-top: 60px ;
+}
+
+.footer{
+    background: white;
+    padding-bottom: 10px;
+}
+
+.watermark{
+    padding-top: 30px;
+}
+

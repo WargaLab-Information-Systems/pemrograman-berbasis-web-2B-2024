@@ -1,0 +1,54 @@
+/* memasukkan background*/
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("bg.jpg");
+    background-position: center;
+    background-size: 100%;
+}
+/*membuat card*/
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+/* jarak dan padding*/
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*agar tampilan berada ditengah*/
+h1 {
+    text-align: center;
+}
+/* untuk mengimputkan teks yang mau ditambahkan*/
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/* membuat button */
+button {
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+<button id="addButton" onclick="addTask()">Tambah</button>

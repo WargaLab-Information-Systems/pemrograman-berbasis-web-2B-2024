@@ -1,0 +1,21 @@
+body {
+    font-family:Georgia; 
+    background-image: url("bg.jpeg");
+    background-repeat:repeat;
+}
+
+h1{
+    color:#6e5e4d;
+}
+
+h2{
+    color:#6e5e4d;
+}
+
+ul{
+    color:#4f3727;
+    display:flex;  
+    list-style:none;
+    float: right;
+}
+

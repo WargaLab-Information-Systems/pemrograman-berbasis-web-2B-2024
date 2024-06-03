@@ -1,0 +1,31 @@
+body {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+  }
+.nav-link:hover {
+    text-decoration: underline;
+    color: #fff;
+    background-color: #007bff;
+}
+.page{
+  font-family:Times New Roman;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.page h1{
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.page p{
+  margin: 0 auto;
+  max-width: 800px; /* Optional: Menetapkan lebar maksimum untuk mencegah teks menjadi terlalu lebar di layar yang lebih besar */
+  color: white;
+  font-size: 20px;
+}

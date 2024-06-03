@@ -1,0 +1,65 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: #007bff;
+    font-weight: bold; 
+    font-style: italic
+}
+.navbar {
+    background-color: #0e0c44;
+}
+
+.jumbotron {
+    background-size: cover;
+    color: #f8f9fa; 
+    padding: 50px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(29, 6, 133, 0.3);
+}
+
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+
+.card-footer p {
+    margin-bottom: 10px;
+}
+
+.modify {
+    background-color: #0d6efd;
+    color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+}
+
+.modify-2 {
+    background-color: aquamarine;
+}  

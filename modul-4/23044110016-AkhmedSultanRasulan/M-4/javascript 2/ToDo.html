@@ -1,0 +1,158 @@
+
+<html>
+<head>
+    <title>Document</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: gray;
+    }
+    .container {
+    max-width: 400px;
+    margin: auto;
+    padding:20px;
+    }
+    h2 {
+    text-align: center;
+    color: silver;
+    }
+    input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+    button {
+        background-color: rgba(15, 134, 138, 0.74);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    }
+    button:hover {
+    background-color: #eac29d;
+    }
+    ul {
+    list-style-type: none;
+    padding: 0;
+    }
+    li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    }
+    li:last-child {
+    border-bottom: none;
+    }
+    .box {
+    width: 500px;
+    height: 500px;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    background-color: antiquewhite;
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="conteiner">
+            <h2>ToDo List</h2>
+            <input type="text" id="input" placeholder="Masukkan Tugas....">
+            <button onclick="addtask()">Tambahkan</button>
+            <ul id="listtugas"></ul>
+        </div>
+    </div>
+    <script >
+        function addtask() {
+        var input = document.getElementById("input").value;
+        if (input === "") {
+        alert("tolong tambahkan teks!");
+        return;
+        }
+        var ul = document.getElementById("listtugas");
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(input));
+        var editButton = document.createElement("button");
+        editButton.innerHTML = "Edit";
+        editButton.onclick = function() {
+        var newText = prompt(li.textContent);
+        if (newText !== null && newText !== "") {
+        li.textContent = newText;
+        }
+        };
+        li.appendChild(editButton);
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "hapus";
+        deleteButton.onclick = function() {
+        if (confirm("Apakah Anda yakin ingin menghapus tugas ini?")) {
+        li.parentNode.removeChild(li);
+        }
+        };
+        li.appendChild(deleteButton);
+        var completeButton = document.createElement("button");
+        completeButton.innerHTML = "menyelesaikan";
+        completeButton.onclick = function() {
+        li.classList.toggle("menyelesaikan");
+        };
+        li.appendChild(completeButton);
+        ul.appendChild(li);
+        document.getElementById("taskInput").value = "";
+        }
+        // Load tasks from local storage
+        function loadTasks() {
+        var tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+        var ul = document.getElementById("taskList");
+        tasks.forEach(function(task) {
+        var li = document.createElement("li");
+        li.appendChild(document.createTextNode(task.text));
+        if (task.completed) {
+        li.classList.add("completed");
+        }
+        //
+        var editButton = document.createElement("button");
+        editButton.innerHTML = "Edit";
+        editButton.onclick = function() {
+        var newText = prompt("masukkan teks yang ingin anda ubah:", li.textContent);
+        if (newText !== null && newText !== "") {
+        li.textContent = newText;
+        }
+        };
+        li.appendChild(editButton);
+        var deleteButton = document.createElement("button");
+        deleteButton.innerHTML = "Delete";
+        deleteButton.onclick = function() {
+        if (confirm("apakah anda yakin ingin menghapus teks ini?")) {
+        li.parentNode.removeChild(li);
+        }
+        };
+        li.appendChild(deleteButton);
+        var completeButton = document.createElement("button");
+        completeButton.innerHTML = "Complete";
+        completeButton.onclick = function() {
+        li.classList.toggle("completed");
+        };
+        li.appendChild(completeButton);
+        ul.appendChild(li);
+        });
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+        loadTasks();
+        });
+        window.addEventListener("beforeunload", function() {
+        var tasks = [];
+        var lis = document.querySelectorAll("#taskList li");
+        lis.forEach(function(li) {
+        tasks.push({
+        text: li.textContent,
+        completed: li.classList.contains("completed")
+        });
+        });
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+        });
+    </script>
+</body>
+</html>

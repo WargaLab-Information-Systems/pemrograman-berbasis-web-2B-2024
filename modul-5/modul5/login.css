@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('inigmbr.jpg'); /* Ganti 'background.jpg' dengan URL atau path gambar latar belakang Anda */
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Tambahkan transparansi ke latar belakang kontainer */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.container h2 {
+    text-align: center;
+    color: black;
+    font-size:30px;
+}
+
+.container form {
+    text-align: center;
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.container form input[type="text"],
+.container form input[type="password"],
+.container form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-color:black;
+}
+
+.container form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.container form input[type="submit"]{
+    font-size: 16px;
+}

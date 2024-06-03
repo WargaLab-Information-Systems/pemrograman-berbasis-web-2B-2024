@@ -1,0 +1,96 @@
+body{
+    font-family: 'open-sans', sans-serif;
+    background: #031829;
+}
+
+h1,h2{
+    text-align: center;
+    text-transform: 300;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+}
+
+.tulisan_login{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.kotak_login{
+    width: 350px;
+    background: #32acff;
+    margin: 80px auto;
+    padding: 30px 20px;
+
+}
+
+.label{
+    font-size: 12pt;
+    color: #f5d938;
+
+}
+
+.form_login{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+}
+.tombol_login{
+    background: #f49320;
+    color: #ffff;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* .tombol_logout{
+    background: #f68700;
+    color: #ffff;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+} */
+/* .tombol_lihatdata{
+    background: #f49320;
+    color: #ffff;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+} */
+
+.kotak_ceklogin{
+    width: 600px;
+    background: #32acff;
+    margin: 80px auto;
+    padding: 30px 20px;
+}
+
+.ikon{
+    background: #ed870b;
+    color: #ffff;
+    font-size: 11pt;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.table{
+    color: aliceblue;
+    text-align: center;
+    background-color: aqua;
+}

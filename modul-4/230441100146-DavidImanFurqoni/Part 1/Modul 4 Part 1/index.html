@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const dataMahasiswa = [];
+  
+        const banyakMahasiswa = prompt("Masukkan banyak data mahasiswa yang akan diinputkan :");
+        for (let i = 0; i < banyakMahasiswa; i++) {
+          const mahasiswa = {};
+          mahasiswa["nama"] = prompt("Masukkan Nama Mahasiswa");
+          mahasiswa["nim"] = prompt("Masukkan NIM Mahasiswa");
+          mahasiswa["jurusan"] = prompt("Masukkan jurusan mahasiswa");
+          mahasiswa["nilai"] = [];
+          for (let j = 0; j < 3; j++) {
+            let nilai = prompt("Masukkan Nilai Mahasiswa");
+            mahasiswa["nilai"].push(nilai);
+          }
+          mahasiswa["rataRata"] = hitungRataNilai(mahasiswa.nilai);
+          mahasiswa["huruf"] = nilaiHuruf(mahasiswa.rataRata);
+  
+          dataMahasiswa.push(mahasiswa);
+        }
+  
+        console.table(dataMahasiswa);
+  
+        function hitungRataNilai(nilai) {
+          let totalNilai = 0;
+          for (let i = 0; i < nilai.length; i++) {
+            totalNilai += parseInt(nilai[i]);
+          }
+          return totalNilai / nilai.length;
+        }
+  
+          const kalimat = prompt("Masukkan kalimat :");
+          console.log(reverseWord(kalimat));
+  
+          function reverseWord(kalimat) {
+            let reversed = "";
+            for (let i = kalimat.length - 1; i >= 0; i--) {
+                reversed += kalimat[i];
+            }
+            return reversed;
+          }
+  
+        for (let i = 0; i < dataMahasiswa.length; i++) {
+          console.log(dataMahasiswa[i].nama);
+          console.log("Rata-rata Nilai : " + dataMahasiswa[i].rataRata + " " + "Nilai Huruf : " + dataMahasiswa[i].huruf);
+          for (let j = 0; j < dataMahasiswa[i].nilai.length; j++) {
+            console.log(dataMahasiswa[i].nilai[j]);
+          }
+        }
+  
+        function nilaiHuruf(rataRata) {
+          if (rataRata >= 80) {
+            return "A";
+          } else if (rataRata >= 70 && rataRata < 80) {
+            return "B";
+          } else if (rataRata >= 60 && rataRata < 70) {
+            return "C";
+          } else if (rataRata >= 50 && rataRata < 60) {
+            return "D";
+          } else if (rataRata < 50) {
+            return "E";
+          }
+        }
+      </script>
+</body>
+</html>

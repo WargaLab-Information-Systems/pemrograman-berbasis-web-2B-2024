@@ -1,0 +1,34 @@
+.navbar{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.slider-content{
+    height: 500px;
+    object-fit: cover;
+}
+
+.card-content {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* Contoh Card */
+.header-card{
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.img-card{
+    height: 500px;
+    object-fit: cover;
+}
+
+.modify {
+    background-color: pink;
+}
