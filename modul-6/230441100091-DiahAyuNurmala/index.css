@@ -1,0 +1,38 @@
+body{
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9AFD9;
+    background-image: url(23.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    text-decoration: none;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Tambahkan transparansi ke latar belakang kontainer */
+    padding: 50px;
+    border-radius: 20px;
+    width: auto;
+    align-content: center;
+    border: 1px solid;
+    box-shadow: 5px 10px #314b49;
+}
+.container-button button{
+    margin-left: 25px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: 1px solid #b1aeae;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.container-button button:hover{
+    background-color: #d9e7e5;
+}
+.container-button a{
+    text-decoration: none;
+    cursor: pointer;
+}

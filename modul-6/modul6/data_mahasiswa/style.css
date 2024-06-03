@@ -1,0 +1,55 @@
+body {
+    background-image: url('foto1.jpg');
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text align: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.container p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.container form {
+    text-align: center;
+}
+
+.container input[type="text"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50; /* Warna latar belakang hijau */
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Efek transisi */
+}
+
+.container input[type="submit"]:hover {
+    background-color: #45a049; /* Warna latar belakang saat dihover */
+}
+
+.container input[type="submit"]:active {
+    background-color: #3e8e41; /* Warna latar belakang saat tombol diklik */
+}

@@ -1,0 +1,34 @@
+h1, h2, h5
+ {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+}
+.container, .lh-base {
+    text-align: center;
+    text-align: justify;
+    font-size: larger;
+}
+
+.mt-0 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: large;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;  
+}
+
+
+.mt-0 {
+    margin-top: 35rem !important;
+    margin-left: 30rem !important;
+    margin-right: 25rem !important;
+    transition-property: all;
+
+  }
+.ms-1 {
+    margin-left: 25rem !important;
+  }
+
+

@@ -1,0 +1,27 @@
+body{
+    background-image: url(cklt.jpeg);
+    /* border-image-source: url(mtc-rmv.png); */
+}
+#sidebar-kiri{
+    height:500px; 
+    float:left;
+    width:500px;
+    margin-left: 10px;
+    margin-right: 0;
+    background-image: url(wth.jpeg);
+}
+#float{
+    /* padding:10px 10px 10px; */
+    height: 250px;
+    width: 250px;
+    float:inline-start;
+    margin: 0;
+}
+#sidebar-kanan{
+    height: 500px; 
+    float: right;
+    width: 500px;
+    margin-left: 0;
+    margin-right: 10px;
+    background-image:  url(wth.jpeg);
+}

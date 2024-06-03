@@ -1,0 +1,44 @@
+body {
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    padding:0;
+    display:flex;
+    background-image: url('foto1.jpg');
+}
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding:50px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: inline-block;
+    width: 120px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="number"] {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    padding: 8px 20px;
+    background-color: grey;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}

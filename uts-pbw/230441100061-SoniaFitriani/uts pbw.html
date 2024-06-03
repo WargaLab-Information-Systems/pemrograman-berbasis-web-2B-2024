@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travel blok</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- Custom CSS -->
+<style>
+  .jumbotron {
+    background-image: url('jumbotron.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .card {
+    border-bottom-left-radius: auto;
+    border-bottom-right-radius: 45px;
+    border-top-left-radius: 45px; 
+    border-top-right-radius: auto;
+  }
+.page{
+    font-family:Times New Roman;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 50px;
+
+}
+.card-title {
+    font-weight: bold;
+  }
+  
+.card-text {
+    font-size: 16px;
+  }
+.card-img-top1{
+    width: 350px;
+    height: 400px; 
+    border-top-left-radius: 45px; 
+    border-top-right-radius: auto;
+  }
+  .card-img-top {
+    max-width: 100%;
+    width: 80px;
+    height: 80px;
+   
+  }
+
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 177, 130, 0.048); /* Ubah kebutuhan opasitas di sini */
+  }
+  .contack{
+    background-size: cover;
+    background-position: align ;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="overlay"></div> <!-- Overlay untuk opasitas di atas gambar -->
+  <div class="container">
+    <a class="navbar-brand" href="#">Travel blok</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <button type="button" class="btn btn-outline-secondary">Beranda</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-secondary">Fasilitas</button>
+        </li>
+        <li class="nav-item">
+          <button type="button" class="btn btn-outline-secondary">About</button>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-info" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Jumbotron dengan Background Image -->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container text-center text-black">
+    <h1 class="page">Selamat Datang di Travel Blok Kami</h1>
+      </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="bromo.jpg" class="card-img-top1" alt="...">
+          <div class="card-body">
+            <div class="font">
+            <h5 class="card-title">Gunung Bromo</h5>
+            <p class="card-text">Gunung Bromo merupakan gunung yang populer dijawa timur.</p>
+            <a href="https://www.instagram.com/gunungbromo?igsh=MXNqN21hbWMwcWtrYw==" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="kawah.jpeg" class="card-img-top1" alt="...">
+          <div class="card-body">
+            <div class="font">
+            <h5 class="card-title">Kawah Ijen</h5>
+            <p class="card-text">Kawah Ijen terkenal dengan blue fire dan kawah sulfur.</p>
+            <a href="https://www.instagram.com/kawahijenindonesia?igsh=MTJzYXZ2MXJwa2x3OA==" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="semeru.jpg" class="card-img-top1" alt="...">
+          <div class="card-body">
+            <div class="font">
+            <h5 class="card-title">Gunung Semeru</h5>
+            <p class="card-text">Gunung Semeru merupakan gunung tertinggi di pulau jawa.</p>
+            <a href="https://www.instagram.com/bbtnbromotenggersemeru?igsh=bHZiOTB6NzNkYXEy" class="btn btn-primary">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Konten Utama -->
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-4 mb-4">
+      <img src="uts.png" class="img-fluid" alt="uts.png ">
+    </div>
+
+    <div class="col-md-8">
+
+      <div class="card mb-4">
+        <div class="page">
+        <h5 class="card-title">Fasilitas Dan Layanan Yang Tersedia</h5>
+        <p class="card-text">This is a new card added above the existing cards.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="camp.png" class="card-img-top" alt="Image 1">
+            <div class="card-body">
+              <h5 class="card-title">Area Camping</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="toilet.png" class="card-img-top" alt="Image 2">
+            <div class="card-body">
+              <h5 class="card-title">Kamar Mandi</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="restaurant.png" class="card-img-top" alt="Image 3">
+            <div class="card-body">
+              <h5 class="card-title">Tempat Makan</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-4">
+            <img src="playground.png" class="card-img-top" alt="Image 4">
+            <div class="card-body">
+              <h5 class="card-title">Taman Bermain</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-white text-center py-2 mt-2">
+  <div class="contack">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Tentang Kami</h1>
+        <p>Travel blog berbasis online 
+          merupakan trobosan yang dilakukan oleh 
+          dinas dibudparpora untuk memudahkan 
+          masyarakat juga memberikan informasi yang 
+          lengkap tentang wisata yang ada di sini.</p>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> <strong>Alamat:</strong> Jl. Mutiara No 14, Gg 2 RT2 RW3, Kabupaten Bangkalan</li>
+          <li><i class="fas fa-envelope"></i> <strong>Email:</strong> <a href="mailto:disbudparpora@kamal.go.id">disbudparpora@kamal.go.id</a></li>
+          <li><i class="fas fa-globe"></i> <strong>Website:</strong> <a href="http://www.disbudparporakamal.go.id">www.disbudparporakamal.go.id</a></li>
+          <li><i class="fas fa-phone"></i> <strong>Telepon:</strong> +(21) 9987 7764 (Travel blog)</li>
+      </ul>            
+      <p>Selengkapnya
+        Service Client
+        
+        Syarat dan Ketentuan
+        
+        Daftar Akomodasi dan Kerjasama </p>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lagu</title>
+    <link rel="stylesheet" href="music.css" />
+  </head>
+  <body>
+    <header>
+      <h1>WEB Lagu</h1>
+    </header>
+    <main>
+      <div class="album-container">
+        <div class="album-cover">
+          <img src="https://ukutabs.com/wp-content/uploads/2022/10/summer-flows-0.02.jpg" alt="Album Cover" />
+        </div>
+        <p>Wave To Earth - Seasons</p>
+        <div class="player">
+          <audio id="audioPlayer">
+            <source src="seasons.mp3" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
+          <div class="controls">
+            <button onclick="playAudio()">Play</button>
+            <button onclick="pauseAudio()">Pause</button>
+            <button onclick="stopAudio()">Stop</button>
+          </div>
+          <div class="progress-container">
+            <input type="range" id="progressBar" value="0" max="100" />
+          </div>
+          <div class="time-display"><span id="currentTime">00:00</span> / <span id="totalTime">00:00</span></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <a href="index.html" target="_self" class="button">Kembali</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>04 April 2024, Ahmad Mushofa</p>
+      <p>&copy; WEB Lagu</p>
+    </footer>
+    <script src="music1.js"></script>
+  </body>
+</html>
