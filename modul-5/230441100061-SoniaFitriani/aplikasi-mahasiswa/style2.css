@@ -1,0 +1,109 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+  align-items: center; /* Pusatkan konten secara horizontal */
+}
+
+.navbar {
+  background-color: #007bff; /* Warna biru yang lebih cerah */
+  padding: 20px; /* Tambahkan ruang ekstra */
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Pusatkan item menu secara horizontal */
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease; /* Efek transisi saat mengubah warna */
+}
+
+.navbar ul li a:hover {
+  color: #f8f9fa; /* Warna teks saat hover */
+}
+
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Styles for the form */
+form {
+  margin: 20px;
+}
+
+input[type='text'] {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid #ced4da; /* Warna border yang lebih lembut */
+  border-radius: 5px;
+}
+
+input[type='text']:focus {
+  outline: none; /* Hilangkan garis kontur saat fokus */
+  border-color: #007bff; /* Warna border saat fokus */
+}
+
+/* Styles for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #dee2e6; /* Warna border yang lebih lembut */
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

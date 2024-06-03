@@ -1,0 +1,55 @@
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparansi 80% */
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form table {
+    width: 100%;
+}
+
+form table tr td {
+    padding: 10px 0;
+}
+
+form table tr td input[type="text"],
+form table tr td input[type="number"],
+form table tr td input[type="radio"] {
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form table tr td input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form table tr td input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form table tr td a button {
+    padding: 8px 20px;
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+form table tr td a button:hover {
+    background-color: #bbb;
+}
