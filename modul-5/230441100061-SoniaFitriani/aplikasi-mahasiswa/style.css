@@ -1,0 +1,75 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  height: 100vh;
+  background: linear-gradient(135deg, #e0e7e8, #669db3); /* Gradien latar belakang */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-left {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #000000;
+  text-align: center;
+}
+
+.header p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 20px;
+  color: #737373;
+  text-align: center;
+}
+
+.login-form label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+  color: #000000;
+}
+
+.login-form button {
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.form-group input {
+  background: #ffffff; /* Warna putih */
+  border: 1px solid #bcbcbc;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Warna teks untuk pesan kesalahan */
+.error-message {
+  color: red;
+  text-align: center;
+}
