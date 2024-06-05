@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.5.1",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),document.addEventListener("DOMContentLoaded",(()=>{this.p()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}k(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.M(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.O()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.M(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.O()}D(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}S(){return new Promise((t=>{this.T?this.O=t:t()}))}C(){this.T=!0}O(){this.T=!1}M(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}p(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&0!==i.indexOf("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.j(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.P(this),this.F(this),this.q(),this.A(),this.I(),await this.U(this.delayedScripts.normal),await this.U(this.delayedScripts.defer),await this.U(this.delayedScripts.async);try{await this.W(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.S().then((()=>{this.D()})),this.N()}A(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),n=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(function(){t.setAttribute("data-rocket-status","failed"),e()})),n?(t.removeAttribute("data-rocket-src"),t.src=n):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed"),e()}}));t.setAttribute("data-rocket-status","skipped")}async U(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.U(t)):Promise.resolve()}I(){this.j([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}j(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o){const n=document.createElement("link");n.href=o,n.rel=e,"preconnect"!==e&&(n.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),i.appendChild(n),this.trash.push(n)}})),document.head.appendChild(i)}P(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function n(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(n){t.everythingLoaded?o=n:e["rocket"+i]=o=n}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){if(o&&o.fn&&!t.allJQueries.includes(o)){o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])};const e=o.fn.on;o.fn.on=o.fn.init.prototype.on=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this},t.allJQueries.push(o)}e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async W(){this.domReadyFired=!0,await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}q(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),n=i.parentElement;let s=t.get(i);void 0===s&&(s=i.nextSibling,t.set(i,s));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),n.insertBefore(c,s)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.k(t)}}RocketLazyLoadScripts.run()})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v22.0 (Yoast SEO v22.5) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>19 Contoh Website Portofolio Terbaik untuk Menarik Klien</title>
+	<meta name="description" content="Website portofolio yang khas mampu meningkatkan branding Anda di mata calon klien. Yuk, lihat contoh website portofolio untuk inspirasi!" />
+	<link rel="canonical" href="https://www.hostinger.co.id/tutorial/contoh-website-portofolio" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="19 Contoh Website Portofolio Terbaik untuk Menarik Klien" />
+	<meta property="og:description" content="Website portofolio yang khas mampu meningkatkan branding Anda di mata calon klien. Yuk, lihat contoh website portofolio untuk inspirasi!" />
+	<meta property="og:url" content="https://www.hostinger.co.id/tutorial/contoh-website-portofolio" />
+	<meta property="og:site_name" content="Hostinger Tutorial" />
+	<meta property="article:published_time" content="2024-03-25T06:41:18+00:00" />
+	<meta property="article:modified_time" content="2024-03-25T08:09:14+00:00" />
+	<meta property="og:image" content="https://www.hostinger.com/tutorials/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg" />
+	<meta name="author" content="Faradilla A." />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://www.hostinger.com/tutorials/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Faradilla A." />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="61 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://www.hostinger.co.id/tutorial/contoh-website-portofolio","url":"https://www.hostinger.co.id/tutorial/contoh-website-portofolio","name":"19 Contoh Website Portofolio Terbaik untuk Menarik Klien","isPartOf":{"@id":"https://www.hostinger.co.id/tutorial/#website"},"datePublished":"2024-03-25T06:41:18+00:00","dateModified":"2024-03-25T08:09:14+00:00","author":{"@id":"https://www.hostinger.co.id/tutorial/#/schema/person/dc81c834824ba2e9bebffe5ff280f686"},"description":"Website portofolio yang khas mampu meningkatkan branding Anda di mata calon klien. Yuk, lihat contoh website portofolio untuk inspirasi!","breadcrumb":{"@id":"https://www.hostinger.co.id/tutorial/contoh-website-portofolio#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.hostinger.co.id/tutorial/contoh-website-portofolio"]}]},{"@type":"BreadcrumbList","@id":"https://www.hostinger.co.id/tutorial/contoh-website-portofolio#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://www.hostinger.co.id/tutorial"},{"@type":"ListItem","position":2,"name":"19 Contoh Website Portofolio Terbaik untuk Menarik Klien"}]},{"@type":"WebSite","@id":"https://www.hostinger.co.id/tutorial/#website","url":"https://www.hostinger.co.id/tutorial/","name":"Hostinger Tutorial","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.hostinger.co.id/tutorial/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"Person","@id":"https://www.hostinger.co.id/tutorial/#/schema/person/dc81c834824ba2e9bebffe5ff280f686","name":"Faradilla A.","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://www.hostinger.co.id/tutorial/#/schema/person/image/","url":"https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2021/08/T029Z4XM6-U01CPGXARQR-8c60d4e8d6f9-512-150x150.jpg","contentUrl":"https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2021/08/T029Z4XM6-U01CPGXARQR-8c60d4e8d6f9-512-150x150.jpg","caption":"Faradilla A."},"description":"Faradilla, yang lebih akrab disapa Ninda, adalah Content Marketing Specialist di Hostinger. Ia suka mengikuti tren teknologi, digital marketing, dan belajar bahasa. Melalui tutorial Hostinger ini, Ninda ingin berbagi informasi dan membantu pembaca menyelesaikan masalah yang dialami. Kenali Ninda lebih dekat di LinkedIn.","jobTitle":"Content Marketing Specialist","url":"https://www.hostinger.co.id/tutorial/author/faradilla"}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//facebook.net' />
+
+<link rel="alternate" type="application/rss+xml" title="Hostinger Tutorial &raquo; Feed" href="https://www.hostinger.co.id/tutorial/feed" />
+<link rel="alternate" type="application/rss+xml" title="Hostinger Tutorial &raquo; Comments Feed" href="https://www.hostinger.co.id/tutorial/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Hostinger Tutorial &raquo; 19 Contoh Website Portofolio Terbaik untuk Menarik Klien Comments Feed" href="https://www.hostinger.co.id/tutorial/contoh-website-portofolio/feed" />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.hostinger.co.id/tutorial/wp-includes/css/dist/block-library/style.min.css?ver=6.5.2' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='ppress-frontend-css' href='https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=1709030904' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-flatpickr-css' href='https://www.hostinger.co.id/tutorial/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.15.6' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-select2-css' href='https://www.hostinger.co.id/tutorial/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.5.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ez-toc-css' href='https://www.hostinger.co.id/tutorial/wp-content/plugins/easy-table-of-contents/assets/css/screen.min.css?ver=2.0.65' type='text/css' media='all' />
+<style id='ez-toc-inline-css' type='text/css'>
+div#ez-toc-container .ez-toc-title {font-size: 120%;}div#ez-toc-container .ez-toc-title {font-weight: 500;}div#ez-toc-container ul li {font-size: 95%;}div#ez-toc-container ul li {font-weight: 500;}div#ez-toc-container nav ul ul li {font-size: 90%;}
+</style>
+<link data-minify="1" rel='stylesheet' id='understrap-styles-css' href='https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/themes/tutorialsthemeuplift/public/css/theme.min.css?ver=1709030905' type='text/css' media='all' />
+<link data-minify="1" rel='stylesheet' id='prismCSS-css' href='https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/themes/tutorialsthemeuplift/resources/prism.css?ver=1709030905' type='text/css' media='all' />
+<script type="text/javascript" id="yoast-seo-base-site-url_js-js-extra">
+/* <![CDATA[ */
+var yoastSeoBaseSiteUrl = {"base_url":"https:\/\/www.hostinger.co.id\/tutorial"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/themes/tutorialsthemeuplift/resources/js/yoast-seo-base-site-url.js?ver=1709030905" id="yoast-seo-base-site-url_js-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/plugins/stop-user-enumeration/frontend/js/frontend.js?ver=1709030905" id="stop-user-enumeration-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.15.6" id="ppress-flatpickr-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.15.6" id="ppress-select2-js" defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/themes/tutorialsthemeuplift/resources/prism.js?ver=1709030905" id="prismJS-js" defer></script>
+<link rel="https://api.w.org/" href="https://www.hostinger.co.id/tutorial/wp-json/" /><link rel="alternate" type="application/json" href="https://www.hostinger.co.id/tutorial/wp-json/wp/v2/posts/34810" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.hostinger.co.id/tutorial/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.5.2" />
+<link rel='shortlink' href='https://www.hostinger.co.id/tutorial/?p=34810' />
+<link rel="alternate" type="application/json+oembed" href="https://www.hostinger.co.id/tutorial/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hostinger.co.id%2Ftutorial%2Fcontoh-website-portofolio" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.hostinger.co.id/tutorial/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.hostinger.co.id%2Ftutorial%2Fcontoh-website-portofolio&#038;format=xml" />
+<!-- Google Tag Manager -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KL4FQVG');</script>
+<!-- End Google Tag Manager --><!-- Markup (JSON-LD) structured in schema.org ver.4.8.1 START -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.hostinger.co.id/tutorial/contoh-website-portofolio"
+    },
+    "headline": "19 Contoh Website Portofolio Terbaik untuk Menarik Klien",
+    "datePublished": "2024-03-25T13:41:18+0700",
+    "dateModified": "2024-03-25T15:09:14+0700",
+    "author": {
+        "@type": "Person",
+        "name": "Faradilla A."
+    },
+    "description": "Portofolio adalah media yang menampilkan karya terbaik Anda untuk membantu meningkatkan reputasi, kredibilitas",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Hostinger Tutorial",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2017/04/hostinger-logo-id.png",
+            "width": 436,
+            "height": 56
+        }
+    }
+}
+</script>
+<!-- Markup (JSON-LD) structured in schema.org END -->
+        <script type="rocketlazyloadscript">
+            document.addEventListener('DOMContentLoaded', function () {
+                let anchorTags = document.querySelectorAll('.ez-toc-link');
+                anchorTags.forEach(function(element) {
+                    element.text = element.text.replace(':','');
+                });
+            }, false);
+        </script>
+        <link rel="icon" href="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2017/06/cropped-cropped-hostinger-fav-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2017/06/cropped-cropped-hostinger-fav-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2017/06/cropped-cropped-hostinger-fav-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2017/06/cropped-cropped-hostinger-fav-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			#ez-toc-container nav ul li {
+    padding-top: 10px;
+}		</style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="post-template-default single single-post postid-34810 single-format-standard wp-embed-responsive">
+<div id="navigation-new">
+        <hmenu-new
+          :menu-items="[{&quot;id&quot;:&quot;mainMenu&quot;,&quot;title&quot;:&quot;Website Hosting&quot;,&quot;items&quot;:[{&quot;title&quot;:&quot;Hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-hosting&quot;,&quot;dropDown&quot;:true,&quot;items&quot;:[{&quot;title&quot;:&quot;Web Hosting&quot;,&quot;text&quot;:&quot;Untuk website skala kecil dan medium.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/shared-hosting.svg&quot;,&quot;href&quot;:&quot;\/web-hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-web-hosting&quot;},{&quot;title&quot;:&quot;Website Builder&quot;,&quot;text&quot;:&quot;Create your website with ease.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/website-builder.svg&quot;,&quot;href&quot;:&quot;\/website-builder&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-website-builder&quot;},{&quot;title&quot;:&quot;Cloud Hosting&quot;,&quot;text&quot;:&quot;Untuk website skala besar.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/cloud-hosting.svg&quot;,&quot;href&quot;:&quot;\/cloud-hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-cloud-hosting&quot;},{&quot;title&quot;:&quot;WordPress Hosting&quot;,&quot;text&quot;:&quot;Hosting teroptimasi untuk WordPress.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/wordpress-hosting.svg&quot;,&quot;href&quot;:&quot;\/wordpress-hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-wordpress-hosting&quot;}],&quot;opened&quot;:false},{&quot;title&quot;:&quot;VPS&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-vps&quot;,&quot;dropDown&quot;:true,&quot;items&quot;:[{&quot;title&quot;:&quot;VPS Hosting&quot;,&quot;text&quot;:&quot;Server virtual yang flexible dengan dedicated resource untuk website dan web aplikasi.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/vps-hosting.svg&quot;,&quot;href&quot;:&quot;\/hosting-vps&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-vps-hosting&quot;},{&quot;title&quot;:&quot;CyberPanel VPS Hosting&quot;,&quot;text&quot;:&quot;Control panel dengan Open\/LiteSpeed Webserver.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/cyberpanel-hosting.svg&quot;,&quot;href&quot;:&quot;\/cyberpanel-vps-hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-cyberpanel-hosting&quot;},{&quot;title&quot;:&quot;Minecraft Server Hosting&quot;,&quot;text&quot;:&quot;Bermain bersama komunitas Minecraft.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/hosting\/minecraft-hosting.svg&quot;,&quot;href&quot;:&quot;\/minecraft-server-hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-minecraft-hosting&quot;}],&quot;opened&quot;:false},{&quot;title&quot;:&quot;Email&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-email&quot;,&quot;dropDown&quot;:true,&quot;items&quot;:[{&quot;title&quot;:&quot;Google Workspace&quot;,&quot;text&quot;:&quot;Paket layanan terbaik Google untuk kerja tim.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/email\/google-workspace-hosting.svg&quot;,&quot;href&quot;:&quot;\/google-workspace&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-google-workspace&quot;},{&quot;title&quot;:&quot;Email Hosting&quot;,&quot;text&quot;:&quot;Promosikan bisnis &amp; jangkau banyak pelanggan.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/email\/email-hosting.svg&quot;,&quot;href&quot;:&quot;\/email-hosting&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-email-hosting&quot;}],&quot;opened&quot;:false},{&quot;title&quot;:&quot;Domain&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-domain&quot;,&quot;dropDown&quot;:true,&quot;items&quot;:[{&quot;title&quot;:&quot;Cari Domain&quot;,&quot;text&quot;:&quot;Temukan domain impian Anda.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/domain\/domain-checker.svg&quot;,&quot;href&quot;:&quot;\/domain-murah&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-domain-checker&quot;},{&quot;title&quot;:&quot;WHOIS Lookup&quot;,&quot;text&quot;:&quot;Cari info WHOIS Domain.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/domain\/whois-database.svg&quot;,&quot;href&quot;:&quot;\/whois&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-whois&quot;},{&quot;title&quot;:&quot;Transfer Domain&quot;,&quot;text&quot;:&quot;Transfer domain murah dan mudah.&quot;,&quot;logo&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/icons\/navbar\/domain\/domain-transfer.svg&quot;,&quot;href&quot;:&quot;\/transfer-domain&quot;,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-transfer-domain&quot;}],&quot;opened&quot;:false},{&quot;title&quot;:&quot;Masuk&quot;,&quot;href&quot;:&quot;\/cpanel-login&quot;,&quot;nameIsLogin&quot;:true,&quot;id&quot;:&quot;hgr-tutorials-h-menu-item-cpanel-login&quot;,&quot;material&quot;:&quot;lock&quot;}]},{&quot;id&quot;:&quot;secondaryMenu&quot;,&quot;title&quot;:&quot;Article topics&quot;,&quot;items&quot;:[{&quot;title&quot;:&quot;WordPress&quot;,&quot;href&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wordpress&quot;},{&quot;title&quot;:&quot;VPS&quot;,&quot;href&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/vps&quot;},{&quot;title&quot;:&quot;Web Development&quot;,&quot;href&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/web-development&quot;},{&quot;title&quot;:&quot;Hosting&quot;,&quot;href&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/hosting&quot;},{&quot;title&quot;:&quot;Glosarium&quot;,&quot;href&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/glosarium&quot;}]}]"
+           cart-path="/cart"
+           home-path="/"
+           blog-path="https://www.hostinger.co.id/tutorial"
+           tutorials-name="Tutorial"
+           cart="Cart"
+           theme-tld=".co.id"
+    >
+    </hmenu-new>
+</div>
+  <div class="h-pb-2 h-pt-2 justify-content-center primary l700 position-relative w-100 position-absolute"
+       id="submenu">
+    <div class="container d-flex w-100 align-items-center height-16px justify-content-between">
+      <div class="d-flex">
+                      <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                              hover-opacity-6"
+            >
+                        <a href="https://www.hostinger.co.id/tutorial/wordpress" data-wpel-link="internal">WordPress</a>
+                    </span>
+                      <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                              hover-opacity-6"
+            >
+                        <a href="https://www.hostinger.co.id/tutorial/vps" data-wpel-link="internal">VPS</a>
+                    </span>
+                      <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                              hover-opacity-6"
+            >
+                        <a href="https://www.hostinger.co.id/tutorial/web-development" data-wpel-link="internal">Web Development</a>
+                    </span>
+                      <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                              hover-opacity-6"
+            >
+                        <a href="https://www.hostinger.co.id/tutorial/hosting" data-wpel-link="internal">Hosting</a>
+                    </span>
+                      <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                              hover-opacity-6"
+            >
+                        <a href="https://www.hostinger.co.id/tutorial/glosarium" data-wpel-link="internal">Glosarium</a>
+                    </span>
+                </div>
+                  <div class="d-flex align-items-center">
+                <form id="searchbox" method="get" action="https://www.hostinger.co.id/tutorial/"
+                      role="search" class="w-100"
+                >
+                  <input
+                      class="label text-content-grey w-100 mr-20 pr-40"
+                      id="s" name="s" type="text"
+                      placeholder="Cari"
+                      value=""
+                  />
+                </form>
+
+            <i onclick="toggleSearch()" id="searchIcon" class="position-relative material-icons ml-auto cursor-pointer">
+              search
+            </i>
+          </div>
+            </div>
+  </div>
+    <script type="rocketlazyloadscript">
+    var searchbox = document.getElementById("searchbox");
+    var searchBoxVisible = false;
+    if (searchbox) {
+        searchbox.style.display = "none";
+    }
+
+    function toggleSearch() {
+        if (searchbox.style.display === "none") {
+            searchbox.style.display = "block";
+            searchbox.classList.add("fade-in");
+            document.getElementById("s").focus();
+            searchBoxVisible = true;
+        } else {
+            searchbox.style.display = "none";
+            searchBoxVisible = false;
+
+        }
+    }
+
+    function onClickOutside(e) {
+        if (searchBoxVisible && e.target.id !== "searchbox" && e.target.id !== "searchIcon" && e.target.id !== "s") {
+            searchbox.style.display = "none";
+        }
+    }
+
+    window.addEventListener("click", onClickOutside);
+</script>    
+<div id="gdpr-consent">
+    <gdpr-banner-bottom :strings="{&quot;banner&quot;:{&quot;body&quot;:{&quot;firstHeading&quot;:&quot;Kami Peduli dengan Privasi Anda&quot;,&quot;firstBody&quot;:&quot;Kami menggunakan cookie untuk memberikan pengalaman terbaik di situs kami, mengaktifkan layanan dan fungsionalitas penting, dan mengumpulkan data tentang interaksi pengunjung dengan situs dan layanan kami. Dengan klik tombol Izinkan, Anda menyetujui penggunaan semua cookie di website kami untuk keperluan iklan, analisis, dan layanan bantuan. Selengkapnya &lt;a id='hgr-cookie_consent-cookie_policy_btn' class='link fs-14 fs-15-sm cursor-pointer' target='_blank' ref='someLink' rel='noopener noreferrer nofollow' href='\/kebijakan-cookie'&gt;Kebijakan Cookie&lt;\/a&gt;.&quot;},&quot;acceptBtn&quot;:&quot;Setujui&quot;,&quot;settingsBtn&quot;:&quot;Setelan&quot;,&quot;declineBtn&quot;:&quot;Blokir&quot;},&quot;popup&quot;:{&quot;header&quot;:{&quot;title&quot;:&quot;Cookies settings&quot;,&quot;body&quot;:&quot;Kami mengolah data Anda untuk mengirimkan konten atau iklan dan menilai pengiriman konten atau iklan tersebut untuk memperoleh insight tentang website kami. Kami mungkin membagikan informasi ini dengan mitra kami. Cookie yang diatur oleh Hostinger dilabeli sebagai \&quot;pihak pertama\&quot;; Anda dipersilakan untuk mengatur preferensi terkait cookie pihak pertama dengan mengaktifkan setiap kategori cookie pihak pertama di bawah ini. Cookie yang tersisa adalah cookie pihak ketiga; Anda dipersilakan untuk mengatur preferensi dalam kaitannya dengan setiap tujuan dengan mengaktifkan pilihan di bawah ini atau berdasarkan vendor dengan mengeklik \&quot;List of IAB Vendors\&quot; di bawah ini. Pilihan-pilihan ini akan dikirimkan secara global ke website lain yang berpartisipasi dalam Transparency and Consent Framework. &lt;a id='hgr-cookie_consent-settings-cookie_policy_btn' class='link fs-14' target='_blank' rel='noopener noreferrer nofollow' href='\/kebijakan-cookie'&gt;Kebijakan Cookie&lt;\/a&gt;.&quot;,&quot;btn&quot;:&quot;Setujui semua cookie&quot;},&quot;cookies&quot;:[{&quot;title&quot;:&quot;Mandatory cookie&quot;,&quot;body&quot;:&quot;Berperan penting dalam memastikan website bekerja dengan baik.&quot;,&quot;btn&quot;:&quot;Selalu aktif&quot;},{&quot;title&quot;:&quot;Cookie statistik&quot;,&quot;body&quot;:&quot;Berperan penting dalam meningkatkan fungsi dan struktur website yang didasarkan pada penggunaan data oleh website.&quot;,&quot;cookieName&quot;:&quot;statistics&quot;},{&quot;title&quot;:&quot;Cookie pemasaran&quot;,&quot;body&quot;:&quot;Bertujuan mengumpulkan informasi untuk menampilkan iklan atau konten di browser tertentu dengan membuat kelompok target yang berbeda.&quot;,&quot;cookieName&quot;:&quot;advertising&quot;}],&quot;buttonTxt&quot;:&quot;Setujui Cookie yang Dipilih&quot;}}">
+</div>
+<div class="h-pt-3">
+    <div class="container">
+        <div class="row col-12 col-lg-9">
+            <div class="text-h-primary label position-relative top-3rem">
+                            </div>
+        </div>
+    </div>
+</div>  <div class="pt-30 pt-0-lg pb-40">
+    <div id="blog-post-container" class="w-100 flex-column d-flex flex-lg-row position-relative pt-20-lg">
+      <div id="post"
+           class="d-flex flex-column flex-lg-row col-12 col-lg-9 col-xxl-7 offset-lg-1 offset-xxl-2 position-relative justify-content-center sidebar-left__wrapper">
+          <div class="stories-margin mt-150-lg sidebar-left">
+  <div class="widget-area row d-table mr-50-lg" style="height: 100%">
+                    <div class="dynamic-sidebar col-12 col-md-6 col-lg-12 sticky-widget mx-auto px-0 pb-30">
+              <div id="custom_html-6" class="widget_text widget widget_custom_html sticky-banner-margin"><div class="textwidget custom-html-widget"><div id="om-sfya15onc0woyl6fmvbn-holder"></div>
+<div id="om-tfvex27jvgr4liofxwur-holder"></div>
+<div id="om-eho1w5nyucy6xsloyubp-holder"></div>
+<div id="om-gqhupb8dvkxkadn1vujo-holder"></div>
+<div id="om-pj6rvjfe3bpdwxedwvoo-holder"></div>
+<div id="om-dh2sp6pbmbhr0ilhrulb-holder"></div>
+<div id="om-jvlmfbbnj5olwlk9k3do-holder"></div>
+<div id="om-t6s58hgwqdzszqmrzxr4-holder"></div>
+<div id="om-i2nqsqtexlpj94lkcsai-holder"></div>
+<div id="om-yllkpcgmtak7zg37ugtv-holder"></div></div></div>        </div>
+        </div>
+</div>        <div class="post-content">
+          <div class="d-flex label text-content-grey mb-20 mb-sm-30 flex-wrap">
+            <div class="d-flex align-items-center h-mr-2 category">
+                                  <a class="category-name mr-5" href="https://www.hostinger.co.id/tutorial/web-development" id="category-name" data-wpel-link="internal">
+                      Web Development                  </a>
+                            </div>
+            <div class="d-flex align-items-center mr-sm-4 mr-1">
+              <p class="post-info">
+                  Mar 25, 2024              </p>
+            </div>
+            <div class="d-flex align-items-center mr-sm-4 mr-1">
+              <p class="ml-2 post-info">
+                  Faradilla A.              </p>
+            </div>
+                              <div class="d-flex align-items-center">
+                  <p class="ml-2 post-info">11menit                      Dibaca                  </p>
+                </div>
+                        </div>
+          <h1>19 Contoh Website Portofolio Terbaik untuk Menarik Klien</h1>
+            
+<div class="social-container d-flex d-xl-none">
+    <a class="social-link text-light-black cursor-pointer d-flex align-items-center justify-content-center">
+      <svg width="28" height="28" class="link" viewBox="0 0 28 14" onclick="copyToClipboard('www.hostinger.co.id/tutorial/contoh-website-portofolio');linkClick(event)" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.364 0.5C2.85 0.5 0 3.41 0 7C0 10.59 2.85 13.5 6.364 13.5H11.454V10.9H6.364C4.254 10.9 2.545 9.154 2.545 7C2.545 4.846 4.255 3.1 6.364 3.1H11.454V0.5H6.364V0.5ZM16.545 0.5V3.1H21.636C23.746 3.1 25.455 4.846 25.455 7C25.455 9.154 23.745 10.9 21.636 10.9H16.546V13.5H21.636C25.15 13.5 28 10.59 28 7C28 3.41 25.15 0.5 21.636 0.5H16.546H16.545ZM7.636 5.7V8.3H20.364V5.7H7.636Z"/>
+      </svg>
+      <div id="copyLink" style="display: none;" class="copy-link">Salin link</div>
+      <div id="copiedLink" style="display: none;" class="copied-link">Disalin!</div>
+    </a>
+    <a href="https://twitter.com/intent/tweet?text=19 Contoh Website Portofolio Terbaik untuk Menarik Klien&amp;url=www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="exclude">
+      <svg width="28" height="28" class="twitter" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28 3.222C26.97 3.685 25.862 3.996 24.7 4.137C25.9034 3.4078 26.801 2.26638 27.226 0.925C26.0996 1.60097 24.8652 2.07794 23.577 2.335C23.0427 1.75645 22.3944 1.29475 21.673 0.978948C20.9515 0.663145 20.1725 0.500076 19.385 0.5C16.212 0.5 13.641 3.1 13.641 6.306C13.641 6.761 13.693 7.206 13.789 7.629C9.016 7.387 4.784 5.075 1.95 1.56C1.43967 2.44841 1.17205 3.45545 1.174 4.48C1.17133 5.43314 1.40284 6.37235 1.84817 7.21507C2.2935 8.05778 2.93903 8.7782 3.728 9.313C2.81494 9.28354 1.92242 9.03451 1.126 8.587V8.66C1.126 11.474 3.106 13.82 5.734 14.353C4.8886 14.5858 4.00082 14.62 3.14 14.453C3.871 16.76 5.993 18.439 8.506 18.486C7.31857 19.431 5.95501 20.1305 4.49471 20.5435C3.0344 20.9566 1.50652 21.075 0 20.892C2.62075 22.596 5.68001 23.502 8.806 23.5C19.372 23.5 25.148 14.652 25.148 6.98C25.1481 6.72925 25.1428 6.47852 25.132 6.228C26.2588 5.40415 27.23 4.38627 28 3.222V3.222Z"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="exclude">
+      <svg width="28" height="28" class="facebook" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_3307_57195)">
+          <path d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H14.966V17.172H11.321V12.932H14.966V9.815C14.966 6.2 17.176 4.229 20.403 4.229C21.4898 4.22651 22.5759 4.28092 23.657 4.392V8.172H21.436C19.678 8.172 19.336 9.003 19.336 10.229V12.928H23.536L22.99 17.167H19.31V28H24.889C25.2976 28.0001 25.7022 27.9198 26.0797 27.7635C26.4572 27.6072 26.8002 27.378 27.0891 27.0891C27.378 26.8002 27.6072 26.4572 27.7635 26.0797C27.9198 25.7022 28.0001 25.2976 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07Z"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_3307_57195">
+            <rect width="28" height="28" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="exclude">
+      <svg width="28" height="28" class="linkedin h-p-0-lg h-mb-3-lg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_3302_57044)">
+          <path d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H24.89C25.2985 28 25.703 27.9195 26.0804 27.7632C26.4578 27.6068 26.8007 27.3776 27.0895 27.0887C27.3783 26.7999 27.6073 26.4569 27.7636 26.0795C27.9198 25.702 28.0001 25.2975 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07ZM9.333 21.778H5.41V10.888H9.334V21.778H9.333ZM7.302 8.893C6.102 8.893 5.302 8.093 5.302 7.026C5.302 5.959 6.1 5.16 7.433 5.16C8.633 5.16 9.433 5.96 9.433 7.026C9.433 8.094 8.633 8.893 7.301 8.893H7.302ZM23.333 21.778H19.535V15.826C19.535 14.18 18.522 13.801 18.142 13.801C17.762 13.801 16.497 14.054 16.497 15.826V21.778H12.572V10.888H16.497V12.408C17.002 11.522 18.015 10.888 19.914 10.888C21.814 10.888 23.334 12.408 23.334 15.826V21.778H23.333Z"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_3302_57044">
+            <rect width="28" height="28" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <a href="mailto:?subject=19 Contoh Website Portofolio Terbaik untuk Menarik Klien&amp;body=Article:%20www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer">
+      <svg width="28" height="28" class="mail h-p-0-lg h-mb-3-lg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.8 3.00001C2.12163 2.99621 1.4654 3.24121 0.955496 3.68864C0.445591 4.13608 0.117389 4.7549 0.033 5.42801L14 14L27.967 5.42801C27.8826 4.7549 27.5544 4.13608 27.0445 3.68864C26.5346 3.24121 25.8784 2.99621 25.2 3.00001H2.8ZM0 8.15901V22.25C0 23.77 1.253 25 2.8 25H25.2C26.747 25 28 23.77 28 22.25V8.15901L14.741 16.296C14.5178 16.4323 14.2615 16.5043 14 16.5043C13.7385 16.5043 13.4822 16.4323 13.259 16.296L0 8.16001V8.15901Z"/>
+      </svg>
+    </a>
+</div>
+<script type="rocketlazyloadscript">
+    function linkHover() {
+        var socialLinkHover = document.getElementById("copyLink");
+        if (socialLinkHover.style.display === "none") {
+            socialLinkHover.style.display = "inline-block";
+        } else {
+            socialLinkHover.style.display = "none";
+        }
+    }
+
+    function linkClick(e) {
+        var parent = e.target.parentElement;
+        var socialLinkClick = Array.from(parent.children).find(elem => elem.id == "copiedLink");
+        if (socialLinkClick.style.display === "none") {
+            socialLinkClick.style.display = "inline-block";
+            document.getElementById("copyLink").style.display = "none";
+        } else {
+            socialLinkClick.style.display = "none";
+        }
+        setTimeout(() => { socialLinkClick.style.display = "none" }, 2000);
+    }
+
+    function copyToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>                                    
+<p><a href="/tutorial/portofolio-adalah" data-wpel-link="internal">Portofolio adalah</a> media yang menampilkan karya terbaik Anda untuk membantu meningkatkan reputasi, kredibilitas, dan branding secara profesional. Namun, terkadang memang tidak mudah untuk mendesain portofolio yang mampu menarik calon klien.</p>
+
+
+
+<p>Apalagi kini ada banyak bentuk portofolio yang bisa dibuat, termasuk versi online seperti website. Nah, kalau ingin <a href="/tutorial/web-portofolio" data-wpel-link="internal">membuat web portofolio</a> yang menarik, Anda bisa mencari inspirasi dari contoh website portofolio terbaik sebelum memulai proses desainnya.</p>
+
+
+
+<p>Di artikel ini, kami punya banyak contoh web portofolio dari berbagai jenis, termasuk penulis, mahasiswa, dan tokoh terkenal. Kami juga akan membahas fitur utama setiap website tersebut, serta elemen wajib portofolio untuk menggaet calon klien. Yuk, temukan inspirasi Anda!</p>
+
+
+
+<div id="ez-toc-container" class="ez-toc-v2_0_65 counter-hierarchy ez-toc-counter ez-toc-grey ez-toc-container-direction">
+<div class="ez-toc-title-container">
+<span class="ez-toc-title-toggle"></span></div>
+<nav><ul class='ez-toc-list ez-toc-list-level-1 ' ><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-1" href="#Contoh_Website_Portofolio_Terbaik_untuk_Personal_Branding" title="Contoh Website Portofolio Terbaik untuk Personal Branding">Contoh Website Portofolio Terbaik untuk Personal Branding</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-2" href="#1_Enrico_Deiana" title="1. Enrico Deiana">1. Enrico Deiana</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-3" href="#2_Sean_OBrien" title="2. Sean O&#8217;Brien">2. Sean O&#8217;Brien</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-4" href="#3_Gary_Le_Masson" title="3. Gary Le Masson">3. Gary Le Masson</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-5" href="#4_Melyssa_Griffin" title="4. Melyssa Griffin">4. Melyssa Griffin</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-6" href="#Contoh_Website_Portofolio_Pribadi_Terbaik_dari_Tokoh_Terkenal" title="Contoh Website Portofolio Pribadi Terbaik dari Tokoh Terkenal">Contoh Website Portofolio Pribadi Terbaik dari Tokoh Terkenal</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-7" href="#1_Russell_Brand" title="1. Russell Brand">1. Russell Brand</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-8" href="#2_Lior_Raz" title="2. Lior Raz">2. Lior Raz</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-9" href="#3_Cristiano_Ronaldo" title="3. Cristiano Ronaldo">3. Cristiano Ronaldo</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-10" href="#4_Bill_Gates" title="4. Bill Gates">4. Bill Gates</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-11" href="#Contoh_Website_Portofolio_Terbaik_untuk_Fotografer_dan_Seniman" title="Contoh Website Portofolio Terbaik untuk Fotografer dan Seniman">Contoh Website Portofolio Terbaik untuk Fotografer dan Seniman</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-12" href="#1_Tamara_Sredojevic" title="1. Tamara Sredojevic">1. Tamara Sredojevic</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-13" href="#2_Demas_Rusli" title="2. Demas Rusli">2. Demas Rusli</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-14" href="#3_Alice_Lee" title="3. Alice Lee">3. Alice Lee</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-15" href="#4_Lauren_Hom" title="4. Lauren Hom">4. Lauren Hom</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-16" href="#Contoh_Website_Portofolio_Terbaik_untuk_Blogger_dan_Penulis" title="Contoh Website Portofolio Terbaik untuk Blogger dan Penulis">Contoh Website Portofolio Terbaik untuk Blogger dan Penulis</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-17" href="#1_Todd_Clarke" title="1. Todd Clarke">1. Todd Clarke</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-18" href="#2_Muriel_Vega" title="2. Muriel Vega">2. Muriel Vega</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-19" href="#3_Helena_Bowen" title="3. Helena Bowen">3. Helena Bowen</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-20" href="#4_Duygu_Muhurdar" title="4. Duygu Mühürdar">4. Duygu Mühürdar</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-21" href="#Contoh_Website_Portofolio_Terbaik_untuk_Mahasiswa_dan_Pelajar" title="Contoh Website Portofolio Terbaik untuk Mahasiswa dan Pelajar">Contoh Website Portofolio Terbaik untuk Mahasiswa dan Pelajar</a><ul class='ez-toc-list-level-3' ><li class='ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-22" href="#1_Greg_Chen" title="1. Greg Chen">1. Greg Chen</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-23" href="#2_Marino_Franulovic" title="2. Marino Franulovic">2. Marino Franulovic</a></li><li class='ez-toc-page-1 ez-toc-heading-level-3'><a class="ez-toc-link ez-toc-heading-24" href="#3_Dayla_Baron" title="3. Dayla Baron">3. Dayla Baron</a></li></ul></li><li class='ez-toc-page-1 ez-toc-heading-level-2'><a class="ez-toc-link ez-toc-heading-25" href="#Faktor-Faktor_yang_Memengaruhi_Kualitas_Website_Portofolio" title="Faktor-Faktor yang Memengaruhi Kualitas Website Portofolio">Faktor-Faktor yang Memengaruhi Kualitas Website Portofolio</a></li></ul></nav></div>
+<h2 class="wp-block-heading" id="h-contoh-website-portofolio-terbaik-untuk-personal-branding"><span class="ez-toc-section" id="Contoh_Website_Portofolio_Terbaik_untuk_Personal_Branding"></span>Contoh Website Portofolio Terbaik untuk Personal Branding<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Untuk membuat web portofolio pribadi, Anda perlu memahami <a href="/tutorial/cara-membuat-website" data-wpel-link="internal">cara membuat website sendiri</a> dan menemukan inspirasi desain terbaik agar portofolio Anda mampu menunjukkan ciri khas Anda sesuai industri yang ditekuni.</p>
+
+
+
+<p>Di bagian ini, kami akan membagikan contoh website portofolio terbaik untuk personal branding. Anda bisa menemukan inspirasi dari <a href="/tutorial/ide-website" data-wpel-link="internal">ide website</a> di bawah ini untuk diterapkan pada website Anda sendiri.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-1-enrico-deiana"><span class="ez-toc-section" id="1_Enrico_Deiana"></span>1. <a href="https://www.enricodeiana.design/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Enrico Deiana</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="511" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20511'%3E%3C/svg%3E" alt="homepage Enrico Deiana" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-Enrico-Deiana.webp" /><noscript><img width="1024" height="511" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-Enrico-Deiana.webp" alt="homepage Enrico Deiana" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>detail interaksi mikro dan ekstensi domain yang relevan dengan industri</li>
+</ul>
+
+
+
+<p>Enrico Deiana adalah seorang web designer dan product designer dari Italia. Website portofolionya yang unik dan menarik ini pernah memenangkan penghargaan Honorable Mention dari <a href="https://www.awwwards.com/" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">Awwwards</a> di tahun 2022.</p>
+
+
+
+<p>Begitu pengunjung membuka website, mereka akan melihat efek swipe dan gambar hero tipografi yang langsung mencerminkan keahlian Enrico di bidang desain dan memberikan kesan pertama yang elegan.</p>
+
+
+
+<p>Scroll ke bawah, pengunjung akan menjumpai beberapa interaksi mikro di website ini, seperti:</p>
+
+
+
+<ul>
+<li>Gaya kursor yang berubah ketika diarahkan ke link yang bisa diklik.</li>
+
+
+
+<li>Latar belakang yang berubah saat kursor mengarah pada area portofolio.</li>
+
+
+
+<li>Teks animasi, foto, dan tombol CTA.</li>
+</ul>
+
+
+
+<p>Halaman About website ini juga menarik dan informatif, menampilkan beberapa sertifikat dan penghargaan menggunakan efek scroll yang lancar dan judul animasi.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="513" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20513'%3E%3C/svg%3E" alt="sertifikat di website enrico" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/sertifikat-di-website-enrico.webp" /><noscript><img width="1024" height="513" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/sertifikat-di-website-enrico.webp" alt="sertifikat di website enrico" /></noscript></figure></div>
+
+
+<p>Web designer freelance ini menyempurnakan portofolionya dengan menambahkan informasi tentang bisnis desain webnya, termasuk halaman harga dengan deskripsi layanan. Cara ini cukup efektif untuk membantu mendapatkan calon klien dengan lebih cepat.</p>
+
+
+
+<p>Fitur lain yang tak kalah keren dari contoh website portofolio ini adalah penggunaan <a href="/tutorial/apa-itu-tld" data-wpel-link="internal">top-level domain</a> (TLD) <strong>.design</strong>, yang memperkuat personal branding Enrico sebagai seorang desainer.</p>
+
+
+    <div class="mb-50 mt-50 mt-70-xxl">
+        <div class="banner__bg ">
+            <span class="h3 font-weight-bold banner__header">Dapatkan domain terbaik mulai dari Rp16.164 saja per tahun! Cek ketersediaannya sekarang dan dapatkan nama domain impian Anda.</span>
+                                <a href="/beli-domain" class="new-h-button-primary button text-white mt-30 float-right banner__btn" data-wpel-link="internal">Cari Domain Terbaik</a>
+                            </div>
+    </div>
+
+
+
+
+
+<h3 class="wp-block-heading" id="h-2-sean-o-brien"><span class="ez-toc-section" id="2_Sean_OBrien"></span>2. <a href="https://seanobrien.com.au/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Sean O&#8217;Brien</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="497" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20497'%3E%3C/svg%3E" alt="homepage sean obrien" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-sean-obrien.webp" /><noscript><img width="1024" height="497" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-sean-obrien.webp" alt="homepage sean obrien" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>personal branding yang kuat dan nama domain dengan kode negara</li>
+</ul>
+
+
+
+<p>Sean O&#8217;Brien adalah seorang windsurfer (peselancar angin) yang telah memenangkan kejuaraan di seluruh dunia. Ia menunjukkan prestasinya tersebut di homepagenya, memungkinkan pengunjung langsung tahu siapa dirinya.</p>
+
+
+
+<p>Sean menampilkan logo brand partner di homepagenya serta artikel yang membahas dirinya di halaman Press. Ia juga menulis artikel blog dan mendedikasikan halaman Tour untuk aktivitasnya.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img width="1024" height="610" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20610'%3E%3C/svg%3E" alt="bagian blog website Sean OBrien" style="width:840px;height:auto" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/bagian-blog-website-Sean-OBrien.webp" /><noscript><img width="1024" height="610" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/bagian-blog-website-Sean-OBrien.webp" alt="bagian blog website Sean OBrien" style="width:840px;height:auto" /></noscript></figure></div>
+
+
+<p>Desain websitenya berani dan penuh warna untuk menunjukkan semangatnya terhadap profesi yang ia jalani. Terdapat berbagai foto dirinya yang sedang berselancar dan font yang besar dengan efek sederhana agar kontennya lebih nyaman dilihat.</p>
+
+
+
+<p>Karena berasal dari Australia, atlet ini menggunakan TLD kode negara <strong>.au</strong> untuk memberi tahu mesin pencari dan pengunjung website bahwa website pribadinya menargetkan negara tersebut.</p>
+
+
+
+<p>Kalau ingin menerapkan strategi serupa, Anda bisa menemukan domain incaran Anda menggunakan tool di bawah ini.</p>
+
+
+    <div class="mb-50 mt-50 domain-checker domain-checker__bg">
+        <h3 class="m-0 text-center text-white pb-10">Cek Domain Murah</h3>
+        <p class="pb-40 text-center text-white">Ketik nama domain yang diinginkan dan segera cek ketersediaannya</p>
+        <form id="domain-checker-form" class="d-flex w-100 position-relative flex-column flex-sm-row align-items-center" action="/domain-murah">
+            <input
+                    class="domain-checker__input label text-light-black"
+                    name="domain" type="text"
+                    placeholder="Ketik domain yang diinginkan"
+                    value=""
+            />
+            <input id="domain-submit"
+                   type="submit"
+                   value="Cek Domain"
+                   class="domain-checker__button hb--danger new-h-button-primary button text-white float-right"/>
+        </form>
+    </div>
+
+
+
+
+
+<h3 class="wp-block-heading" id="h-3-gary-le-masson"><span class="ez-toc-section" id="3_Gary_Le_Masson"></span>3. <a href="https://www.garylemasson.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Gary Le Masson</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="511" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20511'%3E%3C/svg%3E" alt="homepage gary lee mason" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-gary-lee-mason.webp" /><noscript><img width="1024" height="511" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-gary-lee-mason.webp" alt="homepage gary lee mason" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>desain portofolio kreatif</li>
+</ul>
+
+
+
+<p>Gary Le Masson adalah seorang konsultan SEO dan analitik web yang berasal dari Prancis. Website portofolionya merupakan contoh yang bagus untuk membuat web portofolio dengan desain kreatif.</p>
+
+
+
+<p>Ia menggunakan desain khas mesin pencari Google, termasuk untuk kolom pencarian, palet warna, jenis huruf, dan tata letak homepagenya. Ia bahkan membuat namanya terlihat seperti Google di bagian footer.</p>
+
+
+
+<p>Strategi cerdas ini membantu menunjukkan bahwa ia bekerja di industri yang berkaitan dengan mesin pencari Google untuk menarik calon klien.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="831" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20831'%3E%3C/svg%3E" alt="contoh website portofolio gary lee mason" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portofolio-gary-lee-mason-1024x831.webp" /><noscript><img width="1024" height="831" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portofolio-gary-lee-mason-1024x831.webp" alt="contoh website portofolio gary lee mason" /></noscript></figure></div>
+
+
+<p>Di bagian atas halaman, ada beberapa menu website seperti berikut:</p>
+
+
+
+<ul>
+<li><strong>Web analytics</strong>. Ia menjelaskan keahliannya di bidang SEO dan analitik web.</li>
+
+
+
+<li><strong>References</strong>. Halaman ini menunjukkan klien yang pernah bekerja sama dengan Gary.</li>
+
+
+
+<li><strong>Google resume</strong>. Berisi riwayat pendidikan dan informasi pribadinya.</li>
+
+
+
+<li><strong>Contact</strong>. Menampilkan detail dan <a href="https://blog.hubspot.com/marketing/lead-generation-tools" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">formulir kontak</a>, termasuk alamat kantor dan link media sosial.</li>
+</ul>
+
+
+
+<p>Secara umum, halaman tersebut merupakan yang paling sering ditemukan di website portofolio. Dengannya, calon klien bisa mengenal Anda lebih dekat dan melihat apakah keahlian Anda sesuai dengan kebutuhan mereka.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-4-melyssa-griffin"><span class="ez-toc-section" id="4_Melyssa_Griffin"></span>4. <a href="https://www.melyssagriffin.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Melyssa Griffin</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="582" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20582'%3E%3C/svg%3E" alt="homepage website Melyssa Griffin" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/02/homepage-website-Melyssa-Griffin.webp" /><noscript><img width="1024" height="582" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/02/homepage-website-Melyssa-Griffin.webp" alt="homepage website Melyssa Griffin" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>penggunaan pop-up yang menarik tapi tidak mengganggu dan homepage yang informatif</li>
+</ul>
+
+
+
+<p>Melyssa Griffin adalah mantan guru yang kini berfokus untuk membantu para wirausahawan dengan konten seputar pengembangan bisnis, termasuk kursus online dan program pelatihan.</p>
+
+
+
+<p>Saat Anda membuka website portofolionya, akan ada kuis pop-up yang menanyakan gaya kewirausahaan Anda. Pop-up seperti ini bisa membantu meningkatkan keterlibatan pengunjung dan memahami audiens Anda lebih jauh.</p>
+
+
+
+<p>Bagian keren lainnya adalah informasi mendetail yang disajikan di homepagenya. Ia memperkenalkan dirinya, proyek-proyeknya, dan klien yang pernah bekerja sama, serta beberapa link penting. Terdapat juga feed Instagram dan pendaftaran newsletter di bagian footer untuk meningkatkan interaksi.</p>
+
+
+
+<p>Melyssa menggunakan warna-warna cerah seperti kuning dan oranye untuk menekankan area atau elemen tertentu. Ia juga menambahkan ilustrasi dan bentuk warna-warni untuk membuat portofolio yang unik dan menarik.</p>
+
+
+    <div class="mb-50 mt-50 mt-70-xxl">
+        <div class="banner__bg ">
+            <span class="h3 font-weight-bold banner__header">Mau membuat portofolio keren tanpa coding? Coba AI website builder yuk!</span>
+                                <a href="/website-builder" class="new-h-button-primary button text-white mt-30 float-right banner__btn" data-wpel-link="internal">Buat Website Tanpa Coding</a>
+                            </div>
+    </div>
+
+
+
+
+
+<h2 class="wp-block-heading" id="h-contoh-website-portofolio-pribadi-terbaik-dari-tokoh-terkenal"><span class="ez-toc-section" id="Contoh_Website_Portofolio_Pribadi_Terbaik_dari_Tokoh_Terkenal"></span>Contoh Website Portofolio Pribadi Terbaik dari Tokoh Terkenal<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Di bagian ini, kami akan membagikan contoh website portofolio pribadi dari beberapa tokoh terkenal, termasuk komedian dan pemain sepak bola.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-1-russell-brand"><span class="ez-toc-section" id="1_Russell_Brand"></span>1. <a href="https://www.russellbrand.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Russell Brand</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="511" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20511'%3E%3C/svg%3E" alt="website russell brand" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/website-russell-brand.webp" /><noscript><img width="1024" height="511" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/website-russell-brand.webp" alt="website russell brand" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>banner newsletter dan fitur pemesanan</li>
+</ul>
+
+
+
+<p>Russell Brand adalah seorang aktor, komedian, serta aktivis kesehatan mental dan rehabilitasi narkoba. Karena menekuni berbagai aktivitas yang berbeda, Russell menggunakan website pribadinya untuk menginformasikan jadwalnya.</p>
+
+
+
+<p>Ia menampilkan semua karya yang ia buat, termasuk buku, podcast, dan video stand-up comedy. Di samping itu, Russell membagikan jadwal pertunjukan stand-up dan acara komunitasnya sehingga para penggemar bisa langsung memesan tiket di websitenya.</p>
+
+
+
+<p>Russell juga mengajak orang-orang untuk bergabung dalam komunitasnya dengan meminta mereka bergabung ke daftar email, serta menambahkan banner newsletter di bagian atas halaman.</p>
+
+
+
+<p>Dari segi desain, ia menggunakan palet warna abu-abu yang nyaman dipandang, dengan font serif dan gambar burung gagak yang dikenal luas oleh para penggemarnya sebagai lambang perubahan atau transformasi.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-2-lior-raz"><span class="ez-toc-section" id="2_Lior_Raz"></span>2. <a href="https://www.liorraz.co.il/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Lior Raz</a><span class="ez-toc-section-end"></span></h3>
+
+
+
+<figure class="wp-block-image size-large"><img width="1024" height="468" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20468'%3E%3C/svg%3E" alt="homepage website lior raz" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-lior-raz.webp" /><noscript><img width="1024" height="468" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-lior-raz.webp" alt="homepage website lior raz" /></noscript></figure>
+
+
+
+<ul>
+<li><strong>Fitur terbaik:</strong> website portofolio satu halaman yang informatif dan video hero</li>
+</ul>
+
+
+
+<p>Desain web Lior Raz bisa menjadi salah satu contoh website portofolio one-page terbaik dalam daftar ini. Aktor dan pembicara publik ini membuat websitenya terlihat menarik secara visual sembari tetap menyajikan informasi yang jelas.</p>
+
+
+
+<p>Saat membuka website portofolio ini, pengunjung akan melihat video hero yang menampilkan klip pendek dari film Lior yang menarik perhatian.</p>
+
+
+
+<p>Ia membagi website one-page miliknya menjadi 5 bagian: About, Gallery, Press, Speaking, dan Contact. Pengunjung bisa mengklik tombol <strong>plus</strong> untuk membaca konten setiap bagian tersebut dalam tampilan yang rapi.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="513" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20513'%3E%3C/svg%3E" alt="bagian Gallery di portofolio Lior Raz dengan gambar latar belakang lebar penuh" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/bagian-Gallery-di-portofolio-Lior-Raz-dengan-gambar-latar-belakang-lebar-penuh-1024x513.webp" /><noscript><img width="1024" height="513" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/bagian-Gallery-di-portofolio-Lior-Raz-dengan-gambar-latar-belakang-lebar-penuh-1024x513.webp" alt="bagian Gallery di portofolio Lior Raz dengan gambar latar belakang lebar penuh" /></noscript></figure></div>
+
+
+<p>Ada juga tombol <strong>hamburger</strong> yang berisi bagian-bagian berbeda untuk navigasi yang lebih cepat. Lior menggunakan gambar banner dengan lebar penuh untuk judul website, serta warna hitam untuk latar belakang guna mengarahkan fokus pada konten websitenya.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-3-cristiano-ronaldo"><span class="ez-toc-section" id="3_Cristiano_Ronaldo"></span>3. <a href="https://www.cristianoronaldo.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Cristiano Ronaldo</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="648" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20648'%3E%3C/svg%3E" alt="contoh website portofolio cristiano ronaldo.png" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portofolio-cristiano-ronaldo.webp" /><noscript><img width="1024" height="648" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portofolio-cristiano-ronaldo.webp" alt="contoh website portofolio cristiano ronaldo.png" /></noscript><figcaption class="wp-element-caption">Portofolio Cristiano Ronaldo</figcaption></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>highlight pada riwayat karier</li>
+</ul>
+
+
+
+<p>Kalau Anda sedang mencari contoh website portofolio dengan tata letak satu halaman, kunjungi website Cristiano Ronaldo.</p>
+
+
+
+<p>Bagian atas portofolio ini menunjukkan semua proyek Cristiano, mulai dari karier sepak bola hingga industri fashion. Untuk proyek fashion, gambar pada tata letak dengan desain kartu tersebut akan mengarahkan pengunjung ke toko online setiap produk.</p>
+
+
+
+<p>Scroll ke bawah, ada slider horizontal yang merangkum perjalanan karier sang atlet sepak bola ini, dikategorikan menurut klub-klub yang pernah dibelanya. Setiap slide memiliki video pendek yang diputar di latar belakang, menunjukkan kontribusi Cristiano terhadap klub.</p>
+
+
+
+<p>Selain branding dan highlight perjalanan karier, portofolio satu halaman ini menampilkan video untuk produk terbaru Cristiano, formulir pendaftaran newsletter, dan link ke brand partner Cristiano sebelumnya.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-4-bill-gates"><span class="ez-toc-section" id="4_Bill_Gates"></span>4. <a href="https://www.gatesnotes.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Bill Gates</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="548" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20548'%3E%3C/svg%3E" alt="homepage website bill gates" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-bill-gates.webp" /><noscript><img width="1024" height="548" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-bill-gates.webp" alt="homepage website bill gates" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>timeline pribadi dan tata letak majalah</li>
+</ul>
+
+
+
+<p>Website Bill Gates adalah salah satu contoh situs portofolio terbaik kalau Anda ingin fokus menampilkan karya, informasi terbaru, dan berbagi pengetahuan Anda.</p>
+
+
+
+<p>Tata letak websitenya menggunakan desain majalah dan membagi postingan ke dalam berbagai topik, seperti Climate (iklim) serta Energy and Education (energi dan pendidikan). Di bagian atas homepage, ada artikel unggulan yang dipilih berdasarkan waktu publikasi terbaru atau sedang relevan dengan peristiwa terkini.</p>
+
+
+
+<p>Website pribadi salah satu pendiri Microsoft ini menggunakan palet warna hitam dan putih, memungkinkan pembaca fokus pada gambar dan video yang menarik dari channel YouTube Bill Gates. Agar tampilannya tetap simpel, website ini menggunakan menu hamburger di kanan atas layar.</p>
+
+
+
+<p>Halaman About website ini bisa menjadi inspirasi yang menarik untuk membuat timeline pribadi atau profesional. Terdapat slider timeline interaktif untuk menggambarkan perjalanan Bill Gates di berbagai bidang, seperti Microsoft, Bill &amp; Melinda Gates Foundation, dan proyek-proyek lainnya beserta foto-foto yang merepresentasikannya.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="499" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20499'%3E%3C/svg%3E" alt="timeline di website portofolio bill gates" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/timeline-di-website-portofolio-bill-gates.webp" /><noscript><img width="1024" height="499" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/timeline-di-website-portofolio-bill-gates.webp" alt="timeline di website portofolio bill gates" /></noscript></figure></div>
+
+
+<h2 class="wp-block-heading" id="h-contoh-website-portofolio-terbaik-untuk-fotografer-dan-seniman"><span class="ez-toc-section" id="Contoh_Website_Portofolio_Terbaik_untuk_Fotografer_dan_Seniman"></span>Contoh Website Portofolio Terbaik untuk Fotografer dan Seniman<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Apabila Anda berprofesi sebagai fotografer atau desainer grafis, mari lihat contoh website portofolio milik seniman di bawah ini untuk menemukan ide portofolio online Anda sendiri.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-1-tamara-sredojevic"><span class="ez-toc-section" id="1_Tamara_Sredojevic"></span>1. <a href="https://www.iamtamara.design/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Tamara Sredojevic</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="518" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20518'%3E%3C/svg%3E" alt="homepage website tamara sredojevic" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-tamara-sredojevic.webp" /><noscript><img width="1024" height="518" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-tamara-sredojevic.webp" alt="homepage website tamara sredojevic" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>proposisi nilai yang unik dan domain kustom</li>
+</ul>
+
+
+
+<p>Tamara Sredojevic berspesialisasi di bidang desain UX yang mudah diakses dan berkelanjutan. Websitenya bisa menjadi contoh portofolio online yang sangat dalam untuk mencerminkan nilai-nilai pribadi.</p>
+
+
+
+<p>Ia menyatakan target pasar dan basis kliennya dengan jelas di homepage, yang sebagian besarnya adalah organisasi nirlaba, badan amal, dan brand yang mengutamakan nilai-nilai etis.</p>
+
+
+
+<p>Selain menyebutkan nilai-nilai intinya di halaman About, footer website portofolio ini memiliki link ke halaman Accessibility Statement, yang menjelaskan bagaimana Tamara menerapkan standar aksesibilitas pada websitenya.</p>
+
+
+
+<p>Portofolio desain Tamara menekankan kesederhanaan, menggunakan bentuk-bentuk besar, garis-garis tipis, dan warna-warna lembut. Terdapat juga nilai jejak karbon untuk menunjukkan bahwa website ini ramah lingkungan.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="297" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20297'%3E%3C/svg%3E" alt="nilai jejak karbon di website tamara sredojevic" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/nilai-jejak-karbon-di-website-tamara-sredojevic.webp" /><noscript><img width="1024" height="297" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/nilai-jejak-karbon-di-website-tamara-sredojevic.webp" alt="nilai jejak karbon di website tamara sredojevic" /></noscript></figure></div>
+
+
+<p>Untuk mengedukasi calon klien tentang karyanya, setiap halaman proyek menjelaskan proses desainnya, termasuk latar belakang proyek dan metode UX yang digunakan.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-2-demas-rusli"><span class="ez-toc-section" id="2_Demas_Rusli"></span>2. <a href="https://www.demasrusli.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Demas Rusli</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="510" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20510'%3E%3C/svg%3E" alt="portofolio fotografi Demas Rusli" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/portofolio-fotografi-Demas-Rusli-1024x510.webp" /><noscript><img width="1024" height="510" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/portofolio-fotografi-Demas-Rusli-1024x510.webp" alt="portofolio fotografi Demas Rusli" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>gambar hero</li>
+</ul>
+
+
+
+<p>Demas Rusli adalah seorang fotografer yang sudah memiliki ratusan ribu followers di media sosial. Ia berfokus pada fotografi perkotaan, arsitektur, dan foto dari udara.</p>
+
+
+
+<p>Salah satu elemen terbaik contoh website portofolio ini adalah foto yang memikat secara visual di homepagenya. Foto-foto ini dibagi menjadi tiga bagian: gambar hero, kategori foto, dan feed Instagram milik Demas.</p>
+
+
+
+<p>Di bagian atas, terdapat gambar dengan lebar penuh yang berubah setiap lima detik untuk <a href="/tutorial/website-fotografi" data-wpel-link="internal">membuat website fotografi</a> miliknya tampak lebih berkesan.</p>
+
+
+
+<p>Di bawahnya, Demas mengategorikan karyanya ke dalam 6 topik: Comissions, Urban, Aerial, Architecture, Nature, dan Fantasy, untuk membantu calon klien memutuskan apakah karyanya sesuai dengan kebutuhan mereka. Ketika diklik, kategori tersebut akan menampilkan galeri yang penuh dengan foto dan rekaman video statisnya.</p>
+
+
+
+<p>Tata letak galerinya juga berbeda-beda tergantung pada kategorinya. Misalnya, di halaman Comissions, Demas menggunakan tata letak grid yang menampilkan gambar atau GIF dari setiap proyek.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="514" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20514'%3E%3C/svg%3E" alt="tata letak grid di website portofolio Demas Rusli untuk menunjukkan proyeknya" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/tata-letak-grid-di-website-portofolio-Demas-Rusli-untuk-menunjukkan-proyeknya-1024x514.webp" /><noscript><img width="1024" height="514" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/tata-letak-grid-di-website-portofolio-Demas-Rusli-untuk-menunjukkan-proyeknya-1024x514.webp" alt="tata letak grid di website portofolio Demas Rusli untuk menunjukkan proyeknya" /></noscript></figure></div>
+
+
+<p>Kerennya lagi, ia menambahkan tombol yang mengarah ke kategori lain di atas setiap judul kategori, memudahkan pengunjung untuk melihat-lihat area lain tanpa harus kembali ke homepage.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-3-alice-lee"><span class="ez-toc-section" id="3_Alice_Lee"></span>3. <a href="https://www.byalicelee.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Alice Lee</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="439" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20439'%3E%3C/svg%3E" alt="contoh portofolio online Alice Lee" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-portofolio-online-Alice-Lee-1024x439.webp" /><noscript><img width="1024" height="439" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-portofolio-online-Alice-Lee-1024x439.webp" alt="contoh portofolio online Alice Lee" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>desain minimalis untuk portofolio ilustrasi</li>
+</ul>
+
+
+
+<p>Alice Lee adalah seorang ilustrator independen dan seniman mural. Portofolionya yang menarik secara visual bisa menjadi inspirasi desain web yang sangat baik, terutama bagi para ilustrator.</p>
+
+
+
+<p>Di bagian atas homepage, ia menambahkan animasi halus dengan gambar hero yang bergerak sesuai arah kursor pengunjung.</p>
+
+
+
+<p>Di bawahnya, Alice menunjukkan berbagai proyeknya dalam tata letak minimalis berlatar belakang putih sehingga pengunjung bisa fokus pada karyanya yang indah dan penuh warna. Klik salah satu gambar untuk melihat deskripsi proyek dan konsepnya.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="655" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20655'%3E%3C/svg%3E" alt="halaman proyek portofolio Alice Lee menampilkan deskripsi proyek dan beberapa draft" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/halaman-proyek-portofolio-Alice-Lee-menampilkan-deskripsi-proyek-dan-beberapa-draft.webp" /><noscript><img width="1024" height="655" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/halaman-proyek-portofolio-Alice-Lee-menampilkan-deskripsi-proyek-dan-beberapa-draft.webp" alt="halaman proyek portofolio Alice Lee menampilkan deskripsi proyek dan beberapa draft" /></noscript></figure></div>
+
+
+<h3 class="wp-block-heading" id="h-4-lauren-hom"><span class="ez-toc-section" id="4_Lauren_Hom"></span>4. <a href="http://homsweethom.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Lauren Hom</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="430" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20430'%3E%3C/svg%3E" alt="homepage website lauren hom" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-lauren-hom.webp" /><noscript><img width="1024" height="430" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-lauren-hom.webp" alt="homepage website lauren hom" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>konten di balik layar dan blog pendidikan</li>
+</ul>
+
+
+
+<p>Lauren Hom adalah seorang desainer, ilustrator, dan seniman bentuk tulisan dari New York. Ia dikenal suka menggunakan palet warna cerah dan bentuk huruf yang lucu, yang juga ia terapkan dalam portofolio desain grafisnya.</p>
+
+
+
+<p>Ia menggunakan warna hijau untuk latar belakang dan warna oranye untuk elemen yang diberi sorotan, seperti hyperlink dan tombol CTA. Desainer grafis ini juga membagikan foto di balik layar bersama produk akhirnya di halaman Work.</p>
+
+
+
+<p>Di websitenya, Lauren menulis artikel blog tentang mural, lettering, serta tips dan <a href="/tutorial/cara-menjadi-freelancer" data-wpel-link="internal">cara menjadi freelancer</a>, berbagi ilmu seputar keahliannya dan membantu menaikkan peringkat website portofolionya di halaman hasil mesin pencari.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-contoh-website-portofolio-terbaik-untuk-blogger-dan-penulis"><span class="ez-toc-section" id="Contoh_Website_Portofolio_Terbaik_untuk_Blogger_dan_Penulis"></span>Contoh Website Portofolio Terbaik untuk Blogger dan Penulis<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Kami akan membagikan 4 ide website portofolio di bagian ini untuk para penulis, mulai dari copywriter hingga penulis musik.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-1-todd-clarke"><span class="ez-toc-section" id="1_Todd_Clarke"></span>1. <a href="https://toddsgotapen.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Todd Clarke</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="506" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20506'%3E%3C/svg%3E" alt="website todd clarke" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/website-todd-clarke.webp" /><noscript><img width="1024" height="506" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/website-todd-clarke.webp" alt="website todd clarke" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik:</strong> copywriting yang menarik</li>
+</ul>
+
+
+
+<p>Melalui brand Toddsgotapen miliknya, Todd Clarke menunjukkan bahwa membuat portofolio website yang menarik tidak harus menggunakan animasi yang rumit. Desain websitenya tetap sederhana, memanfaatkan skill copywriting Todd untuk menarik perhatian pengunjung.</p>
+
+
+
+<p>Tulisannya lugas dan menarik, membantu pembaca langsung memahami profesi dan keterampilannya di industri yang ia tekuni. Todd menggunakan heading besar untuk menyusun informasi, serta kalimat tebal dan ikon dalam copywriting untuk menyoroti poin-poin penting.</p>
+
+
+
+<p>Di halaman Portfolio, ada kategori yang bisa diklik di bagian atas untuk memudahkan pengunjung melihat-lihat karyanya. Setiap gambar di halaman tersebut akan mengarahkan pengunjung ke website asli atau gambar layar penuh yang menunjukkan versi asli proyek. Untuk membangun kredibilitas, ia menyiapkan satu halaman penuh untuk testimoni.</p>
+
+
+
+<p>Karena Todd hanya memiliki profil LinkedIn, ia mencoret akun media sosial lainnya di bagian footer untuk memberi tahu pengunjung tentang ketersediaannya secara online.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-2-muriel-vega"><span class="ez-toc-section" id="2_Muriel_Vega"></span>2. <a href="https://www.murielvega.net/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Muriel Vega</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="513" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20513'%3E%3C/svg%3E" alt="contoh website portfolio Muriel Vega" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portfolio-Muriel-Vega.webp" /><noscript><img width="1024" height="513" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portfolio-Muriel-Vega.webp" alt="contoh website portfolio Muriel Vega" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>navigasi yang mudah</li>
+</ul>
+
+
+
+<p>Muriel Vega adalah seorang penulis freelance untuk bidang teknologi, makanan, dan budaya yang telah bekerja saja dengan berbagai brand populer, termasuk The Guardian dan Patreon. Portofolionya sederhana namun efektif dalam menunjukkan kemampuan menulisnya kepada calon klien.</p>
+
+
+
+<p>Homepagenya menampilkan pekerjaan Muriel, menu website, 6 ilustrasi yang bisa diklik untuk mengategorikan proyek-proyeknya, serta ikon media sosial. Karyanya disusun dalam tata letak grid yang berisi gambar, judul artikel, dan perusahaan yang menerbitkannya.</p>
+
+
+
+<p>Di halaman About, Muriel memberikan informasi yang lugas dengan menjelaskan pengalaman menulisnya sebelumnya.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-3-helena-bowen"><span class="ez-toc-section" id="3_Helena_Bowen"></span>3. <a href="https://helenabowen.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Helena Bowen</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="373" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20373'%3E%3C/svg%3E" alt="homepage helena bowen" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-helena-bowen.webp" /><noscript><img width="1024" height="373" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-helena-bowen.webp" alt="homepage helena bowen" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>bagian above-the-fold yang kuat</li>
+</ul>
+
+
+
+<p>Helena Bowen adalah seorang pembicara, coach, dan penulis pidato terkemuka. Ia telah bekerja dengan lebih dari 150 klien, memiliki jutaan penonton online, dan tampil di media seperti TED, CNN, dan National Geographic.</p>
+
+
+
+<p>Ia menggunakan bagian homepage <a href="https://seo.london/id/basis-pengetahuan/apa-yang-diatas-lipatan/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">above-the-fold</a> sebagai elemen yang efektif untuk menarik calon klien. Bagian ini menampilkan jumlah klien yang pernah bekerja sama dengannya, terjemahan bahasa, dan jumlah tayangan.</p>
+
+
+
+<p>Scroll ke bawah, Anda akan menemukan testimoni klien-kliennya terdahulu, serta komentar-komentar mereka di media sosial. Selain memberikan bukti sosial, Helena menjelaskan latar belakang karier dan alur kerjanya secara umum.</p>
+
+
+
+<p>Mengenai desain websitenya, ia menggunakan gaya sederhana dengan ruang kosong yang efisien dan foto-foto profesional agar pengunjung tetap fokus pada kontennya serta warna-warna yang kuat untuk menyoroti detail-detail penting.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-4-duygu-muhurdar"><span class="ez-toc-section" id="4_Duygu_Muhurdar"></span>4. <a href="https://dmuhurdar.journoportfolio.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Duygu Mühürdar</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="474" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20474'%3E%3C/svg%3E" alt="website portofolio online milik duygu muhurdar" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/website-portofolio-online-milik-duygu-muhurdar.webp" /><noscript><img width="1024" height="474" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/website-portofolio-online-milik-duygu-muhurdar.webp" alt="website portofolio online milik duygu muhurdar" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>antarmuka pengguna yang sederhana, navigasi yang rapi</li>
+</ul>
+
+
+
+<p>Duygu Mühürdar adalah seorang penulis musik yang mengambil berbagai peran di industri musik. Selain artikel yang menarik, ia menggunakan thumbnail untuk menunjukkan karya tulisan dan visualnya agar homepagenya tetap rapi dan informatif.</p>
+
+
+
+<p>Setiap thumbnail menu menampilkan gaya minimalis yang sama dengan banyak ruang kosong. Ia juga menyertakan link media sosialnya untuk melengkapi konten berbasis teks.</p>
+
+
+
+<p>Halaman Posts, yang ditulis dalam bahasa Turki, memiliki fitur pencarian dan pengurutan. Pengunjung juga bisa menemukan artikel tertentu berdasarkan jenis publikasinya.</p>
+
+
+
+<p>Latar belakang putih di seluruh website memberikan sorotan pada bagian-bagian utamanya. Ini adalah desain yang efektif untuk halaman Social Media Works, karena thumbnail yang berwarna-warni mungkin kurang cocok dengan warna-warna yang tidak netral.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-contoh-website-portofolio-terbaik-untuk-mahasiswa-dan-pelajar"><span class="ez-toc-section" id="Contoh_Website_Portofolio_Terbaik_untuk_Mahasiswa_dan_Pelajar"></span>Contoh Website Portofolio Terbaik untuk Mahasiswa dan Pelajar<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Bagi Anda yang ingin membuat web portofolio sebagai mahasiswa atau pelajar, mari lihat 4 contoh portofolio online terbaik dari para mahasiswa dan lulusan baru di bagian ini untuk menemukan inspirasi ide website.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-1-greg-chen"><span class="ez-toc-section" id="1_Greg_Chen"></span>1. <a href="https://www.guanbaic.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Greg Chen</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="541" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20541'%3E%3C/svg%3E" alt="homepage website greg chen" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-greg-chen.webp" /><noscript><img width="1024" height="541" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-greg-chen.webp" alt="homepage website greg chen" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>alur kerja yang mendetail</li>
+</ul>
+
+
+
+<p>Website Greg Chen bisa menjadi salah satu contoh website portofolio terbaik dalam menampilkan halaman produk yang menarik. Lulusan baru dari Carnegie Mellon University ini mendeskripsikan dirinya dan proyek unggulannya di homepage.</p>
+
+
+
+<p>Setelah mengklik salah satu link proyek, Anda akan melihat video dan deskripsi singkatnya. Di bagian bawah, Anda akan melihat latar belakang proyek, proses riset dan desain, serta hasilnya. Greg juga melampirkan foto dan screenshot untuk mengilustrasikan alur kerjanya dan menunjukkan keahliannya.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="536" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20536'%3E%3C/svg%3E" alt="website greg chen" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/website-greg-chen.webp" /><noscript><img width="1024" height="536" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/website-greg-chen.webp" alt="website greg chen" /></noscript></figure></div>
+
+
+<p>Selain menjelaskan latar belakang pendidikan dan kariernya di halaman About, Greg menyediakan resume yang bisa didownload untuk referensi di masa mendatang dan menjelaskan perannya secara lebih mendetail.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-2-marino-franulovic"><span class="ez-toc-section" id="2_Marino_Franulovic"></span>2. <a href="https://www.franulovic.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Marino Franulovic</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="503" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20503'%3E%3C/svg%3E" alt="homepage website portfolio marino franulovic" style="object-fit:cover" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-portfolio-marino-franulovic.webp" /><noscript><img width="1024" height="503" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/homepage-website-portfolio-marino-franulovic.webp" alt="homepage website portfolio marino franulovic" style="object-fit:cover" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>animasi yang halus di seluruh homepage</li>
+</ul>
+
+
+
+<p>Marino Franulovic meraih gelar Bachelor of Arts dari Coventry University dan memfokuskan kariernya di bidang konsultasi digital marketing.</p>
+
+
+
+<p>Bagian above-the-fold homepagenya menampilkan heading besar, biografi singkat, dan teks animasi. Di bawahnya, Marino menjelaskan jasa yang ditawarkannya, termasuk perencanaan dan pengembangan pemasaran, dengan efek melayang yang halus saat pengunjung menscroll halaman.</p>
+
+
+
+<p>Lanjut ke bawah, ia menampilkan sebuah postingan blog, bagian About dengan detail kontak dan fotonya, serta testimoni. <a href="/tutorial/contoh-portofolio-web-developer" data-wpel-link="internal">Portofolio web developer</a> Marino bisa menjadi inspirasi desain yang bagus, namun bisa ditingkatkan lagi dengan menunjukkan proyek dan klien sebelumnya untuk meningkatkan kepercayaan calon klien.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-3-dayla-baron"><span class="ez-toc-section" id="3_Dayla_Baron"></span>3. <a href="https://www.dalyabaron.com/" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Dayla Baron</a><span class="ez-toc-section-end"></span></h3>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="510" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20510'%3E%3C/svg%3E" alt="website dayla baron" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/website-dayla-baron.webp" /><noscript><img width="1024" height="510" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/website-dayla-baron.webp" alt="website dayla baron" /></noscript></figure></div>
+
+
+<ul>
+<li><strong>Fitur terbaik: </strong>fokus pada resume miliknya</li>
+</ul>
+
+
+
+<p>Apabila Anda membutuhkan inspirasi portofolio untuk penulisan akademis, website Dayla Baron adalah contoh yang sangat baik.</p>
+
+
+
+<p>Mahasiswa PhD astrofisika ini menyediakan navigasi yang sederhana dengan menampilkan empat menu di homepage: Resume, Research, Outreach, dan Personal. Menu-menu tersebut juga merupakan menu sticky sehingga pengunjung tidak perlu kembali ke homepage untuk menemukan kategori lainnya.</p>
+
+
+
+<p>Dayla menuliskan pendidikan, penghargaan, dan publikasinya secara kronologis di halaman Resume. Di halaman Research, terdapat grafik dan gambar untuk membantu pengunjung melihat-lihat makalah akademisnya.</p>
+
+
+
+<h2 class="wp-block-heading" id="h-faktor-faktor-yang-memengaruhi-kualitas-website-portofolio"><span class="ez-toc-section" id="Faktor-Faktor_yang_Memengaruhi_Kualitas_Website_Portofolio"></span>Faktor-Faktor yang Memengaruhi Kualitas Website Portofolio<span class="ez-toc-section-end"></span></h2>
+
+
+
+<p>Contoh-contoh di atas menunjukkan bahwa portofolio yang bagus tidak hanya tentang estetika, tapi juga UX dan kontennya secara keseluruhan. Nah, kami akan membahas 5 fitur terbaik yang perlu dipertimbangkan saat membuat portofolio baru atau menyempurnakan yang ada.</p>
+
+
+
+<p><strong>Proyek-Proyek yang Relevan</strong></p>
+
+
+
+<p>Pastikan Anda hanya menyertakan karya terbaik Anda dalam portofolio untuk menunjukkan skill yang relevan dengan posisi yang diincar.</p>
+
+
+
+<p>Oleh karena itu, targetkan audiens dengan cermat guna membantu memfilter karya dan menampilkan keahlian Anda dari sudut pandang klien. Contohnya, fotografer makanan sebaiknya membatasi portofolionya untuk fotografi komersial dan makanan meskipun ahli juga dalam mengambil foto pemandangan.</p>
+
+
+
+<p><strong>Navigasi yang Lancar dan Mudah</strong></p>
+
+
+
+<p>Navigasi yang mudah memungkinkan pengunjung website langsung menemukan informasi yang mereka butuhkan. Hindari menaruh terlalu banyak link menu dan pastikan desainnya sepenuhnya responsif.</p>
+
+
+
+<p>Hal ini akan turut meningkatkan pengalaman pengguna website, apalagi kalau Anda ingin memberikan sentuhan kreatif.</p>
+
+
+
+<p>Sebagai contoh, terapkan gaya yang serupa dengan portofolio Demas Rusli saat membangun portofolio fotografi untuk membuat beberapa kategori yang efektif.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="528" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20528'%3E%3C/svg%3E" alt="kategori di website portofolio demas rusli" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/kategori-di-website-portofolio-demas-rusli.webp" /><noscript><img width="1024" height="528" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/kategori-di-website-portofolio-demas-rusli.webp" alt="kategori di website portofolio demas rusli" /></noscript></figure></div>
+
+
+<p><strong>Desain yang Unik dan Menarik</strong></p>
+
+
+
+<p>Penting untuk menerapkan tips terbaik desain web guna memberikan pengalaman pengguna yang baik dan memaksimalkan peluang rekrutmen Anda. Apa pun jenis portofolionya, pastikan untuk:</p>
+
+
+
+<ul>
+<li>Menggunakan gambar HD yang berkualitas.</li>
+
+
+
+<li>Memilih palet warna yang mencerminkan kepribadian Anda dan menyoroti karya Anda.</li>
+
+
+
+<li>Memilih tipografi yang tepat.</li>
+</ul>
+
+
+
+<p>Untuk membantu Anda memulai proses desain, coba gunakan <a href="/template-website" data-wpel-link="internal">tema website</a> buatan desainer. Sebagian besar <a href="/website-builder" data-wpel-link="internal">website builder</a>, termasuk Hostinger, menawarkan template terbaik untuk portofolio online sehingga Anda tidak perlu merancangnya dari nol.</p>
+
+
+
+<p>Cukup tambahkan konten Anda, lalu sesuaikan desainnya bila perlu dengan tool editor kami yang mudah digunakan.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img width="1024" height="511" decoding="async" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20511'%3E%3C/svg%3E" alt="contoh website portofolio yang dibuat menggunakan template" data-lazy-src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portofolio-yang-dibuat-menggunakan-template.webp" /><noscript><img width="1024" height="511" decoding="async" src="/tutorial/wp-content/uploads/sites/11/2024/03/contoh-website-portofolio-yang-dibuat-menggunakan-template.webp" alt="contoh website portofolio yang dibuat menggunakan template" /></noscript></figure></div>
+
+<div class="protip">
+                    <h4 class="title">Tips Berguna</h4>
+                    <p>Sempurnakan website portofolio Anda dengan mempelajari <a href="/tutorial/desain-web" data-wpel-link="internal">teknik desain website</a> terbaik.</p>
+                </div>
+
+
+
+<p><strong>Informasi tentang Diri Anda</strong></p>
+
+
+
+<p>Kisah profesional Anda membantu meyakinkan calon klien untuk bekerja sama, terutama kalau memiliki latar belakang pendidikan, pelatihan, dan penghargaan yang relevan. Meski profesional, tidak perlu kaku saat <a href="/tutorial/cara-membuat-brand-sendiri" data-wpel-link="internal">membangun branding</a> agar sesuai dengan kepribadian Anda.</p>
+
+
+
+<p>Beberapa informasi yang diperlukan untuk disertakan dalam website portofolio adalah:</p>
+
+
+
+<ul>
+<li>Detail pribadi seperti hobi, prinsip, dan pandangan pribadi Anda.</li>
+
+
+
+<li>Latar belakang profesional, seperti pendidikan dan sertifikat.</li>
+
+
+
+<li>Foto yang menarik.</li>
+</ul>
+
+
+
+<p><strong>Bukti Sosial</strong></p>
+
+
+
+<p>Bukti sosial menjadikan branding pribadi Anda lebih tepercaya. Selain menyertakan testimoni dari klien atau kolega sebelumnya, Anda juga bisa menambahkan artikel dan penghargaan.</p>
+
+
+
+<p>Sebagai contoh, Enrico Deiana menyebutkan keikutsertaannya dalam menjadi juri Awwwards di portofolionya, dan Helena Bowen menyertakan artikel-artikel yang menampilkan para kliennya.</p>
+
+
+
+<figure class="wp-block-image size-large"><a href="/website-builder" data-wpel-link="internal"><img fetchpriority="high" decoding="async" width="1024" height="300" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201024%20300'%3E%3C/svg%3E" alt="" class="wp-image-36185" data-lazy-srcset="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1.webp 1024w,https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-300x88.webp 300w,https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-150x44.webp 150w,https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-768x225.webp 768w" data-lazy-sizes="(max-width: 1024px) 100vw, 1024px" data-lazy-src="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-1024x300.webp" /><noscript><img fetchpriority="high" decoding="async" width="1024" height="300" src="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-1024x300.webp" alt="" class="wp-image-36185" srcset="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1.webp 1024w,https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-300x88.webp 300w,https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-150x44.webp 150w,https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2024/05/ID-Website-Builder_in-text-banner-1-768x225.webp 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></noscript></a></figure>
+
+
+
+<h2 class="wp-block-heading" id="h-kesimpulan">Kesimpulan</h2>
+
+
+
+<p>Website portofolio yang baik menggabungkan desain yang tepat, contoh karya yang relevan, dan konten yang menarik.</p>
+
+
+
+<p>Sebelum membuat portofolio, pertimbangkan peran, kepribadian, dan nilai-nilai Anda untuk menciptakan ciri khas. Misalnya kalau Anda adalah web designer, Anda bisa menampilkan skill teknis dengan interaksi mikro seperti Enrico Deiana, atau menulis prinsip pribadi seperti Tamara Sredojevic.</p>
+
+
+
+<p>Selain desain, Anda juga bisa menunjukkan layanan yang Anda tawarkan kepada calon pemberi kerja dan klien menggunakan keahlian Anda, seperti Todd Clarke dengan skill copywriting di websitenya.</p>
+
+
+
+<p>Semoga artikel ini berhasil membantu Anda menemukan inspirasi contoh website portofolio terbaik yang bisa diterapkan pada portofolio online Anda.</p>
+
+
+
+<p>Apabila belum yakin dengan hasil web portofolio Anda, jangan ragu untuk meminta pendapat kepada teman atau seorang ahli untuk membantu Anda mengevaluasi dan memperbaikinya.</p>
+
+            
+
+<div id="the-author-section" class="col-12 bg-ghost-white">
+    <div class="d-flex flex-column flex-sm-row ml-0 justify-content-center justify-content-sm-start">
+        <div class="author-avatar">
+                          <img width="150" height="150" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%20150'%3E%3C/svg%3E"
+                   class="border-radius-50"
+                   alt="Author" data-lazy-src="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2021/08/T029Z4XM6-U01CPGXARQR-8c60d4e8d6f9-512-150x150.jpg"/><noscript><img width="150" height="150" src="https://www.hostinger.co.id/tutorial/wp-content/uploads/sites/11/2021/08/T029Z4XM6-U01CPGXARQR-8c60d4e8d6f9-512-150x150.jpg"
+                   class="border-radius-50"
+                   alt="Author"/></noscript>
+                    </div>
+        <div class="author-info align-items-sm-start pl-20-sm">
+            <span class="author">Penulis</span>
+                          <p class="author-name">Faradilla A.</p>
+                    </div>
+    </div>
+    <div class="description mt-15 mt-30-md">
+        <p class="text-center text-sm-left">
+            Faradilla, yang lebih akrab disapa Ninda, adalah Content Marketing Specialist di Hostinger. Ia suka mengikuti tren teknologi, digital marketing, dan belajar bahasa. Melalui tutorial Hostinger ini, Ninda ingin berbagi informasi dan membantu pembaca menyelesaikan masalah yang dialami. Kenali Ninda lebih dekat di <a href="https://www.linkedin.com/in/fcayunindya" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer">LinkedIn</a>.        </p>
+    </div>
+            <div class="more-from-author">
+            <a class="links-hover mt-5" href="https://www.hostinger.co.id/tutorial/author/faradilla" data-wpel-link="internal">
+                Tutorial lain dari Faradilla A.            </a>
+        </div>
+    </div>
+
+                    </div>
+          
+<div class="social-container position-sticky d-none d-xl-block">
+    <a class="social-link text-light-black cursor-pointer d-flex align-items-center justify-content-center">
+      <svg width="28" height="28" class="link" viewBox="0 0 28 14" onclick="copyToClipboard('www.hostinger.co.id/tutorial/contoh-website-portofolio');linkClick(event)" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.364 0.5C2.85 0.5 0 3.41 0 7C0 10.59 2.85 13.5 6.364 13.5H11.454V10.9H6.364C4.254 10.9 2.545 9.154 2.545 7C2.545 4.846 4.255 3.1 6.364 3.1H11.454V0.5H6.364V0.5ZM16.545 0.5V3.1H21.636C23.746 3.1 25.455 4.846 25.455 7C25.455 9.154 23.745 10.9 21.636 10.9H16.546V13.5H21.636C25.15 13.5 28 10.59 28 7C28 3.41 25.15 0.5 21.636 0.5H16.546H16.545ZM7.636 5.7V8.3H20.364V5.7H7.636Z"/>
+      </svg>
+      <div id="copyLink" style="display: none;" class="copy-link">Salin link</div>
+      <div id="copiedLink" style="display: none;" class="copied-link">Disalin!</div>
+    </a>
+    <a href="https://twitter.com/intent/tweet?text=19 Contoh Website Portofolio Terbaik untuk Menarik Klien&amp;url=www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="exclude">
+      <svg width="28" height="28" class="twitter" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M28 3.222C26.97 3.685 25.862 3.996 24.7 4.137C25.9034 3.4078 26.801 2.26638 27.226 0.925C26.0996 1.60097 24.8652 2.07794 23.577 2.335C23.0427 1.75645 22.3944 1.29475 21.673 0.978948C20.9515 0.663145 20.1725 0.500076 19.385 0.5C16.212 0.5 13.641 3.1 13.641 6.306C13.641 6.761 13.693 7.206 13.789 7.629C9.016 7.387 4.784 5.075 1.95 1.56C1.43967 2.44841 1.17205 3.45545 1.174 4.48C1.17133 5.43314 1.40284 6.37235 1.84817 7.21507C2.2935 8.05778 2.93903 8.7782 3.728 9.313C2.81494 9.28354 1.92242 9.03451 1.126 8.587V8.66C1.126 11.474 3.106 13.82 5.734 14.353C4.8886 14.5858 4.00082 14.62 3.14 14.453C3.871 16.76 5.993 18.439 8.506 18.486C7.31857 19.431 5.95501 20.1305 4.49471 20.5435C3.0344 20.9566 1.50652 21.075 0 20.892C2.62075 22.596 5.68001 23.502 8.806 23.5C19.372 23.5 25.148 14.652 25.148 6.98C25.1481 6.72925 25.1428 6.47852 25.132 6.228C26.2588 5.40415 27.23 4.38627 28 3.222V3.222Z"/>
+      </svg>
+    </a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="exclude">
+      <svg width="28" height="28" class="facebook" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_3307_57195)">
+          <path d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H14.966V17.172H11.321V12.932H14.966V9.815C14.966 6.2 17.176 4.229 20.403 4.229C21.4898 4.22651 22.5759 4.28092 23.657 4.392V8.172H21.436C19.678 8.172 19.336 9.003 19.336 10.229V12.928H23.536L22.99 17.167H19.31V28H24.889C25.2976 28.0001 25.7022 27.9198 26.0797 27.7635C26.4572 27.6072 26.8002 27.378 27.0891 27.0891C27.378 26.8002 27.6072 26.4572 27.7635 26.0797C27.9198 25.7022 28.0001 25.2976 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07Z"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_3307_57195">
+            <rect width="28" height="28" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url=www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="exclude">
+      <svg width="28" height="28" class="linkedin h-p-0-lg h-mb-3-lg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <g clip-path="url(#clip0_3302_57044)">
+          <path d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H24.89C25.2985 28 25.703 27.9195 26.0804 27.7632C26.4578 27.6068 26.8007 27.3776 27.0895 27.0887C27.3783 26.7999 27.6073 26.4569 27.7636 26.0795C27.9198 25.702 28.0001 25.2975 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07ZM9.333 21.778H5.41V10.888H9.334V21.778H9.333ZM7.302 8.893C6.102 8.893 5.302 8.093 5.302 7.026C5.302 5.959 6.1 5.16 7.433 5.16C8.633 5.16 9.433 5.96 9.433 7.026C9.433 8.094 8.633 8.893 7.301 8.893H7.302ZM23.333 21.778H19.535V15.826C19.535 14.18 18.522 13.801 18.142 13.801C17.762 13.801 16.497 14.054 16.497 15.826V21.778H12.572V10.888H16.497V12.408C17.002 11.522 18.015 10.888 19.914 10.888C21.814 10.888 23.334 12.408 23.334 15.826V21.778H23.333Z"/>
+        </g>
+        <defs>
+          <clipPath id="clip0_3302_57044">
+            <rect width="28" height="28" fill="white"/>
+          </clipPath>
+        </defs>
+      </svg>
+    </a>
+    <a href="mailto:?subject=19 Contoh Website Portofolio Terbaik untuk Menarik Klien&amp;body=Article:%20www.hostinger.co.id/tutorial/contoh-website-portofolio" class="social-link" target="_blank" rel="nofollow noopener noreferrer">
+      <svg width="28" height="28" class="mail h-p-0-lg h-mb-3-lg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.8 3.00001C2.12163 2.99621 1.4654 3.24121 0.955496 3.68864C0.445591 4.13608 0.117389 4.7549 0.033 5.42801L14 14L27.967 5.42801C27.8826 4.7549 27.5544 4.13608 27.0445 3.68864C26.5346 3.24121 25.8784 2.99621 25.2 3.00001H2.8ZM0 8.15901V22.25C0 23.77 1.253 25 2.8 25H25.2C26.747 25 28 23.77 28 22.25V8.15901L14.741 16.296C14.5178 16.4323 14.2615 16.5043 14 16.5043C13.7385 16.5043 13.4822 16.4323 13.259 16.296L0 8.16001V8.15901Z"/>
+      </svg>
+    </a>
+</div>
+<script type="rocketlazyloadscript">
+    function linkHover() {
+        var socialLinkHover = document.getElementById("copyLink");
+        if (socialLinkHover.style.display === "none") {
+            socialLinkHover.style.display = "inline-block";
+        } else {
+            socialLinkHover.style.display = "none";
+        }
+    }
+
+    function linkClick(e) {
+        var parent = e.target.parentElement;
+        var socialLinkClick = Array.from(parent.children).find(elem => elem.id == "copiedLink");
+        if (socialLinkClick.style.display === "none") {
+            socialLinkClick.style.display = "inline-block";
+            document.getElementById("copyLink").style.display = "none";
+        } else {
+            socialLinkClick.style.display = "none";
+        }
+        setTimeout(() => { socialLinkClick.style.display = "none" }, 2000);
+    }
+
+    function copyToClipboard(str) {
+        var el = document.createElement('textarea');
+        el.value = str;
+        el.setAttribute('readonly', '');
+        el.style = {
+            position: 'absolute',
+            left: '-9999px'
+        };
+
+        document.body.appendChild(el);
+        el.select();
+        document.execCommand('copy');
+        document.body.removeChild(el);
+    }
+</script>      </div>
+    </div>
+  </div>
+        <div class="related-tutorials-section">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-center h-mb-5">
+                <h2 class="pb-30">
+                    Tutorial Terkait                </h2>
+            </div>
+            <div class="row">
+                
+<div class="content-item d-flex flex-column col-md-4 h-mb-2" id="post-36815">
+    <div class="col-12 h-p-0 height-20rem d-contents">
+                <a class="height-inherit" href="https://www.hostinger.co.id/tutorial/contoh-website-pengajar-dan-guru" data-wpel-link="internal">
+                <img width="730" height="319" class="width-100p object-fit-cover border-radius-10px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20730%20319'%3E%3C/svg%3E" data-lazy-src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg"/><noscript><img width="730" height="319" class="width-100p object-fit-cover border-radius-10px" src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg"/></noscript>
+            </a>
+            </div>
+    <div class="d-flex flex-column h-pt-2 h-pb-3">
+        <div class="d-flex justify-content-sm-between justify-content-center h-mb-1">
+            <p class="label text-h-meteorite-dark fw-800 fs-14 related-posts__date-category">
+                31 May •
+                                            <a class="text-h-meteorite-dark text-uppercase fw-800 fs-14 links-hover" href="https://www.hostinger.co.id/tutorial/web-development" data-wpel-link="internal">
+                            Web Development                        </a>
+                        <span class="related-posts__separator">•</span>
+                                </p>
+        </div>
+        <h5 class="text-center text-sm-left pb-10">
+            <a href="https://www.hostinger.co.id/tutorial/contoh-website-pengajar-dan-guru" data-wpel-link="internal">
+                20 Contoh Website Pengajar &amp; Guru di Berbagai Bidang            </a>
+        </h5>
+      <p class="text-content-grey text-center text-sm-left">
+          Sebagai pengajar atau guru di bidang tertentu, website bisa menjadi strategi jitu untuk meningkatkan karier Anda. Dengannya, Anda bisa membangun...      </p>
+                        <div class="d-flex justify-content-center justify-content-sm-start">
+              <a class="subtitle  font-weight-bold hover-text-primary-400 transition-all-3"
+                 href="https://www.hostinger.co.id/tutorial/author/faradilla"
+              >
+                  <p class="author-name text-center text-sm-left">
+                      Oleh Faradilla A.                  </p>
+              </a>
+                        </div>
+                  </div>
+</div>
+<div class="content-item d-flex flex-column col-md-4 h-mb-2" id="post-36691">
+    <div class="col-12 h-p-0 height-20rem d-contents">
+                <a class="height-inherit" href="https://www.hostinger.co.id/tutorial/contoh-website-minimalis-dan-sederhana" data-wpel-link="internal">
+                <img width="730" height="319" class="width-100p object-fit-cover border-radius-10px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20730%20319'%3E%3C/svg%3E" data-lazy-src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg"/><noscript><img width="730" height="319" class="width-100p object-fit-cover border-radius-10px" src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg"/></noscript>
+            </a>
+            </div>
+    <div class="d-flex flex-column h-pt-2 h-pb-3">
+        <div class="d-flex justify-content-sm-between justify-content-center h-mb-1">
+            <p class="label text-h-meteorite-dark fw-800 fs-14 related-posts__date-category">
+                29 May •
+                                            <a class="text-h-meteorite-dark text-uppercase fw-800 fs-14 links-hover" href="https://www.hostinger.co.id/tutorial/web-development" data-wpel-link="internal">
+                            Web Development                        </a>
+                        <span class="related-posts__separator">•</span>
+                                </p>
+        </div>
+        <h5 class="text-center text-sm-left pb-10">
+            <a href="https://www.hostinger.co.id/tutorial/contoh-website-minimalis-dan-sederhana" data-wpel-link="internal">
+                15 Contoh Website Minimalis yang Sederhana namun Aesthetic            </a>
+        </h5>
+      <p class="text-content-grey text-center text-sm-left">
+          Desain merupakan salah satu bagian terpenting dalam proses pembuatan website. Sebab, desain akan memengaruhi kesan pertama pengunjung dan menentukan...      </p>
+                        <div class="d-flex justify-content-center justify-content-sm-start">
+              <a class="subtitle  font-weight-bold hover-text-primary-400 transition-all-3"
+                 href="https://www.hostinger.co.id/tutorial/author/faradilla"
+              >
+                  <p class="author-name text-center text-sm-left">
+                      Oleh Faradilla A.                  </p>
+              </a>
+                        </div>
+                  </div>
+</div>
+<div class="content-item d-flex flex-column col-md-4 h-mb-2" id="post-36480">
+    <div class="col-12 h-p-0 height-20rem d-contents">
+                <a class="height-inherit" href="https://www.hostinger.co.id/tutorial/apa-itu-privasi-domain" data-wpel-link="internal">
+                <img width="730" height="319" class="width-100p object-fit-cover border-radius-10px" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20730%20319'%3E%3C/svg%3E" data-lazy-src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg"/><noscript><img width="730" height="319" class="width-100p object-fit-cover border-radius-10px" src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/no_image.jpg"/></noscript>
+            </a>
+            </div>
+    <div class="d-flex flex-column h-pt-2 h-pb-3">
+        <div class="d-flex justify-content-sm-between justify-content-center h-mb-1">
+            <p class="label text-h-meteorite-dark fw-800 fs-14 related-posts__date-category">
+                21 May •
+                                            <a class="text-h-meteorite-dark text-uppercase fw-800 fs-14 links-hover" href="https://www.hostinger.co.id/tutorial/web-development" data-wpel-link="internal">
+                            Web Development                        </a>
+                        <span class="related-posts__separator">•</span>
+                                            <a class="text-h-meteorite-dark text-uppercase fw-800 fs-14 links-hover" href="https://www.hostinger.co.id/tutorial/domain" data-wpel-link="internal">
+                            Domain                        </a>
+                        <span class="related-posts__separator">•</span>
+                                </p>
+        </div>
+        <h5 class="text-center text-sm-left pb-10">
+            <a href="https://www.hostinger.co.id/tutorial/apa-itu-privasi-domain" data-wpel-link="internal">
+                Apa Itu Privasi Domain: Manfaat dan Cara Mengaktifkannya            </a>
+        </h5>
+      <p class="text-content-grey text-center text-sm-left">
+          Setelah membeli nama domain, informasi pribadi Anda akan tersedia untuk umum. Akibatnya, Anda mungkin akan menerima pesan spam atau website Anda...      </p>
+                        <div class="d-flex justify-content-center justify-content-sm-start">
+              <a class="subtitle  font-weight-bold hover-text-primary-400 transition-all-3"
+                 href="https://www.hostinger.co.id/tutorial/author/faradilla"
+              >
+                  <p class="author-name text-center text-sm-left">
+                      Oleh Faradilla A.                  </p>
+              </a>
+                        </div>
+                  </div>
+</div>            </div>
+        </div>
+    </div>
+    
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/bootstrap/v5/tp.widget.bootstrap.min.js?ver=1709030905" async></script>
+<div class="pb-80 pb-120-lg">
+    <h2 class="text-center mb-40 mt-50">Apa Kata Pelanggan Kami</h2>
+    <div class="container">
+        <div class="trustpilot-widget"
+             data-locale="en"
+             data-template-id="53aa8912dec7e10d38f59f36"
+             data-review-languages="en"
+             data-businessunit-id="580cbf960000ff0005966f44"
+             data-stars="4,5"
+             data-style-height="140px" data-style-width="100%"
+             data-theme="light">
+            <a href="https://www.trustpilot.com/review/hostinger.com" target="_blank" rel="noopener follow noreferrer" data-wpel-link="exclude">Trustpilot</a>
+        </div>
+    </div>
+</div>
+    <div class="container justify-content-center">
+
+                    <div id="comment-form" class="bg-white h-pt-7-lg h-pt-2 h-pb-7-lg h-mt-2 w-100">
+        <div class="d-flex flex-column">
+            	<div id="respond" class="comment-respond">
+		<h3 class="text-h-meteorite-dark fw-800 fs-44 mb-5">Tinggalkan Komentar <small><a rel="nofollow" id="cancel-comment-reply-link" href="/tutorial/contoh-website-portofolio#respond" style="display:none;" data-wpel-link="internal">Cancel reply</a></small></h3><div id="comment-error" class="error-message d-none fs-14 fs-18-sm fs-20-xl pl-15 pl-20-sm pr-15 pr-20-sm"><img width="32" height="32" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3E%3C/svg%3E" data-lazy-src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/icons/alert.svg"/><noscript><img width="32" height="32" src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/icons/alert.svg"/></noscript><span id="required-fields" class="d-none">Silakan isi kolom di bawah ini.</span><span id="required-checkbox" class="d-none">Silakan tandai checkbox persetujuan.</span><span id="required-form" class="d-none">Silakan isi kolom yang tersedia dan beri centang pada checkbox privasi</span></div><form action="https://www.hostinger.co.id/tutorial/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><div id="comment-texarea-input-border" class="new-input-border position-relative mt-20 mt-30-sm"><textarea id="comment" name="comment" placeholder="Komentar*" style="outline: 0; height: 200px !important;" class="w-100 dark border-0 noresize bg-transparent h-pl-2 h-pt-2 label text-content-grey" style="height: 200px !important;"></textarea></div><p class="mb-20"></p><div id="comment-name-input-border" class="new-input-border position-relative"><input id="comment-name-input"  style="outline: 0;" class="dark height-46px bg-transparent border-0 w-100 h-pl-2 label text-content-grey"
+                          id="author" name="author" type="text" placeholder="Nama*" value=""  aria-required='true'></div>
+<p class="mb-20"></p><div id="comment-email-input-border" class="new-input-border position-relative"><input id="comment-email-input"  style="outline: 0;" class="dark height-46px border-0 bg-transparent w-100 h-pl-2 label text-content-grey"
+                           id="email" name="email" placeholder="Email*" type="email" value=""  aria-required='true'></div>
+<p class="comment-form-cookies-consent mt-20 fs-14 d-flex align-items-center"><input id="wp-comment-cookies-consent" class="mr-5 mb-2" name="wp-comment-cookies-consent" type="checkbox" value="yes" /><label for="wp-comment-cookies-consent">Dengan menggunakan formulir ini, maka Anda setuju bahwa data pribadi Anda akan diproses sesuai dengan <a href="/privasi " target="_blank" data-wpel-link="internal">Kebijakan Privasi</a> Hostinger.</label></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit-comment new-h-button-primary button text-white mt-40 float-right w-100 w-30-sm" value="Kirim" /> <input type='hidden' name='comment_post_ID' value='34810' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5eed51529b" /></p><p style="display: none !important;" class="akismet-fields-container" data-prefix="ak_"><label>&#916;<textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100"></textarea></label><input type="hidden" id="ak_js_1" name="ak_js" value="134"/><script type="rocketlazyloadscript">document.getElementById( "ak_js_1" ).setAttribute( "value", ( new Date() ).getTime() );</script></p></form>	</div><!-- #respond -->
+	<p class="akismet_comment_form_privacy_notice">This site uses Akismet to reduce spam. <a href="https://akismet.com/privacy/" target="_blank" rel="nofollow noopener external noreferrer" data-wpel-link="external">Learn how your comment data is processed</a>.</p>          <script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+              var label = document.querySelector("[for='wpgdprc'");
+              var warning = document.getElementsByClassName("akismet_comment_form_privacy_notice");
+              if(label && warning && warning.length > 0) {
+                  label.innerText += " " + warning[0].innerText;
+                  warning[0].innerText = "";
+              }
+
+
+              document.getElementById("submit").addEventListener("click", function displayDate(event) {
+                  var textFieldContainer = document.getElementById("comment-texarea-input-border");
+                  var textField = document.getElementById("comment");
+                  var emailFieldContainer = document.getElementById("comment-email-input-border");
+                  var emailField = document.getElementById("comment-email-input");
+                  var nameFieldContainer = document.getElementById("comment-name-input-border");
+                  var nameField = document.getElementById("comment-name-input");
+                  var checkbox = document.getElementById("wp-comment-cookies-consent");
+                  var errorMessage = document.getElementById("comment-error");
+                  var errorExists = false;
+
+                  textFieldContainer.classList.remove("error");
+                  nameFieldContainer.classList.remove("error");
+                  emailFieldContainer.classList.remove("error");
+                  if(checkbox) checkbox.classList.remove("error");
+                  document.getElementById("required-fields").classList.add("d-none");
+                  document.getElementById("required-checkbox").classList.add("d-none");
+                  document.getElementById("required-form").classList.add("d-none");
+                  errorMessage.classList.add("d-none");
+
+                  if(textField && !textField.value) {
+                      textFieldContainer.classList.add("error");
+                      document.getElementById("required-fields").classList.remove("d-none");
+                      errorExists = true;
+                  }
+                  if(nameField && !nameField.value) {
+                      nameFieldContainer.classList.add("error");
+                      document.getElementById("required-fields").classList.remove("d-none");
+                      errorExists = true;
+                  }
+                  if(emailField && (!emailField.value || !emailField.value.includes('@'))) {
+                      emailFieldContainer.classList.add("error");
+                      document.getElementById("required-fields").classList.remove("d-none");
+                      errorExists = true;
+                  }
+                  if(checkbox && !checkbox.checked) {
+                      checkbox.classList.add("error");
+                      if(errorExists) {
+                          document.getElementById("required-fields").classList.add("d-none");
+                          document.getElementById("required-form").classList.remove("d-none");
+                      }
+                      else {
+                          document.getElementById("required-checkbox").classList.remove("d-none");
+                      }
+                      errorExists = true;
+                  }
+                  if(errorExists) {
+                      event.preventDefault();
+                      errorMessage.classList.remove("d-none");
+                  }
+              });
+
+              var commentForm = document.getElementById('commentform');
+
+              commentForm.addEventListener('submit', function (event) {
+                  event.preventDefault();
+
+                  var submitUrl = commentForm.getAttribute('action');
+
+                  var textField = document.getElementById('comment');
+                  var emailField = document.getElementById('comment-email-input');
+                  var nameField = document.getElementById('comment-name-input');
+                  var checkbox = document.getElementById('wp-comment-cookies-consent');
+                  var commentPostId = 34810;
+                  var commentParentField = document.getElementById('comment_parent');
+                  var commentParentId = commentParentField ? commentParentField.value : 0;
+                  var akismetCommentNonceField = document.getElementById('akismet_comment_nonce');
+                  var akismetCommentNonce = akismetCommentNonceField ? akismetCommentNonceField.value : '';
+                  var akJsField = document.getElementById('ak_js');
+                  var akJsFieldValue = akJsField ? akJsField.value : '';
+
+                  var commentFormData = [];
+
+                  if (textField && textField.value) {
+                      commentFormData.push('comment=' + encodeURIComponent(textField.value));
+                  }
+
+                  if (nameField && nameField.value) {
+                      commentFormData.push('author=' + encodeURIComponent(nameField.value));
+                  }
+
+                  if (emailField && emailField.value) {
+                      commentFormData.push('email=' + encodeURIComponent(emailField.value));
+                  }
+
+                  if (checkbox && checkbox.checked) {
+                      commentFormData.push('wp-comment-cookies-consent=yes');
+                  }
+
+                  commentFormData.push('comment_post_ID=' + commentPostId);
+                  commentFormData.push('comment_parent=' + commentParentId);
+                  commentFormData.push('akismet_comment_nonce=' + akismetCommentNonce);
+                  commentFormData.push('ak_js=' + akJsFieldValue);
+
+                  var encodedFormData = commentFormData.join('&').replace(/%20/g, '+');
+
+                  var httpClient = new XMLHttpRequest();
+
+                  httpClient.onreadystatechange = function () {
+                      if(httpClient.readyState === 4 && httpClient.status === 200) {
+                          var replyNoticeText = document.getElementById('comment-post-notice');
+
+                          replyNoticeText.classList.remove('d-none');
+                          replyNoticeText.classList.add('d-flex');
+
+                          if (textField) {
+                              textField.value = '';
+                          }
+
+                          if (nameField && nameField.value) {
+                              nameField.value = '';
+                          }
+
+                          if (emailField && emailField.value) {
+                              emailField.value = '';
+                          }
+                      }
+                  };
+
+                  httpClient.open('POST', submitUrl, true);
+                  httpClient.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                  httpClient.send(encodedFormData);
+              });
+          </script>
+        </div>
+          <div id="comment-post-notice" class="d-none bg-light w-100 mt-30 p-20">
+            <span class="d-block icon-info w-26-px h-20"></span>
+            <span class="color-primary font-14 line-height-20 ml-10 ">Thank you! Your comment has been successfully submitted. It will be approved within the next 24 hours.</span>
+          </div>
+      </div>
+    </div>
+    </div>
+
+      <script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+      
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        'tutorialsCategory': "Web Development"
+      });
+
+      window.optinMonsterCategory = "Web Development";
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer id="footer">
+    <div id="footer-new" class="footer-new">
+                <Footer-new
+            :menu-items="{&quot;hosting&quot;:{&quot;category&quot;:&quot;Hosting&quot;,&quot;items&quot;:[{&quot;pattern&quot;:&quot;\/web-hosting&quot;,&quot;title&quot;:&quot;Web Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:1,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/pro&quot;,&quot;title&quot;:&quot;Web Hosting Indonesia&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:2,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/hosting-vps&quot;,&quot;title&quot;:&quot;VPS Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:3,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/minecraft-server-hosting&quot;,&quot;title&quot;:&quot;Minecraft Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:4,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/cyberpanel-vps-hosting&quot;,&quot;title&quot;:&quot;CyberPanel VPS Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:4,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/cloud-hosting&quot;,&quot;title&quot;:&quot;Cloud Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:5,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/wordpress-hosting&quot;,&quot;title&quot;:&quot;Cheap WordPress Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:6,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/email-hosting&quot;,&quot;title&quot;:&quot;Email Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:7,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/cms-hosting&quot;,&quot;title&quot;:&quot;CMS Hosting&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:8,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/hosting-gratis&quot;,&quot;title&quot;:&quot;Hosting Gratis&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:11,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/toko-online&quot;,&quot;title&quot;:&quot;Toko Online&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:12,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/hosting-murah&quot;,&quot;title&quot;:&quot;Hosting Murah&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:15,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/website-builder&quot;,&quot;title&quot;:&quot;Website Builder&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:120,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/logo-maker&quot;,&quot;title&quot;:&quot;Logo Maker&quot;,&quot;category&quot;:&quot;Hosting&quot;,&quot;priority&quot;:135,&quot;pathName&quot;:null}]},&quot;domains&quot;:{&quot;category&quot;:&quot;Domain&quot;,&quot;items&quot;:[{&quot;pattern&quot;:&quot;\/domain-murah&quot;,&quot;title&quot;:&quot;Domain Murah&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:1,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/transfer-domain&quot;,&quot;title&quot;:&quot;Transfer Domain&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:2,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/domain-gratis&quot;,&quot;title&quot;:&quot;Domain Gratis&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:3,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/tld\/domain-xyz&quot;,&quot;title&quot;:&quot;Domain .XYZ&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:4,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/tld&quot;,&quot;title&quot;:&quot;Beli Domain&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:7,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/whois&quot;,&quot;title&quot;:&quot;WHOIS&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:8,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/ssl-gratis&quot;,&quot;title&quot;:&quot;SSL Gratis&quot;,&quot;category&quot;:&quot;Domain&quot;,&quot;priority&quot;:30,&quot;pathName&quot;:null}]},&quot;information&quot;:{&quot;category&quot;:&quot;Informasi&quot;,&quot;items&quot;:[{&quot;pattern&quot;:&quot;\/migrasi-website&quot;,&quot;title&quot;:&quot;Migrasi Website&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:10,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;https:\/\/statuspage.hostinger.com\/&quot;,&quot;title&quot;:&quot;Status Sistem&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:20,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/afiliasi&quot;,&quot;title&quot;:&quot;Afiliasi&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:30,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/metode-pembayaran&quot;,&quot;title&quot;:&quot;Metode Pembayaran&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:50,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/penghargaan&quot;,&quot;title&quot;:&quot;Penghargaan&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:60,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/review&quot;,&quot;title&quot;:&quot;Review&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:70,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/harga&quot;,&quot;title&quot;:&quot;Harga&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:80,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/sitemap&quot;,&quot;title&quot;:&quot;Sitemap&quot;,&quot;category&quot;:&quot;Informasi&quot;,&quot;priority&quot;:90,&quot;pathName&quot;:null}]},&quot;legal&quot;:{&quot;category&quot;:&quot;Legal&quot;,&quot;items&quot;:[{&quot;pattern&quot;:&quot;\/legal\/kebijakan-privasi&quot;,&quot;title&quot;:&quot;Kebijakan Privasi&quot;,&quot;category&quot;:&quot;Legal&quot;,&quot;priority&quot;:1,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/legal\/perjanjian-ketentuan-layanan-universal&quot;,&quot;title&quot;:&quot;Ketentuan Penggunaan&quot;,&quot;category&quot;:&quot;Legal&quot;,&quot;priority&quot;:2,&quot;pathName&quot;:null}]},&quot;company&quot;:{&quot;category&quot;:&quot;Perusahaan&quot;,&quot;items&quot;:[{&quot;pattern&quot;:&quot;\/tentang-kami&quot;,&quot;title&quot;:&quot;Tentang Kami&quot;,&quot;category&quot;:&quot;Perusahaan&quot;,&quot;priority&quot;:10,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/teknologi&quot;,&quot;title&quot;:&quot;Teknologi Kami&quot;,&quot;category&quot;:&quot;Perusahaan&quot;,&quot;priority&quot;:20,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;https:\/\/roadmap.hostinger.com\/&quot;,&quot;title&quot;:&quot;Roadmap (Bahasa Inggris)&quot;,&quot;category&quot;:&quot;Perusahaan&quot;,&quot;priority&quot;:50,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/bantuan-dan-kontak&quot;,&quot;title&quot;:&quot;Hubungi Kami&quot;,&quot;category&quot;:&quot;Perusahaan&quot;,&quot;priority&quot;:60,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;https:\/\/www.hostinger.com\/blog\/&quot;,&quot;title&quot;:&quot;Blog (Bahasa Inggris)&quot;,&quot;category&quot;:&quot;Perusahaan&quot;,&quot;priority&quot;:70,&quot;pathName&quot;:null}]},&quot;help&quot;:{&quot;category&quot;:&quot;Bantuan&quot;,&quot;items&quot;:[{&quot;pattern&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/&quot;,&quot;title&quot;:&quot;Tutorial&quot;,&quot;category&quot;:&quot;Bantuan&quot;,&quot;priority&quot;:1,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;https:\/\/support.hostinger.co.id\/&quot;,&quot;title&quot;:&quot;Pengetahuan Dasar&quot;,&quot;category&quot;:&quot;Bantuan&quot;,&quot;priority&quot;:2,&quot;pathName&quot;:null},{&quot;pattern&quot;:&quot;\/laporkan-penyalahgunaan&quot;,&quot;title&quot;:&quot;Laporkan Penyalahgunaan&quot;,&quot;category&quot;:&quot;Bantuan&quot;,&quot;priority&quot;:3,&quot;pathName&quot;:null}]}}"
+            :payment-methods="[&quot;visa&quot;,&quot;mastercard&quot;,&quot;amex&quot;,&quot;discover&quot;,&quot;jcb&quot;,&quot;maestro&quot;,&quot;dinersclub&quot;]"
+            payment-url="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/images/payments/2020/"
+            payment-path="/metode-pembayaran"
+            payment-btn="Dan Lainnya"
+            about="Hostinger memberikan kemudahan bagi siapa pun yang ingin sukses online. Kami terus menyempurnakan teknologi server, menyediakan bantuan profesional, dan memberikan pengalaman web hosting yang mulus."
+            :social-links="[{&quot;id&quot;:&quot;social_linkedin&quot;,&quot;url&quot;:&quot;https:\/\/www.linkedin.com\/company\/hostinger&quot;,&quot;img&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/social-icons\/footer\/ic-linked-in.svg&quot;,&quot;alt&quot;:&quot;Linked-in logo&quot;},{&quot;id&quot;:&quot;social_facebook&quot;,&quot;url&quot;:&quot;https:\/\/www.facebook.com\/Hostinger&quot;,&quot;img&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/social-icons\/footer\/ic-facebook.svg&quot;,&quot;alt&quot;:&quot;Facebook logo&quot;},{&quot;id&quot;:&quot;social_instagram&quot;,&quot;url&quot;:&quot;https:\/\/www.instagram.com\/hostinger_global\/&quot;,&quot;img&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/social-icons\/footer\/ic-instagram.svg&quot;,&quot;alt&quot;:&quot;Instagram logo&quot;},{&quot;id&quot;:&quot;social_twitter&quot;,&quot;url&quot;:&quot;https:\/\/twitter.com\/hostinger&quot;,&quot;img&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/social-icons\/footer\/ic-twitter.svg&quot;,&quot;alt&quot;:&quot;Twitter logo&quot;},{&quot;id&quot;:&quot;social_youtube&quot;,&quot;url&quot;:&quot;https:\/\/www.youtube.com\/channel\/UCsfsYJOpJGTOylYe-QS8eJg?sub_confirmation=1&quot;,&quot;img&quot;:&quot;https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/themes\/tutorialsthemeuplift\/public\/images\/social-icons\/footer\/ic-youtube.svg&quot;,&quot;alt&quot;:&quot;Youtube logo&quot;}]"
+            copyright="© 2004-2024 hostinger.co.id - Web Hosting Premium, Layanan Cloud, VPS, & Registrasi Domain."
+            no-vat-txt="Harga belum termasuk PPN"
+        >
+        </Footer-new>
+    </div>
+</footer>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL4FQVG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<script type="rocketlazyloadscript">(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.account=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,71036,79832);</script>
+
+<script type="rocketlazyloadscript">
+  window.intercomSettings = {
+    app_id: "e5dnas5h"
+  };
+</script>
+
+<script type="rocketlazyloadscript">
+(function () {
+  var w = window;
+  var ic = w.Intercom;
+  if (typeof ic === "function") {
+    ic('reattach_activator');
+    ic('update', w.intercomSettings);
+  } else {
+    var d = document;
+    var i = function () {
+      i.c(arguments);
+    };
+    i.q = [];
+    i.c = function (args) {
+      i.q.push(args);
+    };
+    w.Intercom = i;
+    var l = function () {
+      setTimeout(function () {
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://widget.intercom.io/widget/e5dnas5h';
+        var x = d.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }, 5000);
+    };
+    if (w.attachEvent) {
+      w.attachEvent('onload', l);
+    } else {
+      w.addEventListener('load', l, false);
+    }
+  }
+})();
+</script><script type="rocketlazyloadscript" data-rocket-type="text/javascript">/* <![CDATA[ */!function(e,n){var r={"selectors":{"block":"pre.EnlighterJSRAW","inline":"code.EnlighterJSRAW"},"options":{"indent":2,"ampersandCleanup":true,"linehover":true,"rawcodeDbclick":false,"textOverflow":"break","linenumbers":false,"theme":"classic","language":"generic","retainCssClasses":false,"collapse":false,"toolbarOuter":"","toolbarTop":"{BTN_RAW}{BTN_COPY}{BTN_WINDOW}{BTN_WEBSITE}","toolbarBottom":""},"resources":["https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/plugins\/enlighter\/cache\/X11_enlighterjs.min.css?HhERV67JU5YMlN2","https:\/\/www.hostinger.co.id\/tutorial\/wp-content\/plugins\/enlighter\/resources\/enlighterjs\/enlighterjs.min.js"]},o=document.getElementsByTagName("head")[0],t=n&&(n.error||n.log)||function(){};e.EnlighterJSINIT=function(){!function(e,n){var r=0,l=null;function c(o){l=o,++r==e.length&&(!0,n(l))}e.forEach(function(e){switch(e.match(/\.([a-z]+)(?:[#?].*)?$/)[1]){case"js":var n=document.createElement("script");n.onload=function(){c(null)},n.onerror=c,n.src=e,n.async=!0,o.appendChild(n);break;case"css":var r=document.createElement("link");r.onload=function(){c(null)},r.onerror=c,r.rel="stylesheet",r.type="text/css",r.href=e,r.media="all",o.appendChild(r);break;default:t("Error: invalid file extension",e)}})}(r.resources,function(e){e?t("Error: failed to dynamically load EnlighterJS resources!",e):"undefined"!=typeof EnlighterJS?EnlighterJS.init(r.selectors.block,r.selectors.inline,r.options):t("Error: EnlighterJS resources not loaded yet!")})},(document.querySelector(r.selectors.block)||document.querySelector(r.selectors.inline))&&e.EnlighterJSINIT()}(window,console); /* ]]> */</script><script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/themes/tutorialsthemeuplift/resources/js/web-font-loader.js?ver=1709030905" id="fontloader_js-js" defer></script>
+<script type="text/javascript" id="ppress-frontend-script-js-extra">
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/www.hostinger.co.id\/tutorial\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"11ad0c99f5","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.15.6" id="ppress-frontend-script-js" defer></script>
+<script type="text/javascript" id="ez-toc-scroll-scriptjs-js-extra">
+/* <![CDATA[ */
+var eztoc_smooth_local = {"scroll_offset":"60","add_request_uri":""};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/easy-table-of-contents/assets/js/smooth_scroll.min.js?ver=2.0.65" id="ez-toc-scroll-scriptjs-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/easy-table-of-contents/vendor/js-cookie/js.cookie.min.js?ver=2.2.1" id="ez-toc-js-cookie-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/easy-table-of-contents/vendor/sticky-kit/jquery.sticky-kit.min.js?ver=1.9.2" id="ez-toc-jquery-sticky-kit-js" defer></script>
+<script type="text/javascript" id="ez-toc-js-js-extra">
+/* <![CDATA[ */
+var ezTOC = {"smooth_scroll":"1","scroll_offset":"60","fallbackIcon":"<span class=\"\"><span class=\"eztoc-hide\" style=\"display:none;\">Toggle<\/span><span class=\"ez-toc-icon-toggle-span\"><svg style=\"fill: #999;color:#999\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" class=\"list-377408\" width=\"20px\" height=\"20px\" viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z\" fill=\"currentColor\"><\/path><\/svg><svg style=\"fill: #999;color:#999\" class=\"arrow-unsorted-368013\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" width=\"10px\" height=\"10px\" viewBox=\"0 0 24 24\" version=\"1.2\" baseProfile=\"tiny\"><path d=\"M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z\"\/><\/svg><\/span><\/span>"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/plugins/easy-table-of-contents/assets/js/front.min.js?ver=2.0.65-1713768664" id="ez-toc-js-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/themes/tutorialsthemeuplift/public/js/theme.min.js?ver=1.0.0.1716383072" id="understrap-scripts-js" defer></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-includes/js/comment-reply.min.js?ver=6.5.2" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="rocketlazyloadscript" data-minify="1" defer data-rocket-type="text/javascript" data-rocket-src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/plugins/akismet/_inc/akismet-frontend.js?ver=1709030905" id="akismet-frontend-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.hostinger.co.id/tutorial/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>
+<script data-minify="1" src="https://www.hostinger.co.id/tutorial/wp-content/cache/min/11/tutorial/wp-content/themes/tutorialsthemeuplift/public/js/vueapp.js?ver=1709030905" defer></script>
+
+</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1717146447 -->

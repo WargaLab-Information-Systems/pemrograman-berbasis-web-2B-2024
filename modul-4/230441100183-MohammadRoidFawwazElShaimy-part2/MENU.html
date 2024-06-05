@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Dropdown Menu</title>
+</head>
+<style>
+body {
+font-family: Arial, sans-serif;
+margin: 10px;
+padding: 0;
+background-color: gray;
+}
+.dropdown {
+position: absolute;
+display: inline-block;
+}
+.dropbtn {
+background-color: #3498db;
+color: white;
+font-size: 20px;
+border: none;
+cursor: pointer;
+padding: 10px 20px;
+border-radius: 5px;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1;}
+.show {display: block;}
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px 0;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+h2 {
+   font-family: monospace; 
+   color: #f1f1f1;
+   font-size: 30px;
+   
+}
+p {
+    font-family: courier;
+    color: silver;
+}
+
+</style>
+<body>
+    <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">= Menu</button>
+        <button onclick="toggleDropdown()" class="dropbtn">BERANDA</button>
+        <div id="myDropdown" class="dropdown-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+        </div>
+        <div>
+        </div>
+
+        <center><h2>Selamat datang di halaman web sederhana saya !</h2></center>
+        <p>website ini adalah tambahan darintugas java skrip saya</p>
+        <p>JavaScript adalah bahasa pemrograman yang digunakan developer untuk membuat halaman web yang interaktif. 
+            Dari menyegarkan umpan media sosial hingga menampilkan animasi dan peta interaktif, fungsi JavaScript 
+            dapat meningkatkan pengalaman pengguna situs web. Sebagai bahasa skrip sisi klien, JavaScript adalah 
+            salah satu teknologi inti dari World Wide Web. Misalnya, saat menjelajah internet, kapan pun Anda melihat 
+            carousel gambar, menu tarik-turun klik untuk menampilkan, atau warna elemen yang berubah secara dinamis 
+            di halaman web, Anda melihat efek JavaScript.</p>
+
+        <div><br>
+        <br>
+        <br>
+        <button><a href="WEB.html">lanjutkan ke tugas 2</a></button>
+        </div>
+        <footer>
+        <p>04/05/2024</p>
+        </footer>
+        <script>
+        function toggleDropdown() {
+        var dropdownContent = document.getElementById("myDropdown");
+        dropdownContent.classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        }
+        }
+    }
+}
+</script>
+</body>
+</html>

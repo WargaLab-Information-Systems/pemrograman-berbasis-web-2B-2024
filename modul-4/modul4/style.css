@@ -1,0 +1,162 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'raleway';
+}
+.header {
+  width: 100%;
+  min-height: 100vh;
+  color: #222;
+  background-color: rgb(255, 247, 0);
+}
+.navbar a {
+  font-size: 20px;
+  padding: 14px 16px;
+}
+.navbar ul li a:hover {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+}
+
+nav {
+  background: #4e4949;
+  width: 100%;
+  padding: 10px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.user-pic {
+  width: 45px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 10px;
+}
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: right;
+}
+nav ul li {
+  display: inline;
+  grid: 2rem;
+  margin: 10px;
+}
+nav ul li a {
+  color: #222;
+  text-decoration: none;
+}
+
+.submenu-wrapper {
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  width: 300px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 2s;
+}
+
+.submenu-wrapper.openMenu {
+  max-height: 500px;
+}
+
+.submenu {
+  background-color: #fff;
+  padding: 1.1rem;
+  margin: 10px;
+  border-radius: 5px;
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+.dropdown h3 {
+  font-weight: 400;
+}
+.dropdown img {
+  width: 50px;
+  border-radius: 20%;
+  margin-right: 15px;
+}
+.submenu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  margin: 15px 0 10px;
+  background-color: #000000;
+}
+
+.submenu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  counter-reset: #c70000;
+  margin: 10px 0;
+}
+.submenu-link p {
+  width: 80%;
+  font-size: 15px;
+}
+.submenu-link img {
+  margin-right: 15px;
+  width: 20px;
+}
+.submenu-link span {
+  font-size: 15px;
+  color: #333;
+  transition: 0.5s;
+}
+.submenu-link:hover span {
+  transform: translateX(5px);
+}
+
+.submenu-link:hover p {
+  font-weight: 600;
+}
+
+section {
+  padding: 70px 17%;
+}
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 1.5rem;
+  align-items: center;
+}
+.about-img img {
+  max-width: 100%;
+  width: 600px;
+  height: auto;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.about-text P {
+  margin: 0.8rem 0 1.8rem;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}

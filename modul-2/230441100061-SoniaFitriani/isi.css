@@ -1,0 +1,64 @@
+body {
+    width:1000px;
+    margin:auto;
+} 
+
+h2 {
+    padding-left:10px;
+}
+
+.sapaan, .isi ,.b {
+    color:white;
+    font-weight:bold;
+}
+.sapaan {
+    font-size:28pt;
+    background:pink;
+    font-family:Vivaldi;
+}
+.isi {
+    font-size:18pt;
+    font-family:Brush Script MT;
+}
+.b {
+    font-size:12pt;font-family:Times New Roman;
+}
+
+#sidebar-kiri {
+    min-height:630px;/* tinggi minimal*/ float:left;/* menekan ke kiri*/
+    width:250px;/* lebar */
+    margin:5px;
+    background-color:silver;
+}
+
+h1 {
+    list-style-type:none; margin:0; padding:0; overflow:hidden; 
+}
+ul {
+    list-style-type:none; margin:0; padding:0; overflow:hidden; 
+}
+li {
+    float:left;
+}
+a:link,a:visited {
+    display:block;
+    width:150px; font-weight:bold; font-size:15pt;
+    color:black;
+    background-color:white;
+    text-align:center;
+    text-decoration:none;
+}
+a:hover,a:active { 
+    background-color:#7A991A;
+}
+
+#sidebar-kanan{
+    background-size:1000px;
+    background-image: url(makanan.jpeg);
+    background-repeat: no-repeat;
+    min-height:500px;/* tinggi minimal*/
+    float:left;/* menekan ke kiri*/
+    width:700px;/* lebar */
+    margin:5px;
+    background-color:white;
+}

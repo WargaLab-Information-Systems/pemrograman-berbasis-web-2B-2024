@@ -1,0 +1,95 @@
+body {
+    background-image: url(tulip.png);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 50px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #FFC0CB;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.task-item button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.task-item button.done {
+    background-color: #4CAF50;
+}
+
+.task-item button:hover {
+    background-color: #d32f2f;
+}
+
+.task-item button:hover.done {
+    background-color: #45a049;
+}
+
+.task-item span {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.task-item.done {
+    background-color: #dff0d8;
+    text-decoration: line-through;
+    color: #4CAF50;
+}

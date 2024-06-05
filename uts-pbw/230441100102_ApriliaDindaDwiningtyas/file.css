@@ -1,0 +1,187 @@
+body {
+    height: max-height;
+}
+
+.detail {
+    background-image: url('bgbromo.jpg');
+    background-size: cover;
+    color: black;
+    text-align: center;
+    padding: 200px 50px;
+    font-weight: bold;
+    height: 500px;
+    width: 100%;
+}
+.background{
+    background-color: #402c2c;
+    height: 1000px;
+}
+.card {
+    margin-bottom: 20px; 
+    margin-left: 7%;
+    border-radius: 40px 0px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    width: 300px;
+}
+.card-img-top {
+    border-top-left-radius: 40px; 
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-body {
+    text-align: left;
+}
+
+.card-text {
+    font-weight: normal;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1000; 
+    background-color: rgba(64, 44, 44, 0.6) !important;
+}
+
+.lead {
+    margin-bottom: 60px;
+}
+
+.display-4{
+    font-weight: bold;
+}
+
+.display-4, .lead{
+    color: white;
+}
+
+.mb-3 {
+    position: absolute;
+}
+
+.nav-link {
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.bi-search{
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-brand{
+    font-weight: bold; 
+}
+
+#cw {
+    color: white;
+}
+
+.content-2 {
+    margin-top: 600px;
+}
+
+.img-fluid {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+}
+
+.jdl {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fa-campground, .fa-shower, .fa-utensils, .fa-child {
+    font-size: 45px;
+}
+p{
+    font-size: small;
+}
+.footer{
+    background-color: rgba(64, 44, 44);
+    margin-top: 100px;
+    color: white;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.footer h2 {
+    font-weight: bold; 
+}
+.footer .col-md-6:last-child {
+    text-align: right; 
+}
+
+.fa-instagram {
+    background-color: white;
+    margin: 5px;
+    padding: 6px 8px;
+    border-radius: 50%;
+    color: rgba(64, 44, 44);
+    font-size: 25px;
+}
+.fa-youtube {
+    background-color: white;
+    margin: 5px;
+    padding: 8px 6px;
+    border-radius: 50%;
+    color: rgba(64, 44, 44);
+    font-size: 25px;
+}
+.fa-facebook-f {
+    background-color: white;
+    margin: 5px;
+    padding: 6px 10px;
+    border-radius: 50%;
+    color: rgba(64, 44, 44);
+    font-size: 25px;
+}
+
+.content-3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer .col-md-6 {
+    padding-bottom: 20px; /* Tambahkan padding bawah */
+}
+
+.footer {
+    margin-top: 35px; /* Tambahkan margin atas pada judul */
+}
+h5 {
+    margin-top: 10px;
+}
+h2{
+    font-weight: bold;
+}
+.footer p {
+    margin-top: 10px; /* Tambahkan margin atas pada paragraf */
+}
+.nav-link {
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+#beranda-link,
+#fasilitas-link,
+#about-link {
+    color: #402c2c !important; /* Mengubah warna teks dengan kekhususan lebih tinggi */
+    font-weight: bold;
+}
+#padding{
+    padding-top: 5%;
+}
+#padding-2{
+    padding-top: 9%;
+}
+.bi-search{
+    background-color: white;
+    margin: 5px;
+    padding: 0px 10px;
+    border-radius: 50%;
+    color: rgba(64, 44, 44);
+}
