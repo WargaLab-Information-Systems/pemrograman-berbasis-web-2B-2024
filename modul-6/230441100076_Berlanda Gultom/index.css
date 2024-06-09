@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2; /* background color changed to a light gray */
+  }
+  
+  center {
+    width: 60%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #3498db; /* header color changed to a bright blue */
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 70%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #567498;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #567498;
+  }
+  
+  input[type="submit"] {
+    background-color: #3498db; /* submit button color changed to a bright blue */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #2980b9; /* submit button hover color changed to a darker blue */
+  }
+  
+  a {
+    text-decoration: none;
+    color: #3498db; /* link color changed to a bright pink */
+  }
+  
+  a:hover {
+    color: #3498db; /* link hover color changed to a darker pink */
+  }

@@ -1,0 +1,81 @@
+.navbar {
+  background-color: #9ec5eb; /* Warna latar belakang */
+  height: 60px; /* Tinggi navbar */
+}
+  .navbar-brand {
+    font-size: 1.2rem; /* Ukuran font */
+  }
+
+  .nav-link {
+    color: #9ec5eb; /* Warna teks */
+    font-size: 1rem; /* Ukuran font */
+  }
+
+  .navbar-toggler-icon {
+    font-size: 0.8rem; /* Ukuran font untuk ikon toggle */
+  }
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /* Gaya untuk judul */
+  .display-3 {
+    color: #9ec5eb; /* Warna teks */
+    font-weight: bold; /* Ketebalan font */
+  }
+  
+  /* Gaya untuk teks */
+  p {
+    font-size: 1.1rem; /* Ukuran font */
+    line-height: 1.5; /* Jarak baris */
+  }
+  
+  /* Gaya untuk gambar */
+  .crop-img {
+    border-radius: 8px; /* Bentuk sudut */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+  }
+  
+  /* Gaya untuk container */
+  .container {
+    padding-top: 30px; /* Jarak atas */
+    padding-bottom: 30px; /* Jarak bawah */
+  }
+  
+  /* Gaya untuk judul di dalam container */
+  .container h2 {
+    margin-bottom: 20px; /* Jarak bawah */
+  }
+  
+  /* Gaya untuk paragraf di dalam container */
+  .container p {
+    margin-bottom: 15px; /* Jarak bawah */
+  }
+  
+  

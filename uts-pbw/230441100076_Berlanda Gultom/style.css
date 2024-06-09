@@ -1,0 +1,132 @@
+body{
+    overflow-x: hidden;
+    background-color: ;
+
+}
+.background-container {
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    z-index: -1;
+    
+}
+
+.background-image {
+    position: absolute;
+    width: 105%;
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.background-image:nth-child(1) {
+	top: 0;
+    z-index: -1;
+}
+.background-image:nth-child(2) {
+	bottom: 0;
+    z-index: -2;
+}
+
+.background-image:nth-child(3) {
+	bottom: 0;
+    z-index: -3;
+}
+.hero {
+    position: absolute;
+	width: 100%;
+	height: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.content-container {
+	position: relative;
+	z-index: 1;
+	padding: 20px;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0paso) !important;
+}
+
+/* Gaya untuk menengahkan teks "PESONA JAWA TIMUR" */
+.navbar .nav-item .nav-link {
+    background-color: white;
+    color: black; /* Warna teks */
+    border-radius: 5px; /* Mengatur sudut lengkung */
+    padding: 5px 10px; /* Sesuaikan dengan kebutuhan Anda */
+    margin-right: 10px;
+}
+
+.pesona-title {
+    text-align: center;
+    margin-top: 100px; /* Sesuaikan margin atas jika diperlukan */
+    font-family: Arial, sans-serif; /* Ganti jenis font jika diperlukan */
+    color:white ; /* Ganti warna font jika diperlukan */
+    font-weight: bold;
+}
+
+.jelajahi-title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 50px; /* Atur jarak antara teks dan kartu */ /* Sesuaikan margin atas jika diperlukan */
+    font-family: Arial, sans-serif; /* Ganti jenis font jika diperlukan */
+    color: white ; /* Ganti warna font jika diperlukan */
+    font-size: 24px; /* Sesuaikan ukuran font jika diperlukan */
+}
+
+/* Gaya untuk mengatur kartu (cards) */
+.card {
+    width: 300px; /* Mengatur lebar kartu menjadi 100% dari lebar parent container */
+    height:400px; /* Mengatur tinggi kartu agar disesuaikan dengan kontennya */
+    margin: 0 auto; /* Menambahkan padding pada kartu */
+    -moz-box-align: center;
+    transition: transform 0.3s ease; /* Efek transisi ketika kartu dihover */
+    margin-bottom: 20px;
+    border-top-left-radius: 30px; /* Sudut kiri atas */
+    border-bottom-right-radius: 30px; /* Sudut kanan bawah */
+
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Mendorong kartu ke atas saat dihover */
+}
+
+.card-title {
+    font-size: 1.2rem; /* Ukuran font untuk judul kartu */
+    font-weight: bold; /* Ketebalan font untuk judul kartu */
+    color: #333; /* Warna teks judul kartu */
+}
+
+.card-text {
+    font-size: 1rem; /* Ukuran font untuk teks pada kartu */
+    color: #555; /* Warna teks pada kartu */
+}
+
+/* Gaya untuk gambar pada kartu */
+.card-img-top {
+    width: 100%; /* Atur lebar gambar di bagian atas kartu */
+    height: 200px; /* Atur tinggi gambar di bagian atas kartu */
+    object-fit: cover; /* Atur gambar agar sesuai dengan ukuran yang ditentukan */
+}
+.image-container {
+    position: left;
+    top: 200;
+    left: 0;
+    bottom: 0;
+    width: 20%;
+    padding: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.content-container {
+    margin-left: 0%;
+    padding: 20px;
+}
+
+
+
+
