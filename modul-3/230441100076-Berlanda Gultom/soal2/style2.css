@@ -1,0 +1,37 @@
+/* Set background image */
+body {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.126pLjeWwI6-WgsjavDUkAHaHB&pid=Api&P=0&h=220");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Style header */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+h2{
+    color:green
+}
+/* Style main content */
+main {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+/* Style footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+}
+
+/* Additional styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}

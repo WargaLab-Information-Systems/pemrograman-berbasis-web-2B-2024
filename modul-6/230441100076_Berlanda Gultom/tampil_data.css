@@ -1,0 +1,46 @@
+
+
+/* Style untuk tabel */
+table {
+    width: 70%; /* Lebar tabel disesuaikan dengan kebutuhan */
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk memberikan tampilan lebih menarik */
+}
+
+/* Style untuk sel header */
+th {
+    background-color: #71b8d7;
+    border: 1px solid #dddddd;
+    padding: 12px; /* Padding yang lebih besar */
+    text-align: left;
+}
+
+/* Style untuk sel data */
+td {
+    border: 1px solid #2d03ff;
+    padding: 12px; /* Padding yang lebih besar */
+    text-align: left;
+}
+
+/* Style untuk tautan aksi */
+td a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #e83e8c; /* Warna pink */
+    color: #fff;
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+/* Hover effect untuk tautan aksi */
+td a:hover {
+    background-color: #d6336c; /* Warna pink yang lebih gelap saat hover */
+}
+
+/* Style untuk tautan tambah data */
+.add-link {
+    text-align: left;
+    margin-top: 20px; /* Jarak antara tabel dan tautan tambah data */
+}
