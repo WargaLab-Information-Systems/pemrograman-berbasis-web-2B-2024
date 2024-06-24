@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0177f5;
+}
+
+.container {
+    max-width: 550px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 80px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px #030000;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #163bf2;
+    border-radius: 50px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #031a9f;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #2f3030;
+}
+
+a.logout-button {
+    background-color:rgb(7, 188, 7); 
+    color: white;
+    padding: 10px 40px;
+    border: 1px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin : 420px ;
+  }
+  
+
+a:hover {
+    background-color: #252c52;
+}
