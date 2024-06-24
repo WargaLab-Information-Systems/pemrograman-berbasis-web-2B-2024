@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <style>
+        body {
+            font-family: Helvetica, sans-serif ;
+            background: #efdeeb;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            position: relative; /* Menambahkan posisi relatif untuk menempatkan teks di atas gambar */
+        }
+
+        .bg-container {
+            text-align: center;
+            position: relative; /* Menambahkan posisi relatif untuk menempatkan teks di atas gambar */
+        }
+
+        .bg-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+            color: rgb(237, 252, 255);
+            font-size: 40px;
+        }
+
+        #dropdownMenu {
+            padding: 10px;
+            font-size: 18px;
+            position: absolute;
+            top: 50px; 
+            left: 40px;
+            z-index: 1;
+        }
+
+        #todoApp {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 40px;
+            border: 2px solid #f51dbf;
+            border-radius: 10px;
+            position: relative; 
+            z-index: 1;
+        }
+
+        #taskInput {
+            width: 70%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #f51dbf;
+        }
+
+        #taskList {
+            list-style-type: none;
+            padding: 0;
+            font-family: 'Lucida Sans Regular';
+        }
+
+        .taskItem {
+            margin-bottom: 5px;
+            cursor: pointer;
+        }
+
+        .taskItem.completed {
+            text-decoration: line-through;
+        }
+
+        .inline {
+            color: rgba(229, 151, 222, 0.752);
+            font-weight: bold;
+            font-family: 'Lucida Sans Regular';
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-container">
+        <img src="bg.jpg" class="bg-image" alt="background">
+        <div class="welcome-text">Welcome</div>
+    </div>
+
+    <select id="dropdownMenu">
+        <option value="" disabled selected>Pilih Materi</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="HTML">PHP</option>
+    </select>
+
+    <div id="todoApp">
+      <h1>Memasukkan Data</h1>
+      <input type="text" id="taskInput" placeholder="Data Anda">
+      <button onclick="addTask()">Tambah</button>
+      <ul id="taskList"></ul>
+      <button id="loadTasks">Muat List Tugas</button>
+    </div>
+
+    <div>
+        Untuk memasukkan informasi yang anda butuhkan, anda perlu mamasukkan pada 
+        <span class="inline">komlom: data</span>
+        dengan demikian anda dapat menampilakan data yang anda masukkan pada bagian bawah.
+    
+        Data yang ada akan dijadikan <span class="inline">kolom: data</span>
+        yang dapat di tambahkan sebanyak yang di butuhkan pada tampilan.
+    
+        Data yang di buat dapat di lihat <span class="inline">kolom: data</span>
+        sehingga penambahan data cukup efektif untuk penyimpanan.
+    </div>
+
+    <script src="isian java.js"></script>
+    
+    <script>
+      function addTask() {
+          var taskText = document.getElementById("taskInput").value.trim();
+          if (taskText === "") return;
+          
+          var newTask = document.createElement("li");
+          newTask.textContent = taskText;
+  
+          var deleteButton = document.createElement("button");
+          deleteButton.textContent = "Hapus";
+          deleteButton.onclick = deleteTask; 
+  
+          var completeButton = document.createElement("button");
+          completeButton.textContent = "Tandai Selesai";
+          completeButton.onclick = toggleCompleted;
+  
+          newTask.appendChild(completeButton);
+          newTask.appendChild(deleteButton);
+  
+          document.getElementById("taskList").appendChild(newTask);
+  
+          document.getElementById("taskInput").value = "";
+      }
+  
+      function deleteTask(event) {
+          var taskItem = event.target.parentElement;
+          taskItem.remove();
+      }
+  
+      function toggleCompleted(event) { //untuk menambahkan atau menghapus kelas (class) pada elemen HTML berdasarkan suatu kondis
+          var taskItem = event.target.parentElement;
+          taskItem.classList.toggle("completed");
+          var completeButton = taskItem.querySelector("button");
+          if (taskItem.classList.contains("completed")) {
+              completeButton.textContent = "Tandai Belum Selesai";
+          } else {
+              completeButton.textContent = "Tandai Selesai";
+          }
+      }
+  
+      function clearTasks() {
+          var taskList = document.getElementById("taskList");
+          taskList.innerHTML = "";
+      }
+  
+      document.getElementById("loadTasks").addEventListener("click", clearTasks);
+  </script>
+  
+</body>
+</html>

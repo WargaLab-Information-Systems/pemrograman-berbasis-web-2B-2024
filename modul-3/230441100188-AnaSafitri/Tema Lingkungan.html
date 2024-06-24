@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Lingkungan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .nav-link {
+            color: green;
+            text-decoration: none;
+            transition: border-bottom 0.3s;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+            border-bottom: 1px solid rgb(34, 81, 34);
+        }
+        .accordion-button {
+            color: green;
+        }
+        .accordion-button::after {
+            color: rgb(7, 249, 7);
+        }
+        .accordion-body {
+            color: rgb(15, 46, 2);
+        }
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .card {
+            flex: 0 0 calc(33.333% - 1rem);
+            margin-bottom: 1rem;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./IMG/D Lingkungan.png" alt="Logo" width="38" height="39" class="d-inline-block align-text-top">
+            Dinas Lingkungan Hidup
+          </a>
+          <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Kegiatan</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Visi & Misi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Keterangan</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Kenapa Harus Menjaga Lingkungan?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Menjaga lingkungan sangatlah penting untuk menjaga lingkungan 
+                agar terciptanya lingkungan yang sehat.<code>.accound</code>Dinas.Lingkungan.Hidup</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Apa langkah yang bisa kita lakukan?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Dengan tidak membuang sampah limbah sembarangan dan juga sampah rumah tangga, 
+                kalian juga dapat mendaur ulang sampah rumah tangga.<code>.accound</code>Dinas.Lingkungan.Hidup</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Bagaimana cara pemanfaatan sampah organik?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Kalian dapat memanfaatkan sampah organik agar dapat di manfaatkan sebagai pengganti pupuk 
+                tanaman yang lebih ramah lingkungan.<code>.accound</code>Dinas.Lingkungan.Hidup</div>
+          </div>
+        </div>
+      </div>
+      
+    <div class="card-container">
+        <div class="card" style="width: 18rem;">
+            <img src="l1.jpeg" class="card-img-top" alt="Lingkungan">
+            <div class="card-body">
+            <h5 class="card-title">Kebersihan</h5>
+            <p class="card-text">Membuang sampah pada tempatnya dapat mengurangi pencemaran lingkungan</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="l2.jpeg" class="card-img-top" alt="Lingkungan2">
+            <div class="card-body">
+            <h5 class="card-title">Mengurangi Limbah</h5>
+            <p class="card-text">Dengan terjaganya lingkungan maka akan terwujudkannya hidup yang lebih sehat.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="l3.jpeg" class="card-img-top" alt="Lingkungan3">
+            <div class="card-body">
+            <h5 class="card-title">Daur Ulang</h5>
+            <p class="card-text">Penggunaan kembali dapat mengurangi jumlah sampah yang terus menumpuk</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+
+      <a class="btn btn-primary" href="file:///C:/Users/LENOVO/OneDrive/Documents/pemrograman-berbasis-web-2B/modul%203/Pendidikan%20utm.html" role="button">Pendidikan</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
